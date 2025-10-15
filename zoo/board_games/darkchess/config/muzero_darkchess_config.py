@@ -52,7 +52,19 @@ darkchess_muzero_config = dict(
             image_channel=16,
             # NOTE: whether to use the self_supervised_learning_loss. default is False
             self_supervised_learning_loss=True,
+            # (bool) Whether to analyze simulation normalization.
+            analysis_sim_norm=False,
+            # (str) The model type. For 1-dimensional vector obs, we use mlp model. For the image obs, we use conv model.
+            model_type='conv',  # options={'mlp', 'conv'}
+            # num_channels=64,
+            # (int) The scale of supports used in categorical distribution.
+            # This variable is only effective when ``categorical_distribution=True``.
+            categorical_distribution=True,
+            support_scale=300,
         ),
+        # whether to use GPU
+        device='cuda', 
+        on_policy=False,
         # (str) The path of the pretrained model. If None, the model will be initialized by the default model.
         model_path=None,
         # use_ture_chance_label_in_chance_encoder=use_ture_chance_label_in_chance_encoder,

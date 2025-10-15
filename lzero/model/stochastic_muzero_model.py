@@ -16,7 +16,7 @@ class StochasticMuZeroModel(nn.Module):
 
     def __init__(
             self,
-            observation_shape: SequenceType = (12, 96, 96),
+            observation_shape: SequenceType = (16, 8, 4),
             action_space_size: int = 6,
             chance_space_size: int = 2,
             num_res_blocks: int = 1,

@@ -1,0 +1,583 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+* {
+  font-family: 'Noto Sans TC', 'times new roman', '微軟正黑體', 'Lucida Grande';
+}
+
+div {
+  position: absolute;
+  float: left;
+  text-align: center;
+}
+.message_box{
+  position: relative;
+  /*top: 40vh;*/
+  width: 50vw;
+  height: 50vh;
+}
+.row_nowrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.message_content{
+  border: 2px solid lightblue;
+  width: 100%;
+  height: 90%;
+  overflow-y: auto;
+}
+.message_sendbox{
+  top: 95%;
+  width: 100%;
+  height: 10%;
+  text-align:left;
+}
+
+
+/* history switch */
+label, input, select{
+  vertical-align: middle;
+}
+/* move list time */
+/*red*/
+.time1{
+  border: 2px solid #fff;
+  color:#ae0000;
+  z-index: 2;
+}
+/*black*/
+.time2{
+  border: 2px solid #fff;
+  color:#3c3c3c;
+  z-index: 2;
+}
+.mui-switch {
+  width: 40px;
+  height: 20px;
+  position: relative;
+  border: 1px solid #dfdfdf;
+  background-color: #fdfdfd;
+  box-shadow: #dfdfdf 0 0 0 0 inset;
+  border-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-clip: content-box;
+  display: inline-block;
+  -webkit-appearance: none;
+  user-select: none;
+  outline: none; 
+}
+.mui-switch:before {
+  content: '';
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  border-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4); 
+}
+.mui-switch:checked {
+  border-color: #64bd63;
+  box-shadow: #64bd63 0 0 0 16px inset;
+  background-color: #64bd63; 
+}
+.mui-switch:checked:before {
+  left: 21px; 
+}
+.mui-switch.mui-switch-animbg {
+  transition: background-color ease 0.4s; 
+}
+.mui-switch.mui-switch-animbg:before {
+  transition: left 0.3s; }
+.mui-switch.mui-switch-animbg:checked {
+  box-shadow: #dfdfdf 0 0 0 0 inset;
+  background-color: #64bd63;
+  transition: border-color 0.4s, background-color ease 0.4s; 
+}
+.mui-switch.mui-switch-animbg:checked:before {
+  transition: left 0.3s; 
+}
+/* history switch end */
+
+/* CC */
+.CC_blank{
+  background-color: rgba(0,0,0,0.001);
+  border-style: none none none none;
+  z-index: 3;
+}
+
+/* arrow */
+.arrow1 {
+  transform: rotate(0deg);
+  display:inline-block;
+  height:15px;
+  width:25px;
+  background-color:#5bc0de;
+  position:relative;
+  top:10px;
+}
+.arrow1:before {
+  position:absolute;
+  content:"";
+  border:15px solid transparent;
+  border-left:20px solid #5bc0de;
+  left:25px;
+  top:-7px;
+}
+/* 0514 dialog */
+.box_main{
+  background-color: rgba(195,195,195,0.7);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2048;
+  display: none;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+.box_dialog {
+  position: relative;
+  width: auto;
+  height: auto;
+  margin-top:20px;
+}
+.box_header {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  border-bottom: 1px solid #e5e5e5;
+}
+.box_title {
+  color: black;
+  position: relative;
+  font-size: 36px;
+  margin: 2%;
+  line-height: 1.42857143;
+  box-sizing: border-box;
+}
+
+.box_body {
+  color: black;
+  width: 100%;
+  height: 60%;
+  font-size: 24px;
+  line-height: 1.42857143;
+  position: relative;
+  box-sizing: border-box;
+}
+.box_content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  outline: 0;
+}
+.box_footer {
+  position: relative;
+  width: 100%;
+  text-align: right;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.but_yes {
+  position: relative;
+  text-align: center;
+  font-size: 24px;
+  border:0;
+  background-color: blue;
+  color:#fff;
+  border-radius:10px;
+  cursor:pointer;
+  margin-right: 2px;
+}
+.but_no {
+  position: relative;
+  text-align: center;
+  font-size: 24px;
+  border:0;
+  background-color:red;
+  color:#fff;
+  border-radius:10px;
+  cursor:pointer;
+  margin-right: 2px;
+}
+.but_yes:hover{
+  color: blue;
+  background-color:#fff;
+  border:1px blue solid;
+}
+.but_no:hover{
+  color:red;
+  background-color:#fff;
+  border:1px red solid;
+}
+
+/*<div class="container"><span class="arrow"></span></div>*/
+.container{
+  /* 0: right; 90: down; 180: left; 270: up;*/
+  transform: rotate(270deg);
+  width:5px;
+  height:3px;
+  background:#ccc;
+  margin:10px auto;
+}
+.arrow {
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-left: 3px solid #ccc;
+  float:right;
+  margin-top:-1.5px;
+  margin-right:-2.5px;
+}
+/**********************************************************/
+
+.rect{
+  background-color: rgba(0,0,0,0.001);
+  background: linear-gradient(to left, #0f0, #0f0) left top no-repeat, 
+        linear-gradient(to bottom, #0f0, #0f0) left top no-repeat,
+        linear-gradient(to left, #0f0, #0f0) right top no-repeat,
+        linear-gradient(to bottom, #0f0, #0f0) right top no-repeat, 
+        linear-gradient(to left, #0f0, #0f0) left bottom no-repeat,
+        linear-gradient(to bottom, #0f0, #0f0) left bottom no-repeat, 
+        linear-gradient(to left, #0f0, #0f0) right bottom no-repeat,
+        linear-gradient(to bottom, #0f0, #0f0) right bottom no-repeat;
+  background-size: 3px 13px, 13px 3px, 3px 13px, 13px 3px;
+  z-index: 2;
+}
+.orange_rect{
+  background-color: rgba(0,0,0,0.001);
+  background: linear-gradient(to left, orange, orange) left top no-repeat, 
+        linear-gradient(to bottom, orange, orange) left top no-repeat,
+        linear-gradient(to left, orange, orange) right top no-repeat,
+        linear-gradient(to bottom, orange, orange) right top no-repeat, 
+        linear-gradient(to left, orange, orange) left bottom no-repeat,
+        linear-gradient(to bottom, orange, orange) left bottom no-repeat, 
+        linear-gradient(to left, orange, orange) right bottom no-repeat,
+        linear-gradient(to bottom, orange, orange) right bottom no-repeat;
+  background-size: 3px 13px, 13px 3px, 3px 13px, 13px 3px;
+  z-index: 2;
+}
+.blue_rect{
+  background-color: rgba(0,0,0,0.001);
+  background: linear-gradient(to left, blue, blue) left top no-repeat, 
+        linear-gradient(to bottom, blue, blue) left top no-repeat,
+        linear-gradient(to left, blue, blue) right top no-repeat,
+        linear-gradient(to bottom, blue, blue) right top no-repeat, 
+        linear-gradient(to left, blue, blue) left bottom no-repeat,
+        linear-gradient(to bottom, blue, blue) left bottom no-repeat, 
+        linear-gradient(to left, blue, blue) right bottom no-repeat,
+        linear-gradient(to bottom, blue, blue) right bottom no-repeat;
+  background-size: 3px 13px, 13px 3px, 3px 13px, 13px 3px;
+  z-index: 2;
+}
+.red_rect{
+  background-color: rgba(0,0,0,0.001);
+  background: linear-gradient(to left, red, red) left top no-repeat, 
+        linear-gradient(to bottom, red, red) left top no-repeat,
+        linear-gradient(to left, red, red) right top no-repeat,
+        linear-gradient(to bottom, red, red) right top no-repeat, 
+        linear-gradient(to left, red, red) left bottom no-repeat,
+        linear-gradient(to bottom, red, red) left bottom no-repeat, 
+        linear-gradient(to left, red, red) right bottom no-repeat,
+        linear-gradient(to bottom, red, red) right bottom no-repeat;
+  background-size: 3px 13px, 13px 3px, 3px 13px, 13px 3px;
+  z-index: 2;
+}
+.black_rect{
+  background-color: rgba(0,0,0,0.001);
+  background: linear-gradient(to left, black, black) left top no-repeat, 
+        linear-gradient(to bottom, black, black) left top no-repeat,
+        linear-gradient(to left, black, black) right top no-repeat,
+        linear-gradient(to bottom, black, black) right top no-repeat, 
+        linear-gradient(to left, black, black) left bottom no-repeat,
+        linear-gradient(to bottom, black, black) left bottom no-repeat, 
+        linear-gradient(to left, black, black) right bottom no-repeat,
+        linear-gradient(to bottom, black, black) right bottom no-repeat;
+  background-size: 3px 13px, 13px 3px, 3px 13px, 13px 3px;
+  z-index: 2;
+}
+.pink_rect{
+  background-color: rgba(0,0,0,0.001);
+  background: linear-gradient(to left, pink, pink) left top no-repeat, 
+        linear-gradient(to bottom, pink, pink) left top no-repeat,
+        linear-gradient(to left, pink, pink) right top no-repeat,
+        linear-gradient(to bottom, pink, pink) right top no-repeat, 
+        linear-gradient(to left, pink, pink) left bottom no-repeat,
+        linear-gradient(to bottom, pink, pink) left bottom no-repeat, 
+        linear-gradient(to left, pink, pink) right bottom no-repeat,
+        linear-gradient(to bottom, pink, pink) right bottom no-repeat;
+  background-size: 3px 13px, 13px 3px, 3px 13px, 13px 3px;
+  z-index: 2;
+}
+.move_mark{
+  position: absolute;
+  top: 38px;
+  left: 38px;
+  width:5px;
+  height:5px;
+  border-radius:999em;
+  background-color: orange;
+  z-index: 5;
+}
+
+
+.label, .right_arrow, .left_arrow
+{
+  /*background:#6d8cab;*/
+  background:#d8d8eb;
+  border: 1px solid #a5bacf;
+  border-radius:10px;
+  color:#1b3650;
+}
+
+.path
+{
+  border: 2px solid #fff;
+  background:#fff;
+  overflow:scroll;
+  overflow-x: hidden;
+}
+
+.move1, .move2, .move3, .move4, .end_move, .end_move_best
+{
+  border: 2px solid #fff;
+  background-color: #ccc;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 61% 75%, 35% 100%, 38% 75%, 0% 75%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 61% 75%, 35% 100%, 38% 75%, 0% 75%);
+  z-index: 2;
+  cursor:pointer;
+}
+
+.move1
+{
+  background:#e3d4d6;
+  color:#ae0000;  
+}
+.move2
+{
+  background: #e0e0e0;
+  color:#3c3c3c;
+}
+.move3
+{
+  background: #ae0000;
+  color:#fff;
+}
+
+.move4
+{
+  background: #5b5b5b;
+  color:#fff;
+}
+
+.move_num
+{
+  border: 2px solid #fff;
+  z-index: 2;
+  font-weight: bold;
+  cursor:pointer;
+}
+
+
+.end_move
+{
+  background: #e0e0e0;
+  color:#3c3c3c;
+}
+.end_move_best
+{
+  background:#e3d4d6;
+  color:#ae0000;  
+}
+.end_type
+{
+  border: 2px solid #fff;
+  z-index: 2;
+  font-weight: bold;
+  color:#8C7383;
+  cursor:pointer;
+}
+
+.end_score
+{
+  border: 2px solid #fff;
+  z-index: 2;
+  font-weight: bold;
+  color:#990005;
+  cursor:pointer;
+}
+
+
+.blank, .river, .backslash, .slash 
+{
+  border: 3px solid #ccc;
+  z-index: 1;
+}
+
+.boundary 
+{
+  border: 3px solid #fff;
+  color:#9C9C9C;
+  z-index: 0;
+}
+
+.river 
+{
+  background-color: #fff;
+  border-style:solid solid solid solid; 
+  z-index: 1;
+}
+
+.piece, .piece_dark, .piece_red, .piece_black, .piece_dark_red, .piece_dark_black
+{
+  cursor:pointer;
+  pointer-events: auto;
+  border: 2px solid #a5a4a4;
+  background: #a5a4a4;
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  z-index: 3;
+}
+
+.piece_dark
+{
+  border: none;
+  background: #D4D4D4;
+  /*color:#9C9C9C;*/
+  color:#D4D4D4;
+}
+
+.piece_red
+{
+  border: none;
+  background: #ebd6d6;
+  color:#E63F00;
+}
+
+.piece_black
+{
+  border: none;
+  background: #D4D4D4;
+  color:#444444;
+}
+
+.piece_dark_red
+{
+  border: none;
+  background: #e3d4d6;
+  color:#cfa5ac;
+}
+
+.piece_dark_black
+{
+  border: none;
+  background: #e4e2e2;
+  color:#9C9C9C;
+}
+/* z-index 1 -> -2 */
+.backslash 
+{
+  background: #ccc;
+  -webkit-clip-path: polygon(4% 0, 100% 96%, 100% 100%, 96% 100%, 0 4%, 0 0);
+  clip-path: polygon(4% 0, 100% 96%, 100% 100%, 96% 100%, 0 4%, 0 0);
+  z-index: -2;
+}
+
+.slash
+{
+  background: #ccc;
+  -webkit-clip-path: polygon(0 96%, 96% 0, 100% 0, 100% 4%, 4% 100%, 0 100%);
+  clip-path: polygon(0 96%, 96% 0, 100% 0, 100% 4%, 4% 100%, 0 100%);
+  z-index: -2;
+}
+
+.right_arrow 
+{
+  -webkit-clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+  clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+  z-index: 1;
+  cursor:pointer;
+}
+.left_arrow 
+{
+  -webkit-clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+  clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+  z-index: 1;
+  cursor:pointer;
+}
+
+/* move */
+.r_arrow, .l_arrow, .u_arrow, .d_arrow
+{
+  /*stroke: black;
+  fill: red;*/
+  background-color: rgba(0,242,255,0.7);
+  border: 1px solid #a5bacf;
+  z-index: 1;
+}
+.r_arrow 
+{
+  -webkit-clip-path: polygon(100% 50%, 65% 25%, 65% 40%, 0 40%, 0 60%, 65% 60%, 65% 75%);
+    clip-path: polygon(100% 50%, 65% 25%, 65% 40%, 0 40%, 0 60%, 65% 60%, 65% 75%);
+}
+.l_arrow 
+{
+  -webkit-clip-path: polygon(0 50%, 35% 75%, 35% 60%, 100% 60%, 100% 40%, 35% 40%, 35% 25%);
+    clip-path: polygon(0 50%, 35% 75%, 35% 60%, 100% 60%, 100% 40%, 35% 40%, 35% 25%);
+}
+.u_arrow
+{
+  -webkit-clip-path: polygon(50% 0, 75% 35%, 60% 35%, 60% 100%, 40% 100%, 40% 35%, 25% 35%);
+    clip-path: polygon(50% 0, 75% 35%, 60% 35%, 60% 100%, 40% 100%, 40% 35%, 25% 35%);
+}
+.d_arrow
+{ 
+  -webkit-clip-path: polygon(50% 100%, 25% 65%, 40% 65%, 40% 0, 60% 0, 60% 65%, 75% 65%);
+    clip-path: polygon(50% 100%, 25% 65%, 40% 65%, 40% 0, 60% 0, 60% 65%, 75% 65%);
+}
+.u_arrow_side, .d_arrow_side
+{
+  /*stroke: black;
+  fill: red;*/
+  background-color: rgba(0,242,255,0.5);
+  z-index: 1;
+}
+.u_arrow_side
+{
+  -webkit-clip-path: polygon(50% 0%, 80% 30%, 70% 30%, 70% 100%, 30% 100%, 30% 30%, 20% 30%);
+    clip-path: polygon(50% 0%, 80% 30%, 70% 30%, 70% 100%, 30% 100%, 30% 30%, 20% 30%);
+}
+.d_arrow_side
+{ 
+  -webkit-clip-path: polygon(50% 100%, 25% 65%, 40% 65%, 40% 0, 60% 0, 60% 65%, 75% 65%);
+    clip-path: polygon(50% 100%, 25% 65%, 40% 65%, 40% 0, 60% 0, 60% 65%, 75% 65%);
+}
+
+.r_arrow_side
+{
+  -webkit-clip-path: polygon(100% 50%, 70% 70%, 75% 55%, 0 55%, 0 45%, 75% 45%, 70% 30%);
+    clip-path: polygon(100% 50%, 70% 70%, 75% 55%, 0 55%, 0 45%, 75% 45%, 70% 30%);
+}
+.l_arrow_side
+{
+  -webkit-clip-path: polygon(0 50%, 30% 30%, 25% 45%, 100% 45%, 100% 55%, 25% 55%, 30% 70%);
+    clip-path: polygon(0 50%, 30% 30%, 25% 45%, 100% 45%, 100% 55%, 25% 55%, 30% 70%);
+}
+
