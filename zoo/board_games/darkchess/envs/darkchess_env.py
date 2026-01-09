@@ -169,7 +169,7 @@ class DarkchessEnv(BaseEnv):
         # The "to_play" parameter is used in the MCTS algorithm.
         obs = {
             'observation': self.encode_board(),
-            'action_mask': action_mask,
+            'action_mask': action_mask,      
             'board': copy.deepcopy(self.board),
             'current_player_index': self.current_player,
             'to_play': self.current_player if self.battle_mode == 'self_play_mode' else -1,
