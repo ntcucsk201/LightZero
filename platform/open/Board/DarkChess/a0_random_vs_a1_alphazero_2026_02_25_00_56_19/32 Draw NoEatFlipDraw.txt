@@ -1,0 +1,4073 @@
+INITIAL
+* 1:55am Feb 25, 2026
+* a0_random vs a1_alphazero
+* 1 2 2 2 2 2 5 1 2 2 2 2 2 5
+* X X X X
+* X X X X
+* X X X X
+* X X X X
+* X X X X
+* X X X X
+* X X X X
+* X X X X
+* first 1
+* time 900
+* 1. a8(p) b8(g)
+* 2. c3(P) c8(P)
+* 3. a4(P) d8(M)
+* 4. d6(p) a7(N)
+* 5. c7(K) a7-a8
+* 6. b6(G) a8-a7
+* 7. b7(N) a7-a8
+* 8. b8-b7 a8-b8
+* 9. b5(G) b8-a8
+* 10. a2(P) a8-b8
+* 11. b7-a7 b8-a8
+* 12. d5(p) a8-b8
+* 13. c1(C) b8-a8
+* 14. c2(c) a8-b8
+* 15. a3(m) b8-a8
+* 16. a7-b7 a8-b8
+* 17. a5(C) b8-a8
+* 18. b3(R) a8-b8
+* 19. c4(m) b8-a8
+* 20. d2(r) a8-b8
+* 21. b7-b6 b8-a8
+* 22. b6-b7 a8-b8
+* 23. b7-a7 b8-a8
+* 24. d3(R) a8-b8
+* 25. b2(p) b8-a8
+* 26. b2-a2 a8-b8
+* 27. b4(c) b8-a8
+* 28. a3-b3 a8-b8
+* 29. a7-b7 b8-a8
+* 30. a2-a3 a8-b8
+* 31. b3-c3 b8-a8
+* 32. a6(g) a8-b8
+* 33. a3-a2 b8-a8
+* 34. d4(k) a8-b8
+* 35. b7-b8 c7-b7
+* 36. b4-b7 c8-c7
+* 37. a2-a3 c7-c8
+* 38. b7-c7 d7(n)
+* 39. c6(M) c6-c7
+* 40. a3-b3 c7-b7
+* 41. b8-c8 b7-b8
+* 42. c8-d8 b8-a8
+* 43. c3-d3 a8-b8
+* 44. a6-a7 b8-a8
+* 45. a7-b7 a8-b8
+* 46. d6-c6 b8-a8
+* 47. c5(r) a8-b8
+* 48. d7-c7 b8-a8
+* 49. b7-b8 a8-a7
+* 50. b8-c8 a7-a8
+* 51. d3-c3 a8-b8
+* 52. c7-b7 b8-a8
+* 53. c6-c7 a8-b8
+* 54. b7-a7 b8-a8
+* 55. d2-d3 a8-b8
+* 56. c7-d7 b8-a8
+* 57. d3-d2 a8-b8
+* 58. c4-b4 b8-a8
+* 59. d2-d3 a8-b8
+* 60. b4-a4 b8-a8
+* 61. b3-a3 a8-b8
+* 62. d1(p) b8-a8
+* 63. a4-b4 a8-b8
+* 64. a3-b3 b8-a8
+* 65. d4-c4 a8-b8
+* 66. b3-a3 b8-a8
+* 67. c3-b3 a8-b8
+* 68. c2-c3 b8-a8
+* 69. d1-d2 a8-b8
+* 70. d2-c2 b8-a8
+* 71. c5-c6 a8-b8
+* 72. c2-b2 b8-a8
+* 73. b2-c2 a8-b8
+* 74. a1(P) b8-a8
+* 75. c6-d6 a8-b8
+* 76. c2-d2 b8-a8
+* 77. b3-b2 a8-b8
+* 78. c4-c5 b8-a8
+* 79. b2-b3 a8-b8
+* 80. d6-c6 b8-a8
+* 81. b4-c4 a8-b8
+* 82. a3-a4 b8-a8
+* 83. c6-b6 a8-b8
+* 84. a7-a8 b8-a8
+* 85. a4-b4 a8-b8
+* 86. b6-a6 b8-a8
+* 87. b1(n) a8-b8
+* 88. d7-d6 b8-a8
+* 89. c8-c7 a8-b8
+* 90. d8-d7 b8-a8
+* 91. b3-a3 a8-b8
+* 92. b4-b3 b8-a8
+* 93. d3-d4 a8-b8
+* 94. a3-a4 b8-a8
+* 95. b1-b2 a8-b8
+* 96. c3-c2 b8-a8
+* 97. b3-c3 a8-b8
+* 98. d6-c6 b8-a8
+* 99. d2-d3 a8-b8
+* 100. c6-d6 b8-a8
+* 101. c7-c8 a8-b8
+* 102. b2-b3 b8-a8
+* 103. d3-d2 a8-b8
+* 104. d2-d1 b8-a8
+* 105. c2-b2 a8-b8
+* 106. a4-b4 b8-a8
+* 107. d6-c6 a8-b8
+* 108. d1-d2 b8-a8
+* 109. d2-c2 a8-b8
+* 110. a6-a7 b8-a8
+* 111. c8-b8 a8-a7
+* 112. b3-a3 a7-a8
+* 113. c3-b3 a8-a7
+* 114. b2-a2 a7-a8
+* 115. b8-b7 a8-b8
+* 116. d5-d6 b8-a8
+* 117. d6-d5 a8-b8
+* 118. b7-c7 b8-a8
+* 119. a3-a4 a8-b8
+* 120. c2-b2 b8-a8
+* 121. b2-c2 a8-b8
+* 122. a4-a5 b8-a8
+* 123. c6-d6 a8-b8
+* 124. d4-d3 b8-a8
+* 125. d5-d4 a8-b8
+* 126. c4-c3 b8-a8
+* 127. b3-b2 a8-b8
+* 128. c5-b5 b8-a8
+* 129. b2-b1 a8-b8
+* 130. b4-c4 b8-a8
+* 131. d7-d8 a8-b8
+* 132. b5-b6 b8-a8
+* 133. a5-a4 a8-b8
+* 134. d4-d5 b8-a8
+* 135. b1-a1 a8-b8
+* 136. d3-d2 b8-a8
+* 137. b6-b7 a8-b8
+* 138. a4-a3 b8-a8
+* 139. d5-c5 a8-b8
+* 140. d8-d7 b8-a8
+* 141. a2-b2 a8-b8
+* 142. b2-b8 c1-c3
+* 143. d2-d1 c3-c5
+* 144. b7-a7 c5-c6
+* 145. c4-d4 c6-b6
+* 146. c7-c6 b6-b7
+* 147. d4-d5 b7-c7
+* 148. a1-a2 c7-c8
+* 149. c6-c7 c8-d8
+* 150. b8-c8 d8-d6
+* 151. a3-a4 d6-c6
+* 152. d7-d6 c6-c8
+* 153. a2-b2 c8-b8
+* 154. c7-c6 b8-a8
+* 155. d5-d4 a8-b8
+* 156. d1-c1 b8-a8
+* 157. d6-d5 a8-b8
+* 158. c2-d2 b8-a8
+* 159. a4-b4 a8-b8
+* 160. b2-c2 b8-a8
+* 161. c6-b6 a8-b8
+* 162. a7-b7 b8-a8
+* 163. b6-a6 a8-b8
+* 164. c2-c3 b8-a8
+* 165. c3-d3 a8-b8
+* 166. b7-b6 b8-a8
+* 167. a6-a5 a8-b8
+* 168. a5-a6 b8-a8
+* 169. b6-b5 a8-b8
+* 170. b4-c4 b8-a8
+* 171. b5-b4 a8-b8
+* 172. a6-a5 b8-a8
+* 173. d2-c2 a8-b8
+* 174. a5-a4 b8-a8
+* 175. b4-b3 a8-b8
+* 176. c1-d1 b8-a8
+* 177. c2-b2 a8-b8
+* 178. d1-d2 b8-a8
+* 179. a4-b4 a8-b8
+* 180. b2-a2 b8-a8
+* 181. b4-b5 a8-b8
+* 182. a2-a1 b8-a8
+* 183. d5-d6 a8-b8
+* 184. b5-c5 b8-a8
+* 185. b3-b2 a8-b8
+* 186. d2-c2 b8-a8
+* 187. c4-b4 a8-b8
+* 188. c2-d2 b8-a8
+* 189. d6-d7 a8-b8
+* 190. d2-d1 b8-a8
+* 191. d3-c3 a8-b8
+* 192. c5-c4 b8-a8
+* 193. d4-d5 a8-b8
+* 194. d7-c7 b8-a8
+* 195. c3-c2 a8-b8
+* 196. d5-c5 b8-a8
+* 197. c5-d5 a8-b8
+* 198. b4-b3 b8-a8
+* 199. c7-d7 a8-b8
+* 200. c4-c3 b8-a8
+* 201. b2-a2 a8-b8
+* 202. b3-b4 b8-a8
+* 203. b4-b5 a8-b8
+* 204. d5-d6 b8-a8
+* 205. b5-b4 a8-b8
+* 206. c2-d2 b8-a8
+* 207. d6-c6 a8-b8
+* 208. d2-c2 b8-a8
+* 209. b4-b3 a8-b8
+* 210. d7-d8 b8-a8
+* 211. d1-c1 a8-b8
+* 212. a1-b1 b8-a8
+* NoEatFlipDraw a0_random Draw 0.500000,0.500000
+* Comment 0 0
+0. 1771955708551
+1. 1771955708551
+2. 1771955709085
+3. 1771955709244
+4. 1771955709636
+5. 1771955709795
+6. 1771955710188
+7. 1771955710346
+8. 1771955710689
+9. 1771955710847
+10. 1771955711190
+11. 1771955711349
+12. 1771955711741
+13. 1771955711900
+14. 1771955712292
+15. 1771955712452
+16. 1771955712843
+17. 1771955713003
+18. 1771955713395
+19. 1771955713555
+20. 1771955713946
+21. 1771955714106
+22. 1771955714498
+23. 1771955714658
+24. 1771955715048
+25. 1771955715209
+26. 1771955715599
+27. 1771955715761
+28. 1771955716150
+29. 1771955716312
+30. 1771955716701
+31. 1771955716864
+32. 1771955717302
+33. 1771955717465
+34. 1771955717853
+35. 1771955718017
+36. 1771955718404
+37. 1771955718568
+38. 1771955718956
+39. 1771955719119
+40. 1771955719507
+41. 1771955719672
+42. 1771955720059
+43. 1771955720222
+44. 1771955720610
+45. 1771955720774
+46. 1771955721161
+47. 1771955721325
+48. 1771955721713
+49. 1771955721876
+50. 1771955722264
+51. 1771955722427
+52. 1771955722815
+53. 1771955722978
+54. 1771955723367
+55. 1771955723529
+56. 1771955723918
+57. 1771955724080
+58. 1771955724469
+59. 1771955724630
+60. 1771955725021
+61. 1771955725182
+62. 1771955725572
+63. 1771955725732
+64. 1771955726124
+65. 1771955726283
+66. 1771955726674
+67. 1771955726834
+68. 1771955727225
+69. 1771955727385
+70. 1771955727777
+71. 1771955727936
+72. 1771955728328
+73. 1771955728487
+74. 1771955728879
+75. 1771955729039
+76. 1771955729430
+77. 1771955729589
+78. 1771955729931
+79. 1771955730090
+80. 1771955730432
+81. 1771955730591
+82. 1771955730934
+83. 1771955731092
+84. 1771955731435
+85. 1771955731593
+86. 1771955731936
+87. 1771955732094
+88. 1771955732436
+89. 1771955732595
+90. 1771955732937
+91. 1771955733095
+92. 1771955733439
+93. 1771955733596
+94. 1771955733940
+95. 1771955734098
+96. 1771955734442
+97. 1771955734599
+98. 1771955734943
+99. 1771955735100
+100. 1771955735443
+101. 1771955735601
+102. 1771955735944
+103. 1771955736101
+104. 1771955736445
+105. 1771955736602
+106. 1771955736947
+107. 1771955737104
+108. 1771955737447
+109. 1771955737604
+110. 1771955737948
+111. 1771955738106
+112. 1771955738450
+113. 1771955738606
+114. 1771955738951
+115. 1771955739107
+116. 1771955739452
+117. 1771955739608
+118. 1771955739954
+119. 1771955740109
+120. 1771955740455
+121. 1771955740610
+122. 1771955740956
+123. 1771955741111
+124. 1771955741457
+125. 1771955741612
+126. 1771955741958
+127. 1771955742113
+128. 1771955742460
+129. 1771955742614
+130. 1771955742961
+131. 1771955743115
+132. 1771955743462
+133. 1771955743617
+134. 1771955743963
+135. 1771955744118
+136. 1771955744464
+137. 1771955744619
+138. 1771955744965
+139. 1771955745120
+140. 1771955745466
+141. 1771955745621
+142. 1771955745968
+143. 1771955746122
+144. 1771955746469
+145. 1771955746623
+146. 1771955746969
+147. 1771955747124
+148. 1771955747470
+149. 1771955747625
+150. 1771955747971
+151. 1771955748126
+152. 1771955748472
+153. 1771955748627
+154. 1771955748972
+155. 1771955749129
+156. 1771955749473
+157. 1771955749629
+158. 1771955749974
+159. 1771955750130
+160. 1771955750475
+161. 1771955750631
+162. 1771955750976
+163. 1771955751132
+164. 1771955751479
+165. 1771955751633
+166. 1771955751979
+167. 1771955752134
+168. 1771955752480
+169. 1771955752635
+170. 1771955752981
+171. 1771955753136
+172. 1771955753483
+173. 1771955753638
+174. 1771955753983
+175. 1771955754139
+176. 1771955754485
+177. 1771955754640
+178. 1771955754986
+179. 1771955755140
+180. 1771955755487
+181. 1771955755641
+182. 1771955755987
+183. 1771955756142
+184. 1771955756489
+185. 1771955756643
+186. 1771955756989
+187. 1771955757144
+188. 1771955757491
+189. 1771955757646
+190. 1771955757992
+191. 1771955758146
+192. 1771955758493
+193. 1771955758647
+194. 1771955758994
+195. 1771955759148
+196. 1771955759495
+197. 1771955759649
+198. 1771955759996
+199. 1771955760151
+200. 1771955760497
+201. 1771955760651
+202. 1771955760998
+203. 1771955761152
+204. 1771955761499
+205. 1771955761653
+206. 1771955762000
+207. 1771955762154
+208. 1771955762502
+209. 1771955762655
+210. 1771955763004
+211. 1771955763156
+212. 1771955763504
+213. 1771955763657
+214. 1771955764005
+215. 1771955764158
+216. 1771955764506
+217. 1771955764658
+218. 1771955765008
+219. 1771955765159
+220. 1771955765509
+221. 1771955765660
+222. 1771955766010
+223. 1771955766161
+224. 1771955766511
+225. 1771955766662
+226. 1771955767012
+227. 1771955767163
+228. 1771955767513
+229. 1771955767665
+230. 1771955768015
+231. 1771955768166
+232. 1771955768515
+233. 1771955768668
+234. 1771955769016
+235. 1771955769167
+236. 1771955769517
+237. 1771955769668
+238. 1771955770018
+239. 1771955770169
+240. 1771955770520
+241. 1771955770671
+242. 1771955771019
+243. 1771955771171
+244. 1771955771521
+245. 1771955771674
+246. 1771955772022
+247. 1771955772175
+248. 1771955772523
+249. 1771955772674
+250. 1771955773024
+251. 1771955773175
+252. 1771955773525
+253. 1771955773678
+254. 1771955774026
+255. 1771955774178
+256. 1771955774526
+257. 1771955774679
+258. 1771955775028
+259. 1771955775179
+260. 1771955775528
+261. 1771955775680
+262. 1771955776029
+263. 1771955776181
+264. 1771955776530
+265. 1771955776683
+266. 1771955777031
+267. 1771955777183
+268. 1771955777532
+269. 1771955777685
+270. 1771955778033
+271. 1771955778185
+272. 1771955778534
+273. 1771955778687
+274. 1771955779035
+275. 1771955779188
+276. 1771955779536
+277. 1771955779690
+278. 1771955780038
+279. 1771955780190
+280. 1771955780538
+281. 1771955780691
+282. 1771955781040
+283. 1771955781192
+284. 1771955781542
+285. 1771955781693
+286. 1771955782043
+287. 1771955782194
+288. 1771955782544
+289. 1771955782696
+290. 1771955783047
+291. 1771955783197
+292. 1771955783547
+293. 1771955783699
+294. 1771955784048
+295. 1771955784200
+296. 1771955784550
+297. 1771955784701
+298. 1771955785051
+299. 1771955785203
+300. 1771955785552
+301. 1771955785705
+302. 1771955786053
+303. 1771955786206
+304. 1771955786554
+305. 1771955786709
+306. 1771955787055
+307. 1771955787209
+308. 1771955787556
+309. 1771955787710
+310. 1771955788057
+311. 1771955788212
+312. 1771955788558
+313. 1771955788713
+314. 1771955789059
+315. 1771955789214
+316. 1771955789560
+317. 1771955789715
+318. 1771955790062
+319. 1771955790216
+320. 1771955790562
+321. 1771955790718
+322. 1771955791063
+323. 1771955791219
+324. 1771955791564
+325. 1771955791720
+326. 1771955792066
+327. 1771955792221
+328. 1771955792567
+329. 1771955792722
+330. 1771955793068
+331. 1771955793224
+332. 1771955793570
+333. 1771955793725
+334. 1771955794070
+335. 1771955794227
+336. 1771955794571
+337. 1771955794728
+338. 1771955795072
+339. 1771955795230
+340. 1771955795573
+341. 1771955795732
+342. 1771955796124
+343. 1771955796283
+344. 1771955796625
+345. 1771955796785
+346. 1771955797177
+347. 1771955797336
+348. 1771955797728
+349. 1771955797887
+350. 1771955798279
+351. 1771955798439
+352. 1771955798830
+353. 1771955798990
+354. 1771955799381
+355. 1771955799541
+356. 1771955799884
+357. 1771955800042
+358. 1771955800434
+359. 1771955800594
+360. 1771955800985
+361. 1771955801146
+362. 1771955801536
+363. 1771955801698
+364. 1771955802087
+365. 1771955802248
+366. 1771955802638
+367. 1771955802799
+368. 1771955803190
+369. 1771955803351
+370. 1771955803740
+371. 1771955803901
+372. 1771955804292
+373. 1771955804453
+374. 1771955804843
+375. 1771955805004
+376. 1771955805395
+377. 1771955805555
+378. 1771955805946
+379. 1771955806107
+380. 1771955806497
+381. 1771955806658
+382. 1771955807049
+383. 1771955807209
+384. 1771955807600
+385. 1771955807760
+386. 1771955808151
+387. 1771955808312
+388. 1771955808703
+389. 1771955808863
+390. 1771955809254
+391. 1771955809414
+392. 1771955809805
+393. 1771955809966
+394. 1771955810356
+395. 1771955810517
+396. 1771955810907
+397. 1771955811069
+398. 1771955811458
+399. 1771955811620
+400. 1771955812009
+401. 1771955812171
+402. 1771955812560
+403. 1771955812722
+404. 1771955813111
+405. 1771955813273
+406. 1771955813662
+407. 1771955813824
+408. 1771955814214
+409. 1771955814375
+410. 1771955814764
+411. 1771955814926
+412. 1771955815315
+413. 1771955815477
+414. 1771955815868
+415. 1771955816028
+416. 1771955816418
+417. 1771955816579
+418. 1771955816969
+419. 1771955817131
+420. 1771955817520
+421. 1771955817684
+422. 1771955818071
+423. 1771955818234
+424. 1771955818622
+
+# 15 19 31 35 47 51 63 67 79 83 95 99 111 115 127 131 143 147 159 163 175 179 191 195 207 211 223 227 239 243 255 259 271 275 287 291 303 307 319 323 335 339 351 355 367 371 383 387 399 403 415 419 431 435 447 451 463 467 479 483 495 499 511 515 527 531 543 547 559 563 575 579 591 595 607 611 623 627 639 643 655 659 671 675 687 691 703 707 719 723 735 739 751 755 767 771 783 787 799 803 815 819 831 835 847 851 863 867 879 883 895 899 911 915 927 931 943 947 959 963 975 979 991 995 1007 1011 1023 1027 1039 1043 1055 1059 1071 1075 1087 1091 1103 1107 1119 1123 1135 1139 1151 1155 1167 1171 1183 1187 1199 1203 1215 1219 1231 1235 1247 1251 1263 1267 1279 1283 1295 1299 1311 1315 1327 1331 1343 1347 1359 1363 1375 1379 1391 1395 1407 1411 1423 1427 1439 1443 1455 1459 1471 1475 1487 1491 1503 1507 1519 1523 1535 1539 1551 1555 1567 1571 1583 1587 1599 1603 1615 1619 1631 1635 1647 1651 1663 1667 1679 1683 1695 1699 1711 1715 1727 1731 1743 1747 1759 1763 1775 1779 1791 1795 1807 1811 1823 1827 1839 1843 1855 1859 1871 1875 1887 1891 1903 1907 1919 1923 1935 1939 1951 1955 1967 1971 1983 1987 1999 2003 2015 2019 2031 2035 2047 2051 2063 2067 2079 2083 2095 2099 2111 2115 2127 2131 2143 2147 2159 2163 2175 2179 2191 2195 2207 2211 2223 2227 2239 2243 2255 2259 2271 2275 2287 2291 2303 2307 2319 2323 2335 2339 2351 2355 2367 2371 2383 2387 2399 2403 2415 2419 2431 2435 2447 2451 2463 2467 2479 2483 2495 2499 2511 2515 2527 2531 2543 2547 2559 2563 2575 2579 2591 2595 2607 2611 2623 2627 2639 2643 2655 2659 2671 2675 2687 2691 2703 2707 2719 2723 2735 2739 2751 2755 2767 2771 2783 2787 2799 2803 2815 2819 2831 2835 2847 2851 2863 2867 2879 2883 2895 2899 2911 2915 2927 2931 2943 2947 2959 2963 2975 2979 2991 2995 3007 3011 3023 3027 3039 3043 3055 3059 3071 3075 3087 3091 3103 3107 3119 3123 3135 3139 3151 3155 3167 3171 3183 3187 3199 3203 3215 3219 3231 3235 3247 3251 3263 3267 3279 3283 3295 3299 3311 3315 3327 3331 3343 3347 3359 3363 3375 3379 3391 3395 #
+get= 1 name
+
+=1 MyAI
+get= 2 version
+
+=2 1.0.0
+get= 7 reset_board
+
+=7 
+get= 15 time_setting 900000
+
+=15 
+get= 14 ready
+
+=14 
+get= 12 genmove unknown
+
+legal: a1 a1, a2 a2, a3 a3, a4 a4, a5 a5, a6 a6, a7 a7, a8 a8, b1 b1, b2 b2, b3 b3, b4 b4, b5 b5, b6 b6, b7 b7, b8 b8, c1 c1, c2 c2, c3 c3, c4 c4, c5 c5, c6 c6, c7 c7, c8 c8, d1 d1, d2 d2, d3 d3, d4 d4, d5 d5, d6 d6, d7 d7, d8 d8, 
+=12 a8 a8
+get= 11 flip a8 p
+
+=11 
+get= 16 time_left black 900000
+
+=16 
+get= 11 flip b8 g
+
+=11 
+get= 16 time_left red 899466
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a2 a2, a3 a3, a4 a4, a5 a5, a6 a6, a7 a7, b1 b1, b2 b2, b3 b3, b4 b4, b5 b5, b6 b6, b7 b7, c1 c1, c2 c2, c3 c3, c4 c4, c5 c5, c6 c6, c7 c7, c8 c8, d1 d1, d2 d2, d3 d3, d4 d4, d5 d5, d6 d6, d7 d7, d8 d8, 
+=12 c3 c3
+get= 11 flip c3 P
+
+=11 
+get= 16 time_left black 899841
+
+=16 
+get= 11 flip c8 P
+
+=11 
+get= 16 time_left red 899074
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a2 a2, a3 a3, a4 a4, a5 a5, a6 a6, a7 a7, b1 b1, b2 b2, b3 b3, b4 b4, b5 b5, b6 b6, b7 b7, b8 c8, c1 c1, c2 c2, c4 c4, c5 c5, c6 c6, c7 c7, d1 d1, d2 d2, d3 d3, d4 d4, d5 d5, d6 d6, d7 d7, d8 d8, 
+=12 a4 a4
+get= 11 flip a4 P
+
+=11 
+get= 16 time_left black 899682
+
+=16 
+get= 11 flip d8 M
+
+=11 
+get= 16 time_left red 898681
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a2 a2, a3 a3, a5 a5, a6 a6, a7 a7, b1 b1, b2 b2, b3 b3, b4 b4, b5 b5, b6 b6, b7 b7, b8 c8, c1 c1, c2 c2, c4 c4, c5 c5, c6 c6, c7 c7, d1 d1, d2 d2, d3 d3, d4 d4, d5 d5, d6 d6, d7 d7, 
+=12 d6 d6
+get= 11 flip d6 p
+
+=11 
+get= 16 time_left black 899524
+
+=16 
+get= 11 flip a7 N
+
+=11 
+get= 16 time_left red 898338
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a2 a2, a3 a3, a5 a5, a6 a6, b1 b1, b2 b2, b3 b3, b4 b4, b5 b5, b6 b6, b7 b7, b8 c8, c1 c1, c2 c2, c4 c4, c5 c5, c6 c6, c7 c7, d1 d1, d2 d2, d3 d3, d4 d4, d5 d5, d7 d7, 
+=12 c7 c7
+get= 11 flip c7 K
+
+=11 
+get= 16 time_left black 899366
+
+=16 
+get= 10 move a7 a8
+
+=10 
+get= 16 time_left red 897995
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a2 a2, a3 a3, a5 a5, a6 a6, b1 b1, b2 b2, b3 b3, b4 b4, b5 b5, b6 b6, b7 b7, b8 a8, b8 c8, c1 c1, c2 c2, c4 c4, c5 c5, c6 c6, d1 d1, d2 d2, d3 d3, d4 d4, d5 d5, d7 d7, 
+=12 b6 b6
+get= 11 flip b6 G
+
+=11 
+get= 16 time_left black 899207
+
+=16 
+get= 10 move a8 a7
+
+=10 
+get= 16 time_left red 897603
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a2 a2, a3 a3, a5 a5, a6 a6, b1 b1, b2 b2, b3 b3, b4 b4, b5 b5, b7 b7, b8 a8, b8 c8, c1 c1, c2 c2, c4 c4, c5 c5, c6 c6, d1 d1, d2 d2, d3 d3, d4 d4, d5 d5, d7 d7, 
+=12 b7 b7
+get= 11 flip b7 N
+
+=11 
+get= 16 time_left black 899048
+
+=16 
+get= 10 move a7 a8
+
+=10 
+get= 16 time_left red 897211
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a2 a2, a3 a3, a5 a5, a6 a6, b1 b1, b2 b2, b3 b3, b4 b4, b5 b5, b8 a8, b8 c8, b8 b7, c1 c1, c2 c2, c4 c4, c5 c5, c6 c6, d1 d1, d2 d2, d3 d3, d4 d4, d5 d5, d7 d7, 
+=12 b8 b7
+get= 10 move b8 b7
+
+=10 
+get= 16 time_left black 898888
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 896820
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a2 a2, a3 a3, a5 a5, a6 a6, b1 b1, b2 b2, b3 b3, b4 b4, b5 b5, b7 a7, b7 b8, b7 b6, c1 c1, c2 c2, c4 c4, c5 c5, c6 c6, d1 d1, d2 d2, d3 d3, d4 d4, d5 d5, d7 d7, 
+=12 b5 b5
+get= 11 flip b5 G
+
+=11 
+get= 16 time_left black 898728
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 896428
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a2 a2, a3 a3, a5 a5, a6 a6, b1 b1, b2 b2, b3 b3, b4 b4, b7 a7, b7 b8, b7 b6, c1 c1, c2 c2, c4 c4, c5 c5, c6 c6, d1 d1, d2 d2, d3 d3, d4 d4, d5 d5, d7 d7, 
+=12 a2 a2
+get= 11 flip a2 P
+
+=11 
+get= 16 time_left black 898568
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 896037
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a3 a3, a5 a5, a6 a6, b1 b1, b2 b2, b3 b3, b4 b4, b7 a7, b7 b8, b7 b6, c1 c1, c2 c2, c4 c4, c5 c5, c6 c6, d1 d1, d2 d2, d3 d3, d4 d4, d5 d5, d7 d7, 
+=12 b7 a7
+get= 10 move b7 a7
+
+=10 
+get= 16 time_left black 898408
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 895645
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a3 a3, a5 a5, a6 a6, a7 a8, a7 b7, b1 b1, b2 b2, b3 b3, b4 b4, c1 c1, c2 c2, c4 c4, c5 c5, c6 c6, d1 d1, d2 d2, d3 d3, d4 d4, d5 d5, d7 d7, 
+=12 d5 d5
+get= 11 flip d5 p
+
+=11 
+get= 16 time_left black 898248
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 895255
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a3 a3, a5 a5, a6 a6, a7 a8, a7 b7, b1 b1, b2 b2, b3 b3, b4 b4, c1 c1, c2 c2, c4 c4, c5 c5, c6 c6, d1 d1, d2 d2, d3 d3, d4 d4, d7 d7, 
+=12 c1 c1
+get= 11 flip c1 C
+
+=11 
+get= 16 time_left black 898087
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 894865
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a3 a3, a5 a5, a6 a6, a7 a8, a7 b7, b1 b1, b2 b2, b3 b3, b4 b4, c2 c2, c4 c4, c5 c5, c6 c6, d1 d1, d2 d2, d3 d3, d4 d4, d7 d7, 
+=12 c2 c2
+get= 11 flip c2 c
+
+=11 
+get= 16 time_left black 897925
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 894476
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a3 a3, a5 a5, a6 a6, a7 a8, a7 b7, b1 b1, b2 b2, b3 b3, b4 b4, c2 a2, c4 c4, c5 c5, c6 c6, d1 d1, d2 d2, d3 d3, d4 d4, d7 d7, 
+=12 a3 a3
+get= 11 flip a3 m
+
+=11 
+get= 16 time_left black 897763
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 894087
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a3 a4, a3 a2, a5 a5, a6 a6, a7 a8, a7 b7, b1 b1, b2 b2, b3 b3, b4 b4, c2 a2, c4 c4, c5 c5, c6 c6, d1 d1, d2 d2, d3 d3, d4 d4, d7 d7, 
+=12 a7 b7
+get= 10 move a7 b7
+
+=10 
+get= 16 time_left black 897600
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 893649
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a3 a4, a3 a2, a5 a5, a6 a6, b1 b1, b2 b2, b3 b3, b4 b4, b7 a7, b7 b8, b7 b6, c2 a2, c4 c4, c5 c5, c6 c6, d1 d1, d2 d2, d3 d3, d4 d4, d7 d7, 
+=12 a5 a5
+get= 11 flip a5 C
+
+=11 
+get= 16 time_left black 897437
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 893261
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a3 a4, a3 a2, a6 a6, b1 b1, b2 b2, b3 b3, b4 b4, b7 a7, b7 b8, b7 b6, c2 a2, c4 c4, c5 c5, c6 c6, d1 d1, d2 d2, d3 d3, d4 d4, d7 d7, 
+=12 b3 b3
+get= 11 flip b3 R
+
+=11 
+get= 16 time_left black 897273
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 892874
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a3 a4, a3 b3, a3 a2, a6 a6, b1 b1, b2 b2, b4 b4, b7 a7, b7 b8, b7 b6, c2 a2, c4 c4, c5 c5, c6 c6, d1 d1, d2 d2, d3 d3, d4 d4, d7 d7, 
+=12 c4 c4
+get= 11 flip c4 m
+
+=11 
+get= 16 time_left black 897109
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 892486
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a3 a4, a3 b3, a3 a2, a6 a6, b1 b1, b2 b2, b4 b4, b7 a7, b7 b8, b7 b6, c2 a2, c4 c3, c5 c5, c6 c6, d1 d1, d2 d2, d3 d3, d4 d4, d7 d7, 
+=12 d2 d2
+get= 11 flip d2 r
+
+=11 
+get= 16 time_left black 896946
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 892098
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a3 a4, a3 b3, a3 a2, a6 a6, b1 b1, b2 b2, b4 b4, b7 a7, b7 b8, b7 b6, c2 a2, c4 c3, c5 c5, c6 c6, d1 d1, d3 d3, d4 d4, d7 d7, 
+=12 b7 b6
+get= 10 move b7 b6
+
+=10 
+get= 16 time_left black 896781
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 891711
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a3 a4, a3 b3, a3 a2, a6 a6, b1 b1, b2 b2, b4 b4, b6 b7, b6 b5, c2 a2, c4 c3, c5 c5, c6 c6, d1 d1, d3 d3, d4 d4, d7 d7, 
+=12 b6 b7
+get= 10 move b6 b7
+
+=10 
+get= 16 time_left black 896618
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 891323
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a3 a4, a3 b3, a3 a2, a6 a6, b1 b1, b2 b2, b4 b4, b7 a7, b7 b8, b7 b6, c2 a2, c4 c3, c5 c5, c6 c6, d1 d1, d3 d3, d4 d4, d7 d7, 
+=12 b7 a7
+get= 10 move b7 a7
+
+=10 
+get= 16 time_left black 896454
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 890936
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a3 a4, a3 b3, a3 a2, a6 a6, a7 a8, a7 b7, b1 b1, b2 b2, b4 b4, c2 a2, c4 c3, c5 c5, c6 c6, d1 d1, d3 d3, d4 d4, d7 d7, 
+=12 d3 d3
+get= 11 flip d3 R
+
+=11 
+get= 16 time_left black 896290
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 890548
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a3 a4, a3 b3, a3 a2, a6 a6, a7 a8, a7 b7, b1 b1, b2 b2, b4 b4, c2 a2, c4 c3, c5 c5, c6 c6, d1 d1, d2 d3, d4 d4, d7 d7, 
+=12 b2 b2
+get= 11 flip b2 p
+
+=11 
+get= 16 time_left black 896127
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 890160
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a3 a4, a3 b3, a3 a2, a6 a6, a7 a8, a7 b7, b1 b1, b2 a2, b4 b4, c2 a2, c4 c3, c5 c5, c6 c6, d1 d1, d2 d3, d4 d4, d7 d7, 
+=12 b2 a2
+get= 10 move b2 a2
+
+=10 
+get= 16 time_left black 895964
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 889772
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a2 b2, a3 a4, a3 b3, a6 a6, a7 a8, a7 b7, b1 b1, b4 b4, c2 b2, c4 c3, c5 c5, c6 c6, d1 d1, d2 d3, d4 d4, d7 d7, 
+=12 b4 b4
+get= 11 flip b4 c
+
+=11 
+get= 16 time_left black 895801
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 889383
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a2 b2, a3 a4, a3 b3, a6 a6, a7 a8, a7 b7, b1 b1, c2 b2, c4 c3, c5 c5, c6 c6, d1 d1, d2 d3, d4 d4, d7 d7, 
+=12 a3 b3
+get= 10 move a3 b3
+
+=10 
+get= 16 time_left black 895639
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 888994
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a2 a3, a2 b2, a6 a6, a7 a8, a7 b7, b1 b1, b3 a3, b3 c3, b3 b2, b4 b8, c2 b2, c4 c3, c5 c5, c6 c6, d1 d1, d2 d3, d4 d4, d7 d7, 
+=12 a7 b7
+get= 10 move a7 b7
+
+=10 
+get= 16 time_left black 895477
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 888605
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a2 a3, a2 b2, a6 a6, b1 b1, b3 a3, b3 c3, b3 b2, b7 a7, b7 b8, b7 b6, c2 b2, c4 c3, c5 c5, c6 c6, d1 d1, d2 d3, d4 d4, d7 d7, 
+=12 a2 a3
+get= 10 move a2 a3
+
+=10 
+get= 16 time_left black 895316
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 888214
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a3 a4, a3 a2, a6 a6, b1 b1, b3 c3, b3 b2, b7 a7, b7 b8, b7 b6, c2 b2, c4 c3, c5 c5, c6 c6, d1 d1, d2 d3, d4 d4, d7 d7, 
+=12 b3 c3
+get= 10 move b3 c3
+
+=10 
+get= 16 time_left black 895155
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 887824
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a3 a4, a3 b3, a3 a2, a6 a6, b1 b1, b4 b3, b7 a7, b7 b8, b7 b6, c2 b2, c3 b3, c3 d3, c5 c5, c6 c6, d1 d1, d2 d3, d4 d4, d7 d7, 
+=12 a6 a6
+get= 11 flip a6 g
+
+=11 
+get= 16 time_left black 894995
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 887432
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a3 a4, a3 b3, a3 a2, a6 a7, a6 b6, a6 a5, b1 b1, b4 b3, b7 a7, b7 b8, b7 b6, c2 b2, c3 b3, c3 d3, c5 c5, c6 c6, d1 d1, d2 d3, d4 d4, d7 d7, 
+=12 a3 a2
+get= 10 move a3 a2
+
+=10 
+get= 16 time_left black 894836
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 887041
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a2 a3, a2 b2, a6 a7, a6 b6, a6 a5, b1 b1, b4 b3, b7 a7, b7 b8, b7 b6, c2 b2, c3 b3, c3 d3, c5 c5, c6 c6, d1 d1, d2 d3, d4 d4, d7 d7, 
+=12 d4 d4
+get= 11 flip d4 k
+
+=11 
+get= 16 time_left black 894676
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 886650
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a2 a3, a2 b2, a6 a7, a6 b6, a6 a5, b1 b1, b4 b3, b7 a7, b7 b8, b7 b6, c2 b2, c3 b3, c3 d3, c5 c5, c6 c6, d1 d1, d2 d3, d4 d3, d7 d7, 
+=12 b7 b8
+get= 10 move b7 b8
+
+=10 
+get= 16 time_left black 894516
+
+=16 
+get= 10 move c7 b7
+
+=10 
+get= 16 time_left red 886258
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a2 a3, a2 b2, a6 a7, a6 b6, a6 a5, b1 b1, b4 b7, b4 b3, b8 a8, b8 c8, c2 b2, c3 b3, c3 d3, c5 c5, c6 c6, d1 d1, d2 d3, d4 d3, d7 d7, 
+=12 b4 b7
+get= 10 move b4 b7
+
+=10 
+get= 16 time_left black 894357
+
+=16 
+get= 10 move c8 c7
+
+=10 
+get= 16 time_left red 885866
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a2 a3, a2 b2, a6 a7, a6 b6, a6 a5, b1 b1, b7 a7, b7 b6, b8 a8, b8 c8, c2 b2, c3 b3, c3 d3, c4 b4, c5 c5, c6 c6, d1 d1, d2 d3, d4 d3, d7 d7, 
+=12 a2 a3
+get= 10 move a2 a3
+
+=10 
+get= 16 time_left black 894198
+
+=16 
+get= 10 move c7 c8
+
+=10 
+get= 16 time_left red 885474
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a3 a4, a3 b3, a3 a2, a6 a7, a6 b6, a6 a5, b1 b1, b7 a7, b7 c7, b7 b6, b8 a8, b8 c8, c2 b2, c3 b3, c3 d3, c4 b4, c5 c5, c6 c6, d1 d1, d2 d3, d4 d3, d7 d7, 
+=12 b7 c7
+get= 10 move b7 c7
+
+=10 
+get= 16 time_left black 894038
+
+=16 
+get= 11 flip d7 n
+
+=11 
+get= 16 time_left red 885083
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a3 a4, a3 b3, a3 a2, a6 a7, a6 b6, a6 a5, b1 b1, b8 a8, b8 c8, b8 b7, c2 b2, c3 b3, c3 d3, c4 b4, c5 c5, c6 c6, c7 b7, d1 d1, d2 d3, d4 d3, 
+=12 c6 c6
+get= 11 flip c6 M
+
+=11 
+get= 16 time_left black 893879
+
+=16 
+get= 10 move c6 c7
+
+=10 
+get= 16 time_left red 884741
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a3 a4, a3 b3, a3 a2, a6 a7, a6 b6, a6 a5, b1 b1, b8 a8, b8 c8, b8 b7, c2 b2, c3 b3, c3 d3, c4 b4, c5 c5, d1 d1, d2 d3, d4 d3, d6 c6, 
+=12 a3 b3
+get= 10 move a3 b3
+
+=10 
+get= 16 time_left black 893720
+
+=16 
+get= 10 move c7 b7
+
+=10 
+get= 16 time_left red 884399
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a6 a7, a6 b6, a6 a5, b1 b1, b3 a3, b3 b4, b3 b2, b8 a8, b8 c8, b8 b7, c2 b2, c3 d3, c4 b4, c5 c5, d1 d1, d2 d3, d4 d3, d6 c6, d7 c7, 
+=12 b8 c8
+get= 10 move b8 c8
+
+=10 
+get= 16 time_left black 893561
+
+=16 
+get= 10 move b7 b8
+
+=10 
+get= 16 time_left red 884056
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a6 a7, a6 b6, a6 a5, b1 b1, b3 a3, b3 b4, b3 b2, c2 b2, c3 d3, c4 b4, c5 c5, c8 b8, c8 d8, c8 c7, d1 d1, d2 d3, d4 d3, d6 c6, d7 c7, 
+=12 c8 d8
+get= 10 move c8 d8
+
+=10 
+get= 16 time_left black 893403
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 883713
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a6 a7, a6 b6, a6 a5, b1 b1, b3 a3, b3 b4, b3 b2, c2 b2, c3 d3, c4 b4, c5 c5, d1 d1, d2 d3, d4 d3, d6 c6, d7 c7, d8 c8, 
+=12 c3 d3
+get= 10 move c3 d3
+
+=10 
+get= 16 time_left black 893245
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 883370
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a6 a7, a6 b6, a6 a5, b1 b1, b3 a3, b3 b4, b3 c3, b3 b2, c2 b2, c2 c3, c4 b4, c4 c3, c5 c5, d1 d1, d3 c3, d6 c6, d7 c7, d8 c8, 
+=12 a6 a7
+get= 10 move a6 a7
+
+=10 
+get= 16 time_left black 893087
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 883028
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a7 a8, a7 b7, a7 a6, b1 b1, b3 a3, b3 b4, b3 c3, b3 b2, c2 b2, c2 c3, c4 b4, c4 c3, c5 c5, d1 d1, d3 c3, d6 c6, d7 c7, d8 c8, 
+=12 a7 b7
+get= 10 move a7 b7
+
+=10 
+get= 16 time_left black 892928
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 882686
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, b1 b1, b3 a3, b3 b4, b3 c3, b3 b2, b7 a7, b7 b8, b7 c7, b7 b6, c2 b2, c2 c3, c4 b4, c4 c3, c5 c5, d1 d1, d3 c3, d6 c6, d7 c7, d8 c8, 
+=12 d6 c6
+get= 10 move d6 c6
+
+=10 
+get= 16 time_left black 892770
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 882342
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, b1 b1, b3 a3, b3 b4, b3 c3, b3 b2, b7 a7, b7 b8, b7 c7, b7 b6, c2 b2, c2 c3, c4 b4, c4 c3, c5 c5, c6 b6, c6 c7, c6 d6, d1 d1, d3 c3, d5 d6, d7 c7, d7 d6, d8 c8, 
+=12 c5 c5
+get= 11 flip c5 r
+
+=11 
+get= 16 time_left black 892613
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 881998
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, b1 b1, b3 a3, b3 b4, b3 c3, b3 b2, b7 a7, b7 b8, b7 c7, b7 b6, c2 b2, c2 c3, c4 b4, c4 c3, c6 b6, c6 c7, c6 d6, d1 d1, d3 c3, d5 d6, d7 c7, d7 d6, d8 c8, 
+=12 d7 c7
+get= 10 move d7 c7
+
+=10 
+get= 16 time_left black 892455
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 881654
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, b1 b1, b3 a3, b3 b4, b3 c3, b3 b2, b7 a7, b7 b8, b7 b6, c2 b2, c2 c3, c4 b4, c4 c3, c6 b6, c6 d6, c7 c8, c7 d7, d1 d1, d3 c3, d5 d6, d8 c8, d8 d7, 
+=12 b7 b8
+get= 10 move b7 b8
+
+=10 
+get= 16 time_left black 892298
+
+=16 
+get= 10 move a8 a7
+
+=10 
+get= 16 time_left red 881310
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, b1 b1, b3 a3, b3 b4, b3 c3, b3 b2, b8 a8, b8 c8, b8 b7, c2 b2, c2 c3, c4 b4, c4 c3, c6 b6, c6 d6, c7 b7, c7 c8, c7 d7, d1 d1, d3 c3, d5 d6, d8 c8, d8 d7, 
+=12 b8 c8
+get= 10 move b8 c8
+
+=10 
+get= 16 time_left black 892141
+
+=16 
+get= 10 move a7 a8
+
+=10 
+get= 16 time_left red 880967
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, b1 b1, b3 a3, b3 b4, b3 c3, b3 b2, c2 b2, c2 c3, c4 b4, c4 c3, c6 b6, c6 d6, c7 b7, c7 d7, c8 b8, d1 d1, d3 c3, d5 d6, d8 d7, 
+=12 d3 c3
+get= 10 move d3 c3
+
+=10 
+get= 16 time_left black 891983
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 880624
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, b1 b1, b3 a3, b3 b4, b3 b2, c2 b2, c3 d3, c4 b4, c6 b6, c6 d6, c7 b7, c7 d7, c8 b8, d1 d1, d2 d3, d4 d3, d5 d6, d8 d7, 
+=12 c7 b7
+get= 10 move c7 b7
+
+=10 
+get= 16 time_left black 891826
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 880280
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, b1 b1, b3 a3, b3 b4, b3 b2, b7 a7, b7 b8, b7 c7, b7 b6, c2 b2, c3 d3, c4 b4, c6 b6, c6 c7, c6 d6, c8 b8, c8 c7, d1 d1, d2 d3, d4 d3, d5 d6, d8 d7, 
+=12 c6 c7
+get= 10 move c6 c7
+
+=10 
+get= 16 time_left black 891669
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 879935
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, b1 b1, b3 a3, b3 b4, b3 b2, b7 a7, b7 b6, c2 b2, c3 d3, c4 b4, c5 c6, c7 d7, c7 c6, c8 b8, d1 d1, d2 d3, d4 d3, d5 d6, d8 d7, 
+=12 b7 a7
+get= 10 move b7 a7
+
+=10 
+get= 16 time_left black 891512
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 879592
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a7 b7, a7 a6, b1 b1, b3 a3, b3 b4, b3 b2, c2 b2, c3 d3, c4 b4, c5 c6, c7 b7, c7 d7, c7 c6, c8 b8, d1 d1, d2 d3, d4 d3, d5 d6, d8 d7, 
+=12 d2 d3
+get= 10 move d2 d3
+
+=10 
+get= 16 time_left black 891355
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 879248
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a7 a8, a7 b7, a7 a6, b1 b1, b3 a3, b3 b4, b3 b2, c2 b2, c2 d2, c4 b4, c5 c6, c7 b7, c7 d7, c7 c6, c8 b8, d1 d1, d3 d2, d5 d6, d8 d7, 
+=12 c7 d7
+get= 10 move c7 d7
+
+=10 
+get= 16 time_left black 891197
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 878904
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a7 b7, a7 a6, b1 b1, b3 a3, b3 b4, b3 b2, c2 b2, c2 d2, c4 b4, c5 c6, c8 b8, c8 c7, d1 d1, d3 d2, d5 d6, d7 c7, d7 d6, 
+=12 d3 d2
+get= 10 move d3 d2
+
+=10 
+get= 16 time_left black 891041
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 878559
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a7 a8, a7 b7, a7 a6, b1 b1, b3 a3, b3 b4, b3 b2, c2 b2, c3 d3, c4 b4, c5 c6, c8 b8, c8 c7, d1 d1, d2 d3, d4 d3, d5 d6, d7 c7, d7 d6, 
+=12 c4 b4
+get= 10 move c4 b4
+
+=10 
+get= 16 time_left black 890885
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 878214
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a7 b7, a7 a6, b1 b1, b3 a3, b3 b2, b4 a4, b4 c4, c2 b2, c3 c4, c3 d3, c5 c6, c5 c4, c8 b8, c8 c7, d1 d1, d2 d3, d4 c4, d4 d3, d5 d6, d7 c7, d7 d6, 
+=12 d2 d3
+get= 10 move d2 d3
+
+=10 
+get= 16 time_left black 890729
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 877868
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a7 a8, a7 b7, a7 a6, b1 b1, b3 a3, b3 b2, b4 a4, b4 c4, c2 b2, c2 d2, c3 c4, c5 c6, c5 c4, c8 b8, c8 c7, d1 d1, d3 d2, d4 c4, d5 d6, d7 c7, d7 d6, 
+=12 b4 a4
+get= 10 move b4 a4
+
+=10 
+get= 16 time_left black 890574
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 877522
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a4 a5, a4 b4, a4 a3, a7 b7, a7 a6, b1 b1, b3 a3, b3 b4, b3 b2, c2 b2, c2 d2, c3 c4, c5 c6, c5 c4, c8 b8, c8 c7, d1 d1, d3 d2, d4 c4, d5 d6, d7 c7, d7 d6, 
+=12 b3 a3
+get= 10 move b3 a3
+
+=10 
+get= 16 time_left black 890419
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 877176
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a3 b3, a3 a2, a4 a5, a4 b4, a7 a8, a7 b7, a7 a6, b1 b1, c2 b2, c2 d2, c3 b3, c3 c4, c5 c6, c5 c4, c8 b8, c8 c7, d1 d1, d3 d2, d4 c4, d5 d6, d7 c7, d7 d6, 
+=12 d1 d1
+get= 11 flip d1 p
+
+=11 
+get= 16 time_left black 890264
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 876830
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a3 b3, a3 a2, a4 a5, a4 b4, a7 b7, a7 a6, b1 b1, c2 b2, c2 d2, c3 b3, c3 c4, c5 c6, c5 c4, c8 b8, c8 c7, d1 d2, d3 d2, d4 c4, d5 d6, d7 c7, d7 d6, 
+=12 a4 b4
+get= 10 move a4 b4
+
+=10 
+get= 16 time_left black 890109
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 876484
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a3 a4, a3 b3, a3 a2, a7 a8, a7 b7, a7 a6, b1 b1, b4 a4, b4 c4, b4 b3, c2 b2, c2 d2, c3 b3, c3 c4, c5 c6, c5 c4, c8 b8, c8 c7, d1 d2, d3 d2, d4 c4, d5 d6, d7 c7, d7 d6, 
+=12 a3 b3
+get= 10 move a3 b3
+
+=10 
+get= 16 time_left black 889954
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 876137
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a7 b7, a7 a6, b1 b1, b3 a3, b3 b2, b4 a4, b4 c4, c2 b2, c2 d2, c3 c4, c5 c6, c5 c4, c8 b8, c8 c7, d1 d2, d3 d2, d4 c4, d5 d6, d7 c7, d7 d6, 
+=12 d4 c4
+get= 10 move d4 c4
+
+=10 
+get= 16 time_left black 889800
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 875790
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a7 a8, a7 b7, a7 a6, b1 b1, b3 a3, b3 b2, b4 a4, c2 b2, c2 d2, c4 d4, c5 c6, c8 b8, c8 c7, d1 d2, d3 d4, d3 d2, d5 d6, d5 d4, d7 c7, d7 d6, 
+=12 b3 a3
+get= 10 move b3 a3
+
+=10 
+get= 16 time_left black 889646
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 875443
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a3 a4, a3 b3, a3 a2, a7 b7, a7 a6, b1 b1, b4 a4, b4 b3, c2 b2, c2 d2, c3 b3, c4 d4, c5 c6, c8 b8, c8 c7, d1 d2, d3 d4, d3 d2, d5 d6, d5 d4, d7 c7, d7 d6, 
+=12 c3 b3
+get= 10 move c3 b3
+
+=10 
+get= 16 time_left black 889491
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 875097
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a3 a4, a3 a2, a7 a8, a7 b7, a7 a6, b1 b1, b3 c3, b3 b2, b4 a4, c2 b2, c2 c3, c2 d2, c4 d4, c4 c3, c5 c6, c8 b8, c8 c7, d1 d2, d3 c3, d3 d4, d3 d2, d5 d6, d5 d4, d7 c7, d7 d6, 
+=12 c2 c3
+get= 10 move c2 c3
+
+=10 
+get= 16 time_left black 889336
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 874751
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a3 a4, a3 a2, a7 b7, a7 a6, b1 b1, b3 b2, b4 a4, c3 c2, c4 d4, c5 c6, c8 b8, c8 c7, d1 d2, d3 d4, d3 d2, d5 d6, d5 d4, d7 c7, d7 d6, 
+=12 d1 d2
+get= 10 move d1 d2
+
+=10 
+get= 16 time_left black 889181
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 874405
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a3 a4, a3 a2, a7 a8, a7 b7, a7 a6, b1 b1, b3 b2, b4 a4, c3 c2, c4 d4, c5 c6, c8 b8, c8 c7, d2 c2, d2 d1, d3 d4, d5 d6, d5 d4, d7 c7, d7 d6, 
+=12 d2 c2
+get= 10 move d2 c2
+
+=10 
+get= 16 time_left black 889026
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 874059
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a3 a4, a3 a2, a7 b7, a7 a6, b1 b1, b3 b2, b4 a4, c2 b2, c2 d2, c3 c1, c4 d4, c5 c6, c8 b8, c8 c7, d3 d4, d3 d2, d5 d6, d5 d4, d7 c7, d7 d6, 
+=12 c5 c6
+get= 10 move c5 c6
+
+=10 
+get= 16 time_left black 888871
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 873712
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a3 a4, a3 a2, a7 a8, a7 b7, a7 a6, b1 b1, b3 b2, b4 a4, c2 b2, c2 d2, c3 c1, c4 c5, c4 d4, c6 b6, c6 c7, c6 d6, c6 c5, c8 b8, c8 c7, d3 d4, d3 d2, d5 c5, d5 d6, d5 d4, d7 c7, d7 d6, 
+=12 c2 b2
+get= 10 move c2 b2
+
+=10 
+get= 16 time_left black 888717
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 873365
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a3 a4, a3 a2, a7 b7, a7 a6, b1 b1, b2 a2, b2 c2, b4 a4, c3 c2, c4 c5, c4 d4, c6 b6, c6 c7, c6 d6, c6 c5, c8 b8, c8 c7, d3 d4, d3 d2, d5 c5, d5 d6, d5 d4, d7 c7, d7 d6, 
+=12 b2 c2
+get= 10 move b2 c2
+
+=10 
+get= 16 time_left black 888563
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 873019
+
+=16 
+get= 12 genmove black
+
+legal: a1 a1, a3 a4, a3 a2, a7 a8, a7 b7, a7 a6, b1 b1, b3 b2, b4 a4, c2 b2, c2 d2, c3 c1, c4 c5, c4 d4, c6 b6, c6 c7, c6 d6, c6 c5, c8 b8, c8 c7, d3 d4, d3 d2, d5 c5, d5 d6, d5 d4, d7 c7, d7 d6, 
+=12 a1 a1
+get= 11 flip a1 P
+
+=11 
+get= 16 time_left black 888408
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 872673
+
+=16 
+get= 12 genmove black
+
+legal: a3 a4, a3 a2, a7 b7, a7 a6, b1 b1, b3 b2, b4 a4, c2 b2, c2 d2, c3 c1, c4 c5, c4 d4, c6 b6, c6 c7, c6 d6, c6 c5, c8 b8, c8 c7, d3 d4, d3 d2, d5 c5, d5 d6, d5 d4, d7 c7, d7 d6, 
+=12 c6 d6
+get= 10 move c6 d6
+
+=10 
+get= 16 time_left black 888253
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 872327
+
+=16 
+get= 12 genmove black
+
+legal: a3 a4, a3 a2, a7 a8, a7 b7, a7 a6, b1 b1, b3 b2, b4 a4, c2 b2, c2 d2, c3 c1, c4 c5, c4 d4, c8 b8, c8 c7, d3 d4, d3 d2, d5 c5, d5 d4, d6 c6, d7 c7, 
+=12 c2 d2
+get= 10 move c2 d2
+
+=10 
+get= 16 time_left black 888098
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 871981
+
+=16 
+get= 12 genmove black
+
+legal: a3 a4, a3 a2, a7 b7, a7 a6, b1 b1, b3 b2, b4 a4, c3 c2, c4 c5, c4 d4, c8 b8, c8 c7, d2 c2, d2 d1, d3 d4, d5 c5, d5 d4, d6 c6, d7 c7, 
+=12 b3 b2
+get= 10 move b3 b2
+
+=10 
+get= 16 time_left black 887943
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 871636
+
+=16 
+get= 12 genmove black
+
+legal: a3 a4, a3 b3, a3 a2, a7 a8, a7 b7, a7 a6, b1 b1, b2 a2, b2 b3, b2 c2, b4 a4, b4 b3, c3 b3, c3 c2, c4 c5, c4 d4, c8 b8, c8 c7, d2 c2, d2 d1, d3 d4, d5 c5, d5 d4, d6 c6, d7 c7, 
+=12 c4 c5
+get= 10 move c4 c5
+
+=10 
+get= 16 time_left black 887786
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 871292
+
+=16 
+get= 12 genmove black
+
+legal: a3 a4, a3 b3, a3 a2, a7 b7, a7 a6, b1 b1, b2 a2, b2 b3, b2 c2, b4 a4, b4 c4, b4 b3, c3 b3, c3 c4, c3 c2, c5 b5, c5 c6, c5 c4, c8 b8, c8 c7, d2 c2, d2 d1, d3 d4, d5 d4, d6 c6, d7 c7, 
+=12 b2 b3
+get= 10 move b2 b3
+
+=10 
+get= 16 time_left black 887630
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 870947
+
+=16 
+get= 12 genmove black
+
+legal: a3 a4, a3 a2, a7 a8, a7 b7, a7 a6, b1 b1, b3 b2, b4 a4, b4 c4, c3 c4, c3 c2, c5 b5, c5 c6, c5 c4, c8 b8, c8 c7, d2 c2, d2 d1, d3 d4, d5 d4, d6 c6, d7 c7, 
+=12 d6 c6
+get= 10 move d6 c6
+
+=10 
+get= 16 time_left black 887474
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 870602
+
+=16 
+get= 12 genmove black
+
+legal: a3 a4, a3 a2, a7 b7, a7 a6, b1 b1, b3 b2, b4 a4, b4 c4, c3 c4, c3 c2, c5 b5, c5 c4, c6 b6, c6 c7, c6 d6, c8 b8, c8 c7, d2 c2, d2 d1, d3 d4, d5 d6, d5 d4, d7 c7, d7 d6, 
+=12 b4 c4
+get= 10 move b4 c4
+
+=10 
+get= 16 time_left black 887318
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 870257
+
+=16 
+get= 12 genmove black
+
+legal: a3 a4, a3 a2, a7 a8, a7 b7, a7 a6, b1 b1, b3 b4, b3 b2, c3 c2, c4 b4, c4 d4, c5 b5, c6 b6, c6 c7, c6 d6, c8 b8, c8 c7, d2 c2, d2 d1, d3 d4, d5 d6, d5 d4, d7 c7, d7 d6, 
+=12 a3 a4
+get= 10 move a3 a4
+
+=10 
+get= 16 time_left black 887162
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 869910
+
+=16 
+get= 12 genmove black
+
+legal: a4 b4, a4 a3, a7 b7, a7 a6, b1 b1, b3 a3, b3 b4, b3 b2, c3 c2, c4 b4, c4 d4, c5 b5, c6 b6, c6 c7, c6 d6, c8 b8, c8 c7, d2 c2, d2 d1, d3 d4, d5 d6, d5 d4, d7 c7, d7 d6, 
+=12 c6 b6
+get= 10 move c6 b6
+
+=10 
+get= 16 time_left black 887008
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 869564
+
+=16 
+get= 12 genmove black
+
+legal: a4 b4, a4 a3, a7 a8, a7 b7, a7 a6, b1 b1, b3 a3, b3 b4, b3 b2, b6 a6, b6 b7, b6 c6, c3 c2, c4 b4, c4 d4, c5 b5, c5 c6, c8 b8, c8 c7, d2 c2, d2 d1, d3 d4, d5 d6, d5 d4, d7 c7, d7 d6, 
+=12 a7 a8
+get= 10 move a7 a8
+
+=10 
+get= 16 time_left black 886853
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 869218
+
+=16 
+get= 12 genmove black
+
+legal: a4 b4, a4 a3, b1 b1, b3 a3, b3 b4, b3 b2, b6 a6, b6 b7, b6 c6, c3 c2, c4 b4, c4 d4, c5 b5, c5 c6, c8 b8, c8 c7, d2 c2, d2 d1, d3 d4, d5 d6, d5 d4, d7 c7, d7 d6, 
+=12 a4 b4
+get= 10 move a4 b4
+
+=10 
+get= 16 time_left black 886698
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 868872
+
+=16 
+get= 12 genmove black
+
+legal: b1 b1, b3 a3, b3 b2, b4 a4, b6 a6, b6 b7, b6 c6, c3 c2, c4 d4, c5 b5, c5 c6, c8 b8, c8 c7, d2 c2, d2 d1, d3 d4, d5 d6, d5 d4, d7 c7, d7 d6, 
+=12 b6 a6
+get= 10 move b6 a6
+
+=10 
+get= 16 time_left black 886543
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 868525
+
+=16 
+get= 12 genmove black
+
+legal: a6 a7, a6 b6, a6 a5, b1 b1, b3 a3, b3 b2, b4 a4, c3 c2, c4 d4, c5 b5, c5 c6, c8 b8, c8 c7, d2 c2, d2 d1, d3 d4, d5 d6, d5 d4, d7 c7, d7 d6, 
+=12 b1 b1
+get= 11 flip b1 n
+
+=11 
+get= 16 time_left black 886388
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 868180
+
+=16 
+get= 12 genmove black
+
+legal: a6 a7, a6 b6, a6 a5, b1 a1, b1 b2, b1 c1, b3 a3, b3 b2, b4 a4, c3 c2, c4 d4, c5 b5, c5 c6, c8 b8, c8 c7, d2 c2, d2 d1, d3 d4, d5 d6, d5 d4, d7 c7, d7 d6, 
+=12 d7 d6
+get= 10 move d7 d6
+
+=10 
+get= 16 time_left black 886232
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 867834
+
+=16 
+get= 12 genmove black
+
+legal: a6 a7, a6 b6, a6 a5, b1 a1, b1 b2, b1 c1, b3 a3, b3 b2, b4 a4, c3 c2, c4 d4, c5 b5, c5 c6, c8 b8, c8 c7, d2 c2, d2 d1, d3 d4, d5 d4, d6 c6, d6 d7, d8 d7, 
+=12 c8 c7
+get= 10 move c8 c7
+
+=10 
+get= 16 time_left black 886077
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 867488
+
+=16 
+get= 12 genmove black
+
+legal: a6 a7, a6 b6, a6 a5, b1 a1, b1 b2, b1 c1, b3 a3, b3 b2, b4 a4, c3 c2, c4 d4, c5 b5, c5 c6, c7 b7, c7 c8, c7 d7, c7 c6, d2 c2, d2 d1, d3 d4, d5 d4, d6 c6, d6 d7, d8 c8, d8 d7, 
+=12 d8 d7
+get= 10 move d8 d7
+
+=10 
+get= 16 time_left black 885923
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 867141
+
+=16 
+get= 12 genmove black
+
+legal: a6 a7, a6 b6, a6 a5, b1 a1, b1 b2, b1 c1, b3 a3, b3 b2, b4 a4, c3 c2, c4 d4, c5 b5, c5 c6, c7 b7, c7 c8, c7 c6, d2 c2, d2 d1, d3 d4, d5 d4, d6 c6, d7 d8, 
+=12 b3 a3
+get= 10 move b3 a3
+
+=10 
+get= 16 time_left black 885769
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 866795
+
+=16 
+get= 12 genmove black
+
+legal: a3 a4, a3 b3, a3 a2, a6 a7, a6 b6, a6 a5, b1 a1, b1 b2, b1 c1, b4 a4, b4 b3, c3 b3, c3 c2, c4 d4, c5 b5, c5 c6, c7 b7, c7 c8, c7 c6, d2 c2, d2 d1, d3 d4, d5 d4, d6 c6, d7 d8, 
+=12 b4 b3
+get= 10 move b4 b3
+
+=10 
+get= 16 time_left black 885614
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 866448
+
+=16 
+get= 12 genmove black
+
+legal: a3 a4, a3 a2, a6 a7, a6 b6, a6 a5, b1 a1, b1 b2, b1 c1, b3 b4, b3 b2, c3 c2, c4 b4, c4 d4, c5 b5, c5 c6, c7 b7, c7 c8, c7 c6, d2 c2, d2 d1, d3 d4, d5 d4, d6 c6, d7 d8, 
+=12 d3 d4
+get= 10 move d3 d4
+
+=10 
+get= 16 time_left black 885460
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 866102
+
+=16 
+get= 12 genmove black
+
+legal: a3 a4, a3 a2, a6 a7, a6 b6, a6 a5, b1 a1, b1 b2, b1 c1, b3 b4, b3 b2, c3 d3, c3 c2, c4 b4, c5 b5, c5 c6, c7 b7, c7 c8, c7 c6, d2 c2, d2 d3, d2 d1, d4 d3, d6 c6, d7 d8, 
+=12 a3 a4
+get= 10 move a3 a4
+
+=10 
+get= 16 time_left black 885305
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 865755
+
+=16 
+get= 12 genmove black
+
+legal: a4 a5, a4 b4, a4 a3, a6 a7, a6 b6, a6 a5, b1 a1, b1 b2, b1 c1, b3 a3, b3 b4, b3 b2, c3 d3, c3 c2, c4 b4, c5 b5, c5 c6, c7 b7, c7 c8, c7 c6, d2 c2, d2 d3, d2 d1, d4 d3, d6 c6, d7 d8, 
+=12 b1 b2
+get= 10 move b1 b2
+
+=10 
+get= 16 time_left black 885150
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 865409
+
+=16 
+get= 12 genmove black
+
+legal: a4 a5, a4 b4, a4 a3, a6 a7, a6 b6, a6 a5, b2 a2, b2 c2, b2 b1, b3 a3, b3 b4, c3 d3, c3 c2, c4 b4, c5 b5, c5 c6, c7 b7, c7 c8, c7 c6, d2 c2, d2 d3, d2 d1, d4 d3, d6 c6, d7 d8, 
+=12 c3 c2
+get= 10 move c3 c2
+
+=10 
+get= 16 time_left black 884996
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 865062
+
+=16 
+get= 12 genmove black
+
+legal: a4 a5, a4 b4, a4 a3, a6 a7, a6 b6, a6 a5, b2 a2, b2 b1, b3 a3, b3 b4, b3 c3, c2 c3, c4 b4, c4 c3, c5 b5, c5 c6, c7 b7, c7 c8, c7 c6, d2 d3, d2 d1, d4 d3, d6 c6, d7 d8, 
+=12 b3 c3
+get= 10 move b3 c3
+
+=10 
+get= 16 time_left black 884842
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 864715
+
+=16 
+get= 12 genmove black
+
+legal: a4 a5, a4 b4, a4 a3, a6 a7, a6 b6, a6 a5, b2 a2, b2 b3, b2 b1, c3 b3, c3 d3, c4 b4, c5 b5, c5 c6, c7 b7, c7 c8, c7 c6, d2 d3, d2 d1, d4 d3, d6 c6, d7 d8, 
+=12 d6 c6
+get= 10 move d6 c6
+
+=10 
+get= 16 time_left black 884688
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 864368
+
+=16 
+get= 12 genmove black
+
+legal: a4 a5, a4 b4, a4 a3, a6 a7, a6 b6, a6 a5, b2 a2, b2 b3, b2 b1, c3 b3, c3 d3, c4 b4, c5 b5, c6 b6, c6 d6, c7 b7, c7 c8, d2 d3, d2 d1, d4 d3, d5 d6, d7 d8, d7 d6, 
+=12 d2 d3
+get= 10 move d2 d3
+
+=10 
+get= 16 time_left black 884534
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 864021
+
+=16 
+get= 12 genmove black
+
+legal: a4 a5, a4 b4, a4 a3, a6 a7, a6 b6, a6 a5, b2 a2, b2 b3, b2 b1, c2 d2, c3 b3, c4 b4, c5 b5, c6 b6, c6 d6, c7 b7, c7 c8, d3 d2, d5 d6, d7 d8, d7 d6, 
+=12 c6 d6
+get= 10 move c6 d6
+
+=10 
+get= 16 time_left black 884379
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 863675
+
+=16 
+get= 12 genmove black
+
+legal: a4 a5, a4 b4, a4 a3, a6 a7, a6 b6, a6 a5, b2 a2, b2 b3, b2 b1, c2 d2, c3 b3, c4 b4, c5 b5, c5 c6, c7 b7, c7 c8, c7 c6, d3 d2, d6 c6, d7 d8, 
+=12 c7 c8
+get= 10 move c7 c8
+
+=10 
+get= 16 time_left black 884225
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 863328
+
+=16 
+get= 12 genmove black
+
+legal: a4 a5, a4 b4, a4 a3, a6 a7, a6 b6, a6 a5, b2 a2, b2 b3, b2 b1, c2 d2, c3 b3, c4 b4, c5 b5, c5 c6, c8 b8, c8 d8, c8 c7, d3 d2, d6 c6, d7 c7, d7 d8, 
+=12 b2 b3
+get= 10 move b2 b3
+
+=10 
+get= 16 time_left black 884071
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 862981
+
+=16 
+get= 12 genmove black
+
+legal: a4 a5, a4 b4, a4 a3, a6 a7, a6 b6, a6 a5, b3 a3, b3 b4, b3 b2, c2 b2, c2 d2, c4 b4, c5 b5, c5 c6, c8 b8, c8 d8, c8 c7, d3 d2, d6 c6, d7 c7, d7 d8, 
+=12 d3 d2
+get= 10 move d3 d2
+
+=10 
+get= 16 time_left black 883917
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 862634
+
+=16 
+get= 12 genmove black
+
+legal: a4 a5, a4 b4, a4 a3, a6 a7, a6 b6, a6 a5, b3 a3, b3 b4, b3 b2, c2 b2, c3 d3, c4 b4, c5 b5, c5 c6, c8 b8, c8 d8, c8 c7, d2 d3, d2 d1, d4 d3, d6 c6, d7 c7, d7 d8, 
+=12 d2 d1
+get= 10 move d2 d1
+
+=10 
+get= 16 time_left black 883763
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 862286
+
+=16 
+get= 12 genmove black
+
+legal: a4 a5, a4 b4, a4 a3, a6 a7, a6 b6, a6 a5, b3 a3, b3 b4, b3 b2, c2 b2, c2 d2, c3 d3, c4 b4, c5 b5, c5 c6, c8 b8, c8 d8, c8 c7, d1 d2, d4 d3, d6 c6, d7 c7, d7 d8, 
+=12 c2 b2
+get= 10 move c2 b2
+
+=10 
+get= 16 time_left black 883610
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 861937
+
+=16 
+get= 12 genmove black
+
+legal: a4 a5, a4 b4, a4 a3, a6 a7, a6 b6, a6 a5, b2 b5, b2 a2, b2 c2, b2 b1, b3 a3, b3 b4, c3 d3, c3 c2, c4 b4, c5 b5, c5 c6, c8 b8, c8 d8, c8 c7, d1 d2, d4 d3, d6 c6, d7 c7, d7 d8, 
+=12 a4 b4
+get= 10 move a4 b4
+
+=10 
+get= 16 time_left black 883458
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 861589
+
+=16 
+get= 12 genmove black
+
+legal: a6 a7, a6 b6, a6 a5, b2 a2, b2 c2, b2 b1, b3 a3, b4 a4, c3 d3, c3 c2, c5 b5, c5 c6, c8 b8, c8 d8, c8 c7, d1 d2, d4 d3, d6 c6, d7 c7, d7 d8, 
+=12 d6 c6
+get= 10 move d6 c6
+
+=10 
+get= 16 time_left black 883305
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 861241
+
+=16 
+get= 12 genmove black
+
+legal: a6 a7, a6 b6, a6 a5, b2 a2, b2 c2, b2 b1, b3 a3, b4 a4, c3 d3, c3 c2, c5 b5, c6 b6, c6 c7, c6 d6, c8 b8, c8 d8, c8 c7, d1 d2, d4 d3, d5 d6, d7 c7, d7 d8, d7 d6, 
+=12 d1 d2
+get= 10 move d1 d2
+
+=10 
+get= 16 time_left black 883152
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 860893
+
+=16 
+get= 12 genmove black
+
+legal: a6 a7, a6 b6, a6 a5, b2 a2, b2 c2, b2 b1, b3 a3, b4 a4, c3 d3, c3 c2, c5 b5, c6 b6, c6 c7, c6 d6, c8 b8, c8 d8, c8 c7, d2 c2, d2 d3, d2 d1, d4 d3, d5 d6, d7 c7, d7 d8, d7 d6, 
+=12 d2 c2
+get= 10 move d2 c2
+
+=10 
+get= 16 time_left black 883000
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 860543
+
+=16 
+get= 12 genmove black
+
+legal: a6 a7, a6 b6, a6 a5, b2 a2, b2 b1, b3 a3, b4 a4, c2 d2, c3 d3, c5 b5, c6 b6, c6 c7, c6 d6, c8 b8, c8 d8, c8 c7, d4 d3, d5 d6, d7 c7, d7 d8, d7 d6, 
+=12 a6 a7
+get= 10 move a6 a7
+
+=10 
+get= 16 time_left black 882849
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 860193
+
+=16 
+get= 12 genmove black
+
+legal: a7 b7, a7 a6, b2 a2, b2 b1, b3 a3, b4 a4, c2 d2, c3 d3, c5 b5, c6 b6, c6 c7, c6 d6, c8 b8, c8 d8, c8 c7, d4 d3, d5 d6, d7 c7, d7 d8, d7 d6, 
+=12 c8 b8
+get= 10 move c8 b8
+
+=10 
+get= 16 time_left black 882698
+
+=16 
+get= 10 move a8 a7
+
+=10 
+get= 16 time_left red 859843
+
+=16 
+get= 12 genmove black
+
+legal: b2 a2, b2 b1, b3 a3, b4 a4, b8 a8, b8 c8, b8 b7, c2 d2, c3 d3, c5 b5, c6 b6, c6 c7, c6 d6, d4 d3, d5 d6, d7 c7, d7 d8, d7 d6, 
+=12 b3 a3
+get= 10 move b3 a3
+
+=10 
+get= 16 time_left black 882547
+
+=16 
+get= 10 move a7 a8
+
+=10 
+get= 16 time_left red 859493
+
+=16 
+get= 12 genmove black
+
+legal: a3 a4, a3 b3, a3 a2, b2 b5, b2 a2, b2 b3, b2 b1, b4 a4, b4 b3, b8 a8, b8 c8, b8 b7, c2 d2, c3 b3, c3 d3, c5 b5, c6 b6, c6 c7, c6 d6, d4 d3, d5 d6, d7 c7, d7 d8, d7 d6, 
+=12 c3 b3
+get= 10 move c3 b3
+
+=10 
+get= 16 time_left black 882396
+
+=16 
+get= 10 move a8 a7
+
+=10 
+get= 16 time_left red 859143
+
+=16 
+get= 12 genmove black
+
+legal: a3 a4, a3 a2, b2 a2, b2 b1, b3 c3, b4 a4, b8 a8, b8 c8, b8 b7, c2 c3, c2 d2, c4 c3, c5 b5, c6 b6, c6 c7, c6 d6, d4 d3, d5 d6, d7 c7, d7 d8, d7 d6, 
+=12 b2 a2
+get= 10 move b2 a2
+
+=10 
+get= 16 time_left black 882245
+
+=16 
+get= 10 move a7 a8
+
+=10 
+get= 16 time_left red 858793
+
+=16 
+get= 12 genmove black
+
+legal: a2 a5, a2 b2, a3 a4, b3 c3, b3 b2, b4 a4, b8 a8, b8 c8, b8 b7, c2 b2, c2 c3, c2 d2, c4 c3, c5 b5, c6 b6, c6 c7, c6 d6, d4 d3, d5 d6, d7 c7, d7 d8, d7 d6, 
+=12 b8 b7
+get= 10 move b8 b7
+
+=10 
+get= 16 time_left black 882093
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 858443
+
+=16 
+get= 12 genmove black
+
+legal: a2 a5, a2 b2, a3 a4, b3 c3, b3 b2, b4 a4, b7 a7, b7 b8, b7 c7, b7 b6, c2 b2, c2 c3, c2 d2, c4 c3, c5 b5, c6 b6, c6 c7, c6 d6, d4 d3, d5 d6, d7 c7, d7 d8, d7 d6, 
+=12 d5 d6
+get= 10 move d5 d6
+
+=10 
+get= 16 time_left black 881942
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 858094
+
+=16 
+get= 12 genmove black
+
+legal: a2 a5, a2 b2, a3 a4, b3 c3, b3 b2, b4 a4, b7 a7, b7 b8, b7 c7, b7 b6, c2 b2, c2 c3, c2 d2, c4 c3, c5 b5, c5 d5, c6 b6, c6 c7, d4 d5, d4 d3, d6 d5, d7 c7, d7 d8, 
+=12 d6 d5
+get= 10 move d6 d5
+
+=10 
+get= 16 time_left black 881789
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 857746
+
+=16 
+get= 12 genmove black
+
+legal: a2 a5, a2 b2, a3 a4, b3 c3, b3 b2, b4 a4, b7 a7, b7 b8, b7 c7, b7 b6, c2 b2, c2 c3, c2 d2, c4 c3, c5 b5, c6 b6, c6 c7, c6 d6, d4 d3, d5 d6, d7 c7, d7 d8, d7 d6, 
+=12 b7 c7
+get= 10 move b7 c7
+
+=10 
+get= 16 time_left black 881638
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 857396
+
+=16 
+get= 12 genmove black
+
+legal: a2 a5, a2 b2, a3 a4, b3 c3, b3 b2, b4 a4, c2 b2, c2 c3, c2 d2, c4 c3, c5 b5, c6 b6, c6 d6, c7 b7, c7 c8, d4 d3, d5 d6, d7 d8, d7 d6, 
+=12 a3 a4
+get= 10 move a3 a4
+
+=10 
+get= 16 time_left black 881487
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 857046
+
+=16 
+get= 12 genmove black
+
+legal: a2 a5, a2 a3, a2 b2, a4 a5, a4 a3, b3 a3, b3 c3, b3 b2, c2 b2, c2 c3, c2 d2, c4 c3, c5 b5, c6 b6, c6 d6, c7 b7, c7 c8, d4 d3, d5 d6, d7 d8, d7 d6, 
+=12 c2 b2
+get= 10 move c2 b2
+
+=10 
+get= 16 time_left black 881336
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 856695
+
+=16 
+get= 12 genmove black
+
+legal: a2 a5, a2 a3, a4 a5, a4 a3, b2 c2, b2 b1, b3 a3, b3 c3, c4 c3, c5 b5, c6 b6, c6 d6, c7 b7, c7 c8, d4 d3, d5 d6, d7 d8, d7 d6, 
+=12 b2 c2
+get= 10 move b2 c2
+
+=10 
+get= 16 time_left black 881185
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 856347
+
+=16 
+get= 12 genmove black
+
+legal: a2 a5, a2 a3, a2 b2, a4 a5, a4 a3, b3 a3, b3 c3, b3 b2, c2 b2, c2 c3, c2 d2, c4 c3, c5 b5, c6 b6, c6 d6, c7 b7, c7 c8, d4 d3, d5 d6, d7 d8, d7 d6, 
+=12 a4 a5
+get= 10 move a4 a5
+
+=10 
+get= 16 time_left black 881033
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 855997
+
+=16 
+get= 12 genmove black
+
+legal: a2 a8, a2 a3, a2 b2, a5 a6, a5 a4, b3 a3, b3 c3, b3 b2, b4 a4, c2 b2, c2 c3, c2 d2, c4 c3, c5 b5, c6 b6, c6 d6, c7 b7, c7 c8, d4 d3, d5 d6, d7 d8, d7 d6, 
+=12 c6 d6
+get= 10 move c6 d6
+
+=10 
+get= 16 time_left black 880880
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 855649
+
+=16 
+get= 12 genmove black
+
+legal: a2 a3, a2 b2, a5 a6, a5 a4, b3 a3, b3 c3, b3 b2, b4 a4, c2 b2, c2 c3, c2 d2, c4 c3, c5 b5, c5 c6, c7 b7, c7 c8, c7 c6, d4 d3, d6 c6, d7 d8, 
+=12 d4 d3
+get= 10 move d4 d3
+
+=10 
+get= 16 time_left black 880727
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 855301
+
+=16 
+get= 12 genmove black
+
+legal: a2 a8, a2 a3, a2 b2, a5 a6, a5 a4, b3 a3, b3 c3, b3 b2, b4 a4, c2 b2, c2 c3, c2 d2, c4 d4, c4 c3, c5 b5, c5 c6, c7 b7, c7 c8, c7 c6, d3 c3, d3 d4, d3 d2, d5 d4, d6 c6, d7 d8, 
+=12 d5 d4
+get= 10 move d5 d4
+
+=10 
+get= 16 time_left black 880576
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 854951
+
+=16 
+get= 12 genmove black
+
+legal: a2 a3, a2 b2, a5 a6, a5 a4, b3 a3, b3 c3, b3 b2, b4 a4, c2 b2, c2 c3, c2 d2, c4 c3, c5 b5, c5 c6, c5 d5, c7 b7, c7 c8, c7 c6, d3 c3, d3 d2, d4 d5, d6 c6, d6 d5, d7 d8, 
+=12 c4 c3
+get= 10 move c4 c3
+
+=10 
+get= 16 time_left black 880425
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 854601
+
+=16 
+get= 12 genmove black
+
+legal: a2 a8, a2 a3, a2 b2, a5 a6, a5 a4, b3 a3, b3 b2, b4 a4, b4 c4, c2 b2, c2 d2, c3 c4, c5 b5, c5 c6, c5 d5, c5 c4, c7 b7, c7 c8, c7 c6, d3 d2, d4 c4, d4 d5, d6 c6, d6 d5, d7 d8, 
+=12 b3 b2
+get= 10 move b3 b2
+
+=10 
+get= 16 time_left black 880272
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 854253
+
+=16 
+get= 12 genmove black
+
+legal: a2 a3, a5 a6, a5 a4, b2 b3, b2 b1, b4 a4, b4 c4, b4 b3, c2 d2, c3 b3, c3 c4, c5 b5, c5 c6, c5 d5, c5 c4, c7 b7, c7 c8, c7 c6, d3 d2, d4 c4, d4 d5, d6 c6, d6 d5, d7 d8, 
+=12 c5 b5
+get= 10 move c5 b5
+
+=10 
+get= 16 time_left black 880120
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 853905
+
+=16 
+get= 12 genmove black
+
+legal: a2 a8, a2 a3, a5 a6, a5 a4, b2 b3, b2 b1, b4 a4, b4 c4, b4 b3, b5 b6, b5 c5, c2 d2, c3 b3, c3 c4, c7 b7, c7 c8, c7 c6, d3 d2, d4 c4, d4 d5, d6 c6, d6 d5, d7 d8, 
+=12 b2 b1
+get= 10 move b2 b1
+
+=10 
+get= 16 time_left black 879967
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 853556
+
+=16 
+get= 12 genmove black
+
+legal: a2 a3, a2 b2, a5 a6, a5 a4, b1 a1, b1 b2, b4 a4, b4 c4, b4 b3, b5 b6, b5 c5, c2 b2, c2 d2, c3 b3, c3 c4, c7 b7, c7 c8, c7 c6, d3 d2, d4 c4, d4 d5, d6 c6, d6 d5, d7 d8, 
+=12 b4 c4
+get= 10 move b4 c4
+
+=10 
+get= 16 time_left black 879816
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 853207
+
+=16 
+get= 12 genmove black
+
+legal: a2 a8, a2 a3, a2 b2, a5 a6, a5 a4, b1 a1, b1 b2, b5 b6, b5 c5, b5 b4, c2 b2, c2 d2, c3 b3, c4 b4, c4 c5, c7 b7, c7 c8, c7 c6, d3 d2, d4 d5, d6 c6, d6 d5, d7 d8, 
+=12 d7 d8
+get= 10 move d7 d8
+
+=10 
+get= 16 time_left black 879664
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 852858
+
+=16 
+get= 12 genmove black
+
+legal: a2 a3, a2 b2, a5 a6, a5 a4, b1 a1, b1 b2, b5 b6, b5 c5, b5 b4, c2 b2, c2 d2, c3 b3, c4 b4, c4 c5, c7 b7, c7 c8, c7 d7, c7 c6, d3 d2, d4 d5, d6 c6, d6 d7, d6 d5, d8 c8, d8 d7, 
+=12 b5 b6
+get= 10 move b5 b6
+
+=10 
+get= 16 time_left black 879512
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 852509
+
+=16 
+get= 12 genmove black
+
+legal: a2 a8, a2 a3, a2 b2, a5 a6, a5 b5, a5 a4, b1 a1, b1 b2, b6 a6, b6 b7, b6 c6, b6 b5, c2 b2, c2 d2, c3 b3, c4 b4, c4 c5, c7 b7, c7 c8, c7 d7, c7 c6, d3 d2, d4 d5, d6 c6, d6 d7, d6 d5, d8 c8, d8 d7, 
+=12 a5 a4
+get= 10 move a5 a4
+
+=10 
+get= 16 time_left black 879359
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 852161
+
+=16 
+get= 12 genmove black
+
+legal: a2 a3, a2 b2, a4 a5, a4 b4, a4 a3, b1 a1, b1 b2, b6 a6, b6 b7, b6 c6, b6 b5, c2 b2, c2 d2, c3 b3, c4 b4, c4 c5, c7 b7, c7 c8, c7 d7, c7 c6, d3 d2, d4 d5, d6 c6, d6 d7, d6 d5, d8 c8, d8 d7, 
+=12 d4 d5
+get= 10 move d4 d5
+
+=10 
+get= 16 time_left black 879207
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 851812
+
+=16 
+get= 12 genmove black
+
+legal: a2 a8, a2 a3, a2 b2, a4 a5, a4 b4, a4 a3, b1 a1, b1 b2, b6 a6, b6 b7, b6 c6, b6 b5, c2 b2, c2 d2, c3 b3, c4 b4, c4 c5, c4 d4, c7 b7, c7 c8, c7 d7, c7 c6, d3 d4, d3 d2, d5 c5, d5 d4, d6 c6, d6 d7, d8 c8, d8 d7, 
+=12 b1 a1
+get= 10 move b1 a1
+
+=10 
+get= 16 time_left black 879054
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 851464
+
+=16 
+get= 12 genmove black
+
+legal: a1 b1, a2 a3, a2 b2, a4 a5, a4 b4, a4 a3, b6 a6, b6 b7, b6 c6, b6 b5, c2 b2, c2 d2, c3 b3, c4 b4, c4 c5, c4 d4, c7 b7, c7 c8, c7 d7, c7 c6, d3 d4, d3 d2, d5 c5, d5 d4, d6 c6, d6 d7, d8 c8, d8 d7, 
+=12 d3 d2
+get= 10 move d3 d2
+
+=10 
+get= 16 time_left black 878902
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 851115
+
+=16 
+get= 12 genmove black
+
+legal: a1 b1, a2 a8, a2 a3, a2 b2, a4 a5, a4 b4, a4 a3, b6 a6, b6 b7, b6 c6, b6 b5, c2 b2, c3 b3, c3 d3, c4 b4, c4 c5, c4 d4, c7 b7, c7 c8, c7 d7, c7 c6, d2 d3, d2 d1, d5 c5, d5 d4, d6 c6, d6 d7, d8 c8, d8 d7, 
+=12 b6 b7
+get= 10 move b6 b7
+
+=10 
+get= 16 time_left black 878749
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 850767
+
+=16 
+get= 12 genmove black
+
+legal: a1 b1, a2 a3, a2 b2, a4 a5, a4 b4, a4 a3, b7 a7, b7 b8, b7 b6, c2 b2, c3 b3, c3 d3, c4 b4, c4 c5, c4 d4, c7 c8, c7 d7, c7 c6, d2 d3, d2 d1, d5 c5, d5 d4, d6 c6, d6 d7, d8 c8, d8 d7, 
+=12 a4 a3
+get= 10 move a4 a3
+
+=10 
+get= 16 time_left black 878596
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 850419
+
+=16 
+get= 12 genmove black
+
+legal: a1 b1, a2 a8, a2 b2, a3 a4, a3 b3, b7 a7, b7 b8, b7 b6, c2 b2, c3 b3, c3 d3, c4 b4, c4 c5, c4 d4, c7 c8, c7 d7, c7 c6, d2 d3, d2 d1, d5 c5, d5 d4, d6 c6, d6 d7, d8 c8, d8 d7, 
+=12 d5 c5
+get= 10 move d5 c5
+
+=10 
+get= 16 time_left black 878442
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 850071
+
+=16 
+get= 12 genmove black
+
+legal: a1 b1, a2 b2, a3 a4, a3 b3, b7 a7, b7 b8, b7 b6, c2 b2, c3 b3, c3 d3, c4 b4, c4 d4, c5 b5, c5 c6, c5 d5, c7 c8, c7 d7, c7 c6, d2 d3, d2 d1, d6 c6, d6 d7, d6 d5, d8 c8, d8 d7, 
+=12 d8 d7
+get= 10 move d8 d7
+
+=10 
+get= 16 time_left black 878290
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 849723
+
+=16 
+get= 12 genmove black
+
+legal: a1 b1, a2 a8, a2 b2, a3 a4, a3 b3, b7 a7, b7 b8, b7 b6, c2 b2, c3 b3, c3 d3, c4 b4, c4 d4, c5 b5, c5 c6, c5 d5, c7 c8, c7 c6, d2 d3, d2 d1, d6 c6, d6 d5, d7 d8, 
+=12 a2 b2
+get= 10 move a2 b2
+
+=10 
+get= 16 time_left black 878137
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 849374
+
+=16 
+get= 12 genmove black
+
+legal: a1 a2, a1 b1, a3 a4, a3 b3, a3 a2, b2 b8, b2 a2, b2 b3, b2 b1, b7 a7, b7 b8, b7 b6, c3 b3, c3 d3, c4 b4, c4 d4, c5 b5, c5 c6, c5 d5, c7 c8, c7 c6, d2 d3, d2 d1, d6 c6, d6 d5, d7 d8, 
+=12 b2 b8
+get= 10 move b2 b8
+
+=10 
+get= 16 time_left black 877985
+
+=16 
+get= 10 move c1 c3
+
+=10 
+get= 16 time_left red 849024
+
+=16 
+get= 12 genmove black
+
+legal: a1 a2, a1 b1, a3 a4, a3 b3, a3 a2, b7 a7, b7 b6, b8 a8, b8 c8, c2 b2, c2 c1, c4 b4, c4 d4, c4 c3, c5 b5, c5 c6, c5 d5, c7 c8, c7 c6, d2 d3, d2 d1, d6 c6, d6 d5, d7 d8, 
+=12 d2 d1
+get= 10 move d2 d1
+
+=10 
+get= 16 time_left black 877834
+
+=16 
+get= 10 move c3 c5
+
+=10 
+get= 16 time_left red 848674
+
+=16 
+get= 12 genmove black
+
+legal: a1 a2, a1 b1, a3 a4, a3 b3, a3 a2, b7 a7, b7 b6, b8 a8, b8 c8, c2 b2, c2 c3, c2 d2, c2 c1, c4 b4, c4 c5, c4 d4, c4 c3, c7 c8, c7 c6, d1 c1, d1 d2, d6 c6, d6 d5, d7 d8, 
+=12 b7 a7
+get= 10 move b7 a7
+
+=10 
+get= 16 time_left black 877683
+
+=16 
+get= 10 move c5 c6
+
+=10 
+get= 16 time_left red 848324
+
+=16 
+get= 12 genmove black
+
+legal: a1 a2, a1 b1, a3 a4, a3 b3, a3 a2, a7 a8, a7 b7, a7 a6, b8 a8, b8 c8, b8 b7, c2 b2, c2 c3, c2 d2, c2 c1, c4 b4, c4 c5, c4 d4, c4 c3, c7 b7, c7 c8, c7 c6, d1 c1, d1 d2, d6 d5, d7 d8, 
+=12 c4 d4
+get= 10 move c4 d4
+
+=10 
+get= 16 time_left black 877531
+
+=16 
+get= 10 move c6 b6
+
+=10 
+get= 16 time_left red 847973
+
+=16 
+get= 12 genmove black
+
+legal: a1 a2, a1 b1, a3 a4, a3 b3, a3 a2, a7 a8, a7 b7, a7 a6, b8 a8, b8 c8, b8 b7, c2 b2, c2 c3, c2 d2, c2 c1, c7 b7, c7 c8, c7 c6, d1 c1, d1 d2, d4 c4, d4 d5, d4 d3, d6 c6, d6 d5, d7 d8, 
+=12 c7 c6
+get= 10 move c7 c6
+
+=10 
+get= 16 time_left black 877381
+
+=16 
+get= 10 move b6 b7
+
+=10 
+get= 16 time_left red 847623
+
+=16 
+get= 12 genmove black
+
+legal: a1 a2, a1 b1, a3 a4, a3 b3, a3 a2, a7 a8, a7 b7, a7 a6, b8 a8, b8 c8, c2 b2, c2 c3, c2 d2, c2 c1, c6 b6, c6 c7, c6 c5, d1 c1, d1 d2, d4 c4, d4 d5, d4 d3, d6 d5, d7 c7, d7 d8, 
+=12 d4 d5
+get= 10 move d4 d5
+
+=10 
+get= 16 time_left black 877229
+
+=16 
+get= 10 move b7 c7
+
+=10 
+get= 16 time_left red 847274
+
+=16 
+get= 12 genmove black
+
+legal: a1 a2, a1 b1, a3 a4, a3 b3, a3 a2, a7 a8, a7 b7, a7 a6, b8 a8, b8 c8, b8 b7, c2 b2, c2 c3, c2 d2, c2 c1, c6 b6, c6 c7, c6 c5, d1 c1, d1 d2, d5 c5, d5 d4, d7 c7, d7 d8, 
+=12 a1 a2
+get= 10 move a1 a2
+
+=10 
+get= 16 time_left black 877077
+
+=16 
+get= 10 move c7 c8
+
+=10 
+get= 16 time_left red 846924
+
+=16 
+get= 12 genmove black
+
+legal: a2 b2, a2 a1, a3 a4, a3 b3, a7 a8, a7 b7, a7 a6, b8 a8, b8 b7, c2 b2, c2 c3, c2 d2, c2 c1, c6 b6, c6 c7, c6 c5, d1 c1, d1 d2, d5 c5, d5 d4, d7 c7, d7 d8, 
+=12 c6 c7
+get= 10 move c6 c7
+
+=10 
+get= 16 time_left black 876926
+
+=16 
+get= 10 move c8 d8
+
+=10 
+get= 16 time_left red 846574
+
+=16 
+get= 12 genmove black
+
+legal: a2 b2, a2 a1, a3 a4, a3 b3, a7 a8, a7 b7, a7 a6, b8 a8, b8 c8, b8 b7, c2 b2, c2 c3, c2 d2, c2 c1, c7 b7, c7 c8, c7 c6, d1 c1, d1 d2, d5 c5, d5 d4, d6 c6, d7 d8, 
+=12 b8 c8
+get= 10 move b8 c8
+
+=10 
+get= 16 time_left black 876774
+
+=16 
+get= 10 move d8 d6
+
+=10 
+get= 16 time_left red 846225
+
+=16 
+get= 12 genmove black
+
+legal: a2 b2, a2 a1, a3 a4, a3 b3, a7 a8, a7 b7, a7 a6, c2 b2, c2 c3, c2 d2, c2 c1, c7 b7, c7 c6, c8 b8, c8 d8, d1 c1, d1 d2, d5 c5, d5 d6, d5 d4, d7 d8, d7 d6, 
+=12 a3 a4
+get= 10 move a3 a4
+
+=10 
+get= 16 time_left black 876621
+
+=16 
+get= 10 move d6 c6
+
+=10 
+get= 16 time_left red 845877
+
+=16 
+get= 12 genmove black
+
+legal: a2 a3, a2 b2, a2 a1, a4 a5, a4 b4, a4 a3, a7 a8, a7 b7, a7 a6, c2 b2, c2 c3, c2 d2, c2 c1, c7 b7, c7 c6, c8 c6, c8 b8, c8 d8, d1 c1, d1 d2, d5 c5, d5 d6, d5 d4, d7 d8, d7 d6, 
+=12 d7 d6
+get= 10 move d7 d6
+
+=10 
+get= 16 time_left black 876468
+
+=16 
+get= 10 move c6 c8
+
+=10 
+get= 16 time_left red 845529
+
+=16 
+get= 12 genmove black
+
+legal: a2 a3, a2 b2, a2 a1, a4 a5, a4 b4, a4 a3, a7 a8, a7 b7, a7 a6, c2 b2, c2 c3, c2 d2, c2 c1, c7 b7, c7 c8, c7 d7, c7 c6, d1 c1, d1 d2, d5 c5, d5 d4, d6 c6, d6 d7, 
+=12 a2 b2
+get= 10 move a2 b2
+
+=10 
+get= 16 time_left black 876313
+
+=16 
+get= 10 move c8 b8
+
+=10 
+get= 16 time_left red 845183
+
+=16 
+get= 12 genmove black
+
+legal: a4 a5, a4 b4, a4 a3, a7 a8, a7 b7, a7 a6, b2 a2, b2 b3, b2 b1, c2 c3, c2 d2, c2 c1, c7 b7, c7 c8, c7 d7, c7 c6, d1 c1, d1 d2, d5 c5, d5 d4, d6 c6, d6 d7, 
+=12 c7 c6
+get= 10 move c7 c6
+
+=10 
+get= 16 time_left black 876159
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 844836
+
+=16 
+get= 12 genmove black
+
+legal: a4 a5, a4 b4, a4 a3, a7 a8, a7 b7, a7 a6, b2 a2, b2 b3, b2 b1, c2 c3, c2 d2, c2 c1, c6 b6, c6 c7, c6 c5, d1 c1, d1 d2, d5 c5, d5 d4, d6 d7, 
+=12 d5 d4
+get= 10 move d5 d4
+
+=10 
+get= 16 time_left black 876005
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 844489
+
+=16 
+get= 12 genmove black
+
+legal: a4 a5, a4 b4, a4 a3, a7 a8, a7 b7, a7 a6, b2 a2, b2 b3, b2 b1, c2 c3, c2 d2, c2 c1, c6 b6, c6 c7, c6 c5, d1 c1, d1 d2, d4 c4, d4 d5, d4 d3, d6 d7, d6 d5, 
+=12 d1 c1
+get= 10 move d1 c1
+
+=10 
+get= 16 time_left black 875850
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 844143
+
+=16 
+get= 12 genmove black
+
+legal: a4 a5, a4 b4, a4 a3, a7 a8, a7 b7, a7 a6, b2 a2, b2 b3, b2 b1, c1 b1, c1 d1, c2 c3, c2 d2, c6 b6, c6 c7, c6 c5, d4 c4, d4 d5, d4 d3, d6 d7, d6 d5, 
+=12 d6 d5
+get= 10 move d6 d5
+
+=10 
+get= 16 time_left black 875695
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 843797
+
+=16 
+get= 12 genmove black
+
+legal: a4 a5, a4 b4, a4 a3, a7 a8, a7 b7, a7 a6, b2 a2, b2 b3, b2 b1, c1 b1, c1 d1, c2 c3, c2 d2, c6 b6, c6 c7, c6 d6, c6 c5, d4 c4, d4 d3, d5 c5, d5 d6, 
+=12 c2 d2
+get= 10 move c2 d2
+
+=10 
+get= 16 time_left black 875540
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 843451
+
+=16 
+get= 12 genmove black
+
+legal: a4 a5, a4 b4, a4 a3, a7 a8, a7 b7, a7 a6, b2 a2, b2 b3, b2 c2, b2 b1, c1 b1, c1 c2, c1 d1, c6 b6, c6 c7, c6 d6, c6 c5, d2 c2, d2 d3, d2 d1, d4 c4, d4 d3, d5 c5, d5 d6, 
+=12 a4 b4
+get= 10 move a4 b4
+
+=10 
+get= 16 time_left black 875385
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 843104
+
+=16 
+get= 12 genmove black
+
+legal: a7 a8, a7 b7, a7 a6, b2 a2, b2 b3, b2 c2, b2 b1, b4 a4, b4 b5, b4 c4, b4 b3, c1 b1, c1 c2, c1 d1, c6 b6, c6 c7, c6 d6, c6 c5, d2 c2, d2 d3, d2 d1, d4 c4, d4 d3, d5 c5, d5 d6, 
+=12 b2 c2
+get= 10 move b2 c2
+
+=10 
+get= 16 time_left black 875231
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 842758
+
+=16 
+get= 12 genmove black
+
+legal: a7 a8, a7 b7, a7 a6, b4 a4, b4 b5, b4 c4, b4 b3, c1 b1, c1 d1, c2 b2, c2 c3, c6 b6, c6 c7, c6 d6, c6 c5, d2 d3, d2 d1, d4 c4, d4 d3, d5 c5, d5 d6, 
+=12 c6 b6
+get= 10 move c6 b6
+
+=10 
+get= 16 time_left black 875075
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 842413
+
+=16 
+get= 12 genmove black
+
+legal: a7 a8, a7 b7, a7 a6, b4 a4, b4 b5, b4 c4, b4 b3, b6 a6, b6 b7, b6 c6, b6 b5, c1 b1, c1 d1, c2 b2, c2 c3, d2 d3, d2 d1, d4 c4, d4 d3, d5 c5, d5 d6, 
+=12 a7 b7
+get= 10 move a7 b7
+
+=10 
+get= 16 time_left black 874919
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 842068
+
+=16 
+get= 12 genmove black
+
+legal: b4 a4, b4 b5, b4 c4, b4 b3, b6 a6, b6 c6, b6 b5, b7 a7, b7 b8, b7 c7, c1 b1, c1 d1, c2 b2, c2 c3, d2 d3, d2 d1, d4 c4, d4 d3, d5 c5, d5 d6, 
+=12 b6 a6
+get= 10 move b6 a6
+
+=10 
+get= 16 time_left black 874763
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 841722
+
+=16 
+get= 12 genmove black
+
+legal: a6 a7, a6 b6, a6 a5, b4 a4, b4 b5, b4 c4, b4 b3, b7 a7, b7 b8, b7 c7, b7 b6, c1 b1, c1 d1, c2 b2, c2 c3, d2 d3, d2 d1, d4 c4, d4 d3, d5 c5, d5 d6, 
+=12 c2 c3
+get= 10 move c2 c3
+
+=10 
+get= 16 time_left black 874608
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 841376
+
+=16 
+get= 12 genmove black
+
+legal: a6 a7, a6 b6, a6 a5, b4 a4, b4 b5, b4 c4, b4 b3, b7 a7, b7 b8, b7 c7, b7 b6, c1 b1, c1 c2, c1 d1, c3 b3, c3 c4, c3 d3, c3 c2, d2 c2, d2 d3, d2 d1, d4 c4, d4 d3, d5 c5, d5 d6, 
+=12 c3 d3
+get= 10 move c3 d3
+
+=10 
+get= 16 time_left black 874453
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 841030
+
+=16 
+get= 12 genmove black
+
+legal: a6 a7, a6 b6, a6 a5, b4 a4, b4 b5, b4 c4, b4 b3, b7 a7, b7 b8, b7 c7, b7 b6, c1 b1, c1 c2, c1 d1, d2 c2, d2 d1, d3 c3, d4 c4, d5 c5, d5 d6, 
+=12 b7 b6
+get= 10 move b7 b6
+
+=10 
+get= 16 time_left black 874297
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 840684
+
+=16 
+get= 12 genmove black
+
+legal: a6 a7, a6 a5, b4 a4, b4 b5, b4 c4, b4 b3, b6 b7, b6 c6, b6 b5, c1 b1, c1 c2, c1 d1, d2 c2, d2 d1, d3 c3, d4 c4, d5 c5, d5 d6, 
+=12 a6 a5
+get= 10 move a6 a5
+
+=10 
+get= 16 time_left black 874142
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 840339
+
+=16 
+get= 12 genmove black
+
+legal: a5 a6, a5 b5, a5 a4, b4 a4, b4 b5, b4 c4, b4 b3, b6 a6, b6 b7, b6 c6, b6 b5, c1 b1, c1 c2, c1 d1, d2 c2, d2 d1, d3 c3, d4 c4, d5 c5, d5 d6, 
+=12 a5 a6
+get= 10 move a5 a6
+
+=10 
+get= 16 time_left black 873985
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 839995
+
+=16 
+get= 12 genmove black
+
+legal: a6 a7, a6 a5, b4 a4, b4 b5, b4 c4, b4 b3, b6 b7, b6 c6, b6 b5, c1 b1, c1 c2, c1 d1, d2 c2, d2 d1, d3 c3, d4 c4, d5 c5, d5 d6, 
+=12 b6 b5
+get= 10 move b6 b5
+
+=10 
+get= 16 time_left black 873828
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 839651
+
+=16 
+get= 12 genmove black
+
+legal: a6 a7, a6 b6, a6 a5, b4 a4, b4 c4, b4 b3, b5 a5, b5 b6, b5 c5, c1 b1, c1 c2, c1 d1, d2 c2, d2 d1, d3 c3, d4 c4, d5 c5, d5 d6, 
+=12 b4 c4
+get= 10 move b4 c4
+
+=10 
+get= 16 time_left black 873670
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 839308
+
+=16 
+get= 12 genmove black
+
+legal: a6 a7, a6 b6, a6 a5, b5 a5, b5 b6, b5 c5, b5 b4, c1 b1, c1 c2, c1 d1, c4 b4, c4 c5, c4 c3, d2 c2, d2 d1, d3 c3, d5 c5, d5 d6, 
+=12 b5 b4
+get= 10 move b5 b4
+
+=10 
+get= 16 time_left black 873511
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 838916
+
+=16 
+get= 12 genmove black
+
+legal: a6 a7, a6 b6, a6 a5, b4 a4, b4 b5, b4 b3, c1 b1, c1 c2, c1 d1, c4 c5, c4 c3, d2 c2, d2 d1, d3 c3, d5 c5, d5 d6, 
+=12 a6 a5
+get= 10 move a6 a5
+
+=10 
+get= 16 time_left black 873352
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 838574
+
+=16 
+get= 12 genmove black
+
+legal: a5 a6, a5 b5, a5 a4, b4 a4, b4 b5, b4 b3, c1 b1, c1 c2, c1 d1, c4 c5, c4 c3, d2 c2, d2 d1, d3 c3, d5 c5, d5 d6, 
+=12 d2 c2
+get= 10 move d2 c2
+
+=10 
+get= 16 time_left black 873192
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 838182
+
+=16 
+get= 12 genmove black
+
+legal: a5 a6, a5 b5, a5 a4, b4 a4, b4 b5, b4 b3, c1 b1, c1 d1, c2 b2, c2 c3, c2 d2, c4 c5, c4 c3, d3 c3, d3 d2, d5 c5, d5 d6, 
+=12 a5 a4
+get= 10 move a5 a4
+
+=10 
+get= 16 time_left black 873033
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 837790
+
+=16 
+get= 12 genmove black
+
+legal: a4 a5, a4 a3, b4 b5, b4 b3, c1 b1, c1 d1, c2 b2, c2 c3, c2 d2, c4 c5, c4 c3, d3 c3, d3 d2, d5 c5, d5 d6, 
+=12 b4 b3
+get= 10 move b4 b3
+
+=10 
+get= 16 time_left black 872874
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 837398
+
+=16 
+get= 12 genmove black
+
+legal: a4 a5, a4 b4, a4 a3, b3 a3, b3 b4, b3 c3, b3 b2, c1 b1, c1 d1, c2 b2, c2 c3, c2 d2, c4 b4, c4 c5, c4 c3, d3 c3, d3 d2, d5 c5, d5 d6, 
+=12 c1 d1
+get= 10 move c1 d1
+
+=10 
+get= 16 time_left black 872714
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 837007
+
+=16 
+get= 12 genmove black
+
+legal: a4 a5, a4 b4, a4 a3, b3 a3, b3 b4, b3 c3, b3 b2, c2 b2, c2 c3, c2 d2, c2 c1, c4 b4, c4 c5, c4 c3, d1 c1, d1 d2, d3 c3, d3 d2, d5 c5, d5 d6, 
+=12 c2 b2
+get= 10 move c2 b2
+
+=10 
+get= 16 time_left black 872554
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 836616
+
+=16 
+get= 12 genmove black
+
+legal: a4 a5, a4 b4, a4 a3, b2 a2, b2 c2, b2 b1, b3 a3, b3 b4, b3 c3, c4 b4, c4 c5, c4 c3, d1 c1, d1 d2, d3 c3, d3 d2, d5 c5, d5 d6, 
+=12 d1 d2
+get= 10 move d1 d2
+
+=10 
+get= 16 time_left black 872394
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 836273
+
+=16 
+get= 12 genmove black
+
+legal: a4 a5, a4 b4, a4 a3, b2 a2, b2 c2, b2 b1, b3 a3, b3 b4, b3 c3, c4 b4, c4 c5, c4 c3, d2 c2, d2 d1, d3 c3, d5 c5, d5 d6, 
+=12 a4 b4
+get= 10 move a4 b4
+
+=10 
+get= 16 time_left black 872236
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 835881
+
+=16 
+get= 12 genmove black
+
+legal: b2 a2, b2 c2, b2 b1, b3 a3, b3 c3, b4 a4, b4 b5, c4 c5, c4 c3, d2 c2, d2 d1, d3 c3, d5 c5, d5 d6, 
+=12 b2 a2
+get= 10 move b2 a2
+
+=10 
+get= 16 time_left black 872076
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 835490
+
+=16 
+get= 12 genmove black
+
+legal: a2 a3, a2 b2, a2 a1, b3 a3, b3 c3, b3 b2, b4 a4, b4 b5, c4 c5, c4 c3, d2 c2, d2 d1, d3 c3, d5 c5, d5 d6, 
+=12 b4 b5
+get= 10 move b4 b5
+
+=10 
+get= 16 time_left black 871915
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 835100
+
+=16 
+get= 12 genmove black
+
+legal: a2 a3, a2 b2, a2 a1, b3 a3, b3 b4, b3 c3, b3 b2, b5 a5, b5 b6, b5 c5, b5 b4, c4 b4, c4 c5, c4 c3, d2 c2, d2 d1, d3 c3, d5 c5, d5 d6, 
+=12 a2 a1
+get= 10 move a2 a1
+
+=10 
+get= 16 time_left black 871753
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 834711
+
+=16 
+get= 12 genmove black
+
+legal: a1 a2, a1 b1, b3 a3, b3 b4, b3 c3, b3 b2, b5 a5, b5 b6, b5 c5, b5 b4, c4 b4, c4 c5, c4 c3, d2 c2, d2 d1, d3 c3, d5 c5, d5 d6, 
+=12 d5 d6
+get= 10 move d5 d6
+
+=10 
+get= 16 time_left black 871592
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 834321
+
+=16 
+get= 12 genmove black
+
+legal: a1 a2, a1 b1, b3 a3, b3 b4, b3 c3, b3 b2, b5 a5, b5 b6, b5 c5, b5 b4, c4 b4, c4 c5, c4 c3, d2 c2, d2 d1, d3 c3, d4 d5, d6 c6, d6 d7, d6 d5, 
+=12 b5 c5
+get= 10 move b5 c5
+
+=10 
+get= 16 time_left black 871431
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 833930
+
+=16 
+get= 12 genmove black
+
+legal: a1 a2, a1 b1, b3 a3, b3 b4, b3 c3, b3 b2, c4 b4, c4 c3, c5 b5, c5 c6, c5 d5, d2 c2, d2 d1, d3 c3, d4 d5, d6 c6, d6 d7, d6 d5, 
+=12 b3 b2
+get= 10 move b3 b2
+
+=10 
+get= 16 time_left black 871270
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 833541
+
+=16 
+get= 12 genmove black
+
+legal: a1 a2, a1 b1, b2 a2, b2 b3, b2 c2, b2 b1, c4 b4, c4 c3, c5 b5, c5 c6, c5 d5, d2 c2, d2 d1, d3 c3, d4 d5, d6 c6, d6 d7, d6 d5, 
+=12 d2 c2
+get= 10 move d2 c2
+
+=10 
+get= 16 time_left black 871109
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 833150
+
+=16 
+get= 12 genmove black
+
+legal: a1 a2, a1 b1, b2 a2, b2 b3, b2 b1, c2 c3, c2 d2, c2 c1, c4 b4, c4 c3, c5 b5, c5 c6, c5 d5, d3 c3, d3 d2, d4 d5, d6 c6, d6 d7, d6 d5, 
+=12 c4 b4
+get= 10 move c4 b4
+
+=10 
+get= 16 time_left black 870948
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 832760
+
+=16 
+get= 12 genmove black
+
+legal: a1 a2, a1 b1, b2 a2, b2 b3, b2 b1, b4 a4, b4 b5, b4 c4, b4 b3, c2 c3, c2 d2, c2 c1, c5 b5, c5 c6, c5 d5, c5 c4, d3 c3, d3 d2, d4 c4, d4 d5, d6 c6, d6 d7, d6 d5, 
+=12 c2 d2
+get= 10 move c2 d2
+
+=10 
+get= 16 time_left black 870787
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 832369
+
+=16 
+get= 12 genmove black
+
+legal: a1 a2, a1 b1, b2 a2, b2 b3, b2 c2, b2 b1, b4 a4, b4 b5, b4 c4, b4 b3, c5 b5, c5 c6, c5 d5, c5 c4, d2 c2, d2 d1, d3 c3, d4 c4, d4 d5, d6 c6, d6 d7, d6 d5, 
+=12 d6 d7
+get= 10 move d6 d7
+
+=10 
+get= 16 time_left black 870627
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 831978
+
+=16 
+get= 12 genmove black
+
+legal: a1 a2, a1 b1, b2 a2, b2 b3, b2 c2, b2 b1, b4 a4, b4 b5, b4 c4, b4 b3, c5 b5, c5 c6, c5 d5, c5 c4, d2 c2, d2 d1, d3 c3, d4 c4, d4 d5, d7 c7, d7 d8, d7 d6, 
+=12 d2 d1
+get= 10 move d2 d1
+
+=10 
+get= 16 time_left black 870466
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 831588
+
+=16 
+get= 12 genmove black
+
+legal: a1 a2, a1 b1, b2 a2, b2 b3, b2 c2, b2 b1, b4 a4, b4 b5, b4 c4, b4 b3, c5 b5, c5 c6, c5 d5, c5 c4, d1 c1, d1 d2, d3 c3, d3 d2, d4 c4, d4 d5, d7 c7, d7 d8, d7 d6, 
+=12 d3 c3
+get= 10 move d3 c3
+
+=10 
+get= 16 time_left black 870305
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 831197
+
+=16 
+get= 12 genmove black
+
+legal: a1 a2, a1 b1, b2 a2, b2 b3, b2 c2, b2 b1, b4 a4, b4 b5, b4 c4, b4 b3, c3 b3, c3 c4, c3 d3, c3 c2, c5 b5, c5 c6, c5 d5, c5 c4, d1 c1, d1 d2, d4 c4, d4 d5, d4 d3, d7 c7, d7 d8, d7 d6, 
+=12 c5 c4
+get= 10 move c5 c4
+
+=10 
+get= 16 time_left black 870145
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 830806
+
+=16 
+get= 12 genmove black
+
+legal: a1 a2, a1 b1, b2 a2, b2 b3, b2 c2, b2 b1, b4 a4, b4 b5, b4 b3, c3 b3, c3 d3, c3 c2, c4 c5, d1 c1, d1 d2, d4 d5, d4 d3, d7 c7, d7 d8, d7 d6, 
+=12 d4 d5
+get= 10 move d4 d5
+
+=10 
+get= 16 time_left black 869985
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 830415
+
+=16 
+get= 12 genmove black
+
+legal: a1 a2, a1 b1, b2 a2, b2 b3, b2 c2, b2 b1, b4 a4, b4 b5, b4 b3, c3 b3, c3 d3, c3 c2, c4 c5, c4 d4, d1 c1, d1 d2, d5 c5, d5 d6, d5 d4, d7 c7, d7 d8, d7 d6, 
+=12 d7 c7
+get= 10 move d7 c7
+
+=10 
+get= 16 time_left black 869824
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 830024
+
+=16 
+get= 12 genmove black
+
+legal: a1 a2, a1 b1, b2 a2, b2 b3, b2 c2, b2 b1, b4 a4, b4 b5, b4 b3, c3 b3, c3 d3, c3 c2, c4 c5, c4 d4, c7 b7, c7 c8, c7 d7, c7 c6, d1 c1, d1 d2, d5 c5, d5 d6, d5 d4, 
+=12 c3 c2
+get= 10 move c3 c2
+
+=10 
+get= 16 time_left black 869664
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 829633
+
+=16 
+get= 12 genmove black
+
+legal: a1 a2, a1 b1, b2 a2, b2 b3, b2 b1, b4 a4, b4 b5, b4 b3, c2 c3, c2 d2, c2 c1, c4 c5, c4 d4, c4 c3, c7 b7, c7 c8, c7 d7, c7 c6, d1 c1, d1 d2, d5 c5, d5 d6, d5 d4, 
+=12 d5 c5
+get= 10 move d5 c5
+
+=10 
+get= 16 time_left black 869504
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 829242
+
+=16 
+get= 12 genmove black
+
+legal: a1 a2, a1 b1, b2 a2, b2 b3, b2 b1, b4 a4, b4 b5, b4 b3, c2 c3, c2 d2, c2 c1, c4 d4, c4 c3, c5 b5, c5 c6, c5 d5, c7 b7, c7 c8, c7 d7, c7 c6, d1 c1, d1 d2, 
+=12 c5 d5
+get= 10 move c5 d5
+
+=10 
+get= 16 time_left black 869343
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 828852
+
+=16 
+get= 12 genmove black
+
+legal: a1 a2, a1 b1, b2 a2, b2 b3, b2 b1, b4 a4, b4 b5, b4 b3, c2 c3, c2 d2, c2 c1, c4 c5, c4 d4, c4 c3, c7 b7, c7 c8, c7 d7, c7 c6, d1 c1, d1 d2, d5 c5, d5 d6, d5 d4, 
+=12 b4 b3
+get= 10 move b4 b3
+
+=10 
+get= 16 time_left black 869182
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 828462
+
+=16 
+get= 12 genmove black
+
+legal: a1 a2, a1 b1, b2 a2, b2 b1, b3 a3, b3 b4, b3 c3, c2 c3, c2 d2, c2 c1, c4 b4, c4 c5, c4 d4, c4 c3, c7 b7, c7 c8, c7 d7, c7 c6, d1 c1, d1 d2, d5 c5, d5 d6, d5 d4, 
+=12 c7 d7
+get= 10 move c7 d7
+
+=10 
+get= 16 time_left black 869020
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 828073
+
+=16 
+get= 12 genmove black
+
+legal: a1 a2, a1 b1, b2 a2, b2 b1, b3 a3, b3 b4, b3 c3, c2 c3, c2 d2, c2 c1, c4 b4, c4 c5, c4 d4, c4 c3, d1 c1, d1 d2, d5 c5, d5 d6, d5 d4, d7 c7, d7 d8, d7 d6, 
+=12 c4 c3
+get= 10 move c4 c3
+
+=10 
+get= 16 time_left black 868858
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 827684
+
+=16 
+get= 12 genmove black
+
+legal: a1 a2, a1 b1, b2 a2, b2 b1, b3 a3, b3 b4, c2 d2, c2 c1, c3 c4, c3 d3, d1 c1, d1 d2, d5 c5, d5 d6, d5 d4, d7 c7, d7 d8, d7 d6, 
+=12 b2 a2
+get= 10 move b2 a2
+
+=10 
+get= 16 time_left black 868696
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 827295
+
+=16 
+get= 12 genmove black
+
+legal: a1 b1, a2 a3, a2 b2, b3 a3, b3 b4, b3 b2, c2 b2, c2 d2, c2 c1, c3 c4, c3 d3, d1 c1, d1 d2, d5 c5, d5 d6, d5 d4, d7 c7, d7 d8, d7 d6, 
+=12 b3 b4
+get= 10 move b3 b4
+
+=10 
+get= 16 time_left black 868534
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 826906
+
+=16 
+get= 12 genmove black
+
+legal: a1 b1, a2 a3, a2 b2, b4 a4, b4 b5, b4 c4, b4 b3, c2 b2, c2 d2, c2 c1, c3 b3, c3 c4, c3 d3, d1 c1, d1 d2, d5 c5, d5 d6, d5 d4, d7 c7, d7 d8, d7 d6, 
+=12 b4 b5
+get= 10 move b4 b5
+
+=10 
+get= 16 time_left black 868372
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 826517
+
+=16 
+get= 12 genmove black
+
+legal: a1 b1, a2 a3, a2 b2, b5 a5, b5 b6, b5 c5, b5 b4, c2 b2, c2 d2, c2 c1, c3 b3, c3 c4, c3 d3, d1 c1, d1 d2, d5 c5, d5 d6, d5 d4, d7 c7, d7 d8, d7 d6, 
+=12 d5 d6
+get= 10 move d5 d6
+
+=10 
+get= 16 time_left black 868210
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 826127
+
+=16 
+get= 12 genmove black
+
+legal: a1 b1, a2 a3, a2 b2, b5 a5, b5 b6, b5 c5, b5 b4, c2 b2, c2 d2, c2 c1, c3 b3, c3 c4, c3 d3, d1 c1, d1 d2, d6 c6, d6 d5, d7 c7, d7 d8, 
+=12 b5 b4
+get= 10 move b5 b4
+
+=10 
+get= 16 time_left black 868049
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 825738
+
+=16 
+get= 12 genmove black
+
+legal: a1 b1, a2 a3, a2 b2, b4 a4, b4 b5, b4 c4, b4 b3, c2 b2, c2 d2, c2 c1, c3 b3, c3 c4, c3 d3, d1 c1, d1 d2, d6 c6, d6 d5, d7 c7, d7 d8, 
+=12 c2 d2
+get= 10 move c2 d2
+
+=10 
+get= 16 time_left black 867887
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 825349
+
+=16 
+get= 12 genmove black
+
+legal: a1 b1, a2 a3, a2 b2, b4 a4, b4 b5, b4 c4, b4 b3, c3 b3, c3 c4, c3 d3, c3 c2, d1 c1, d2 c2, d2 d3, d6 c6, d6 d5, d7 c7, d7 d8, 
+=12 d6 c6
+get= 10 move d6 c6
+
+=10 
+get= 16 time_left black 867725
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 824958
+
+=16 
+get= 12 genmove black
+
+legal: a1 b1, a2 a3, a2 b2, b4 a4, b4 b5, b4 c4, b4 b3, c3 b3, c3 c4, c3 d3, c3 c2, c6 b6, c6 c7, c6 d6, c6 c5, d1 c1, d2 c2, d2 d3, d7 c7, d7 d8, d7 d6, 
+=12 d2 c2
+get= 10 move d2 c2
+
+=10 
+get= 16 time_left black 867565
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 824568
+
+=16 
+get= 12 genmove black
+
+legal: a1 b1, a2 a3, a2 b2, b4 a4, b4 b5, b4 c4, b4 b3, c2 b2, c2 d2, c2 c1, c3 b3, c3 c4, c3 d3, c6 b6, c6 c7, c6 d6, c6 c5, d1 c1, d1 d2, d7 c7, d7 d8, d7 d6, 
+=12 b4 b3
+get= 10 move b4 b3
+
+=10 
+get= 16 time_left black 867404
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 824178
+
+=16 
+get= 12 genmove black
+
+legal: a1 b1, a2 a3, a2 b2, b3 a3, b3 b4, b3 b2, c2 b2, c2 d2, c2 c1, c3 c4, c3 d3, c6 b6, c6 c7, c6 d6, c6 c5, d1 c1, d1 d2, d7 c7, d7 d8, d7 d6, 
+=12 d7 d8
+get= 10 move d7 d8
+
+=10 
+get= 16 time_left black 867242
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 823789
+
+=16 
+get= 12 genmove black
+
+legal: a1 b1, a2 a3, a2 b2, b3 a3, b3 b4, b3 b2, c2 b2, c2 d2, c2 c1, c3 c4, c3 d3, c6 b6, c6 c7, c6 d6, c6 c5, d1 c1, d1 d2, d8 c8, d8 d7, 
+=12 d1 c1
+get= 10 move d1 c1
+
+=10 
+get= 16 time_left black 867078
+
+=16 
+get= 10 move a8 b8
+
+=10 
+get= 16 time_left red 823402
+
+=16 
+get= 12 genmove black
+
+legal: a1 b1, a2 a3, a2 b2, b3 a3, b3 b4, b3 b2, c1 b1, c1 d1, c2 b2, c2 d2, c3 c4, c3 d3, c6 b6, c6 c7, c6 d6, c6 c5, d8 c8, d8 d7, 
+=12 a1 b1
+get= 10 move a1 b1
+
+=10 
+get= 16 time_left black 866915
+
+=16 
+get= 10 move b8 a8
+
+=10 
+get= 16 time_left red 823014
+
+=16 
+
+# 15 19 31 35 47 51 63 67 79 83 95 99 111 115 127 131 143 147 159 163 175 179 191 195 207 211 223 227 239 243 255 259 271 275 287 291 303 307 319 323 335 339 351 355 367 371 383 387 399 403 415 419 431 435 447 451 463 467 479 483 495 499 511 515 527 531 543 547 559 563 575 579 591 595 607 611 623 627 639 643 655 659 671 675 687 691 703 707 719 723 735 739 751 755 767 771 783 787 799 803 815 819 831 835 847 851 863 867 879 883 895 899 911 915 927 931 943 947 959 963 975 979 991 995 1007 1011 1023 1027 1039 1043 1055 1059 1071 1075 1087 1091 1103 1107 1119 1123 1135 1139 1151 1155 1167 1171 1183 1187 1199 1203 1215 1219 1231 1235 1247 1251 1263 1267 1279 1283 1295 1299 1311 1315 1327 1331 1343 1347 1359 1363 1375 1379 1391 1395 1407 1411 1423 1427 1439 1443 1455 1459 1471 1475 1487 1491 1503 1507 1519 1523 1535 1539 1551 1555 1567 1571 1583 1587 1599 1603 1615 1619 1631 1635 1647 1651 1663 1667 1679 1683 1695 1699 1711 1715 1727 1731 1743 1747 1759 1763 1775 1779 1791 1795 1807 1811 1823 1827 1839 1843 1855 1859 1871 1875 1887 1891 1903 1907 1919 1923 1935 1939 1951 1955 1967 1971 1983 1987 1999 2003 2015 2019 2031 2035 2047 2051 2063 2067 2079 2083 2095 2099 2111 2115 2127 2131 2143 2147 2159 2163 2175 2179 2191 2195 2207 2211 2223 2227 2239 2243 2255 2259 2271 2275 2287 2291 2303 2307 2319 2323 2335 2339 2351 2355 2367 2371 2383 2387 2399 2403 2415 2419 2431 2435 2447 2451 2463 2467 2479 2483 2495 2499 2511 2515 2527 2531 2543 2547 2559 2563 2575 2579 2591 2595 2607 2611 2623 2627 2639 2643 2655 2659 2671 2675 2687 2691 2703 2707 2719 2723 2735 2739 2751 2755 2767 2771 2783 2787 2799 2803 2815 2819 2831 2835 2847 2851 2863 2867 2879 2883 2895 2899 2911 2915 2927 2931 2943 2947 2959 2963 2975 2979 2991 2995 3007 3011 3023 3027 3039 3043 3055 3059 3071 3075 3087 3091 3103 3107 3119 3123 3135 3139 3151 3155 3167 3171 3183 3187 3199 3203 3215 3219 3231 3235 3247 3251 3263 3267 3279 3283 3295 3299 3311 3315 3327 3331 3343 3347 3359 3363 3375 3379 3391 3395 #
+
+###
+Account: a0_random
+Mode: MGTP
+Path: /home/ntcucsk201/DarkChess/LightZero/MGTP/myai
+Arg: 
+Name: MyAI
+Version: 1.0.0
+###

@@ -1,0 +1,971 @@
+1 name
+>>1 LightZero_DarkChess
+2 version
+>>2 1.0.0
+7 reset_board
+>>7 
+15 time_setting 900000
+>>15 
+14 ready
+>>14 
+12 genmove unknown
+>>12 d4 d4
+11 flip d4 P
+>>11 
+16 time_left red 900000
+>>16 
+11 flip b3 p
+>>11 
+16 time_left black 899816
+>>16 
+12 genmove red
+>>12 d1 d1
+11 flip d1 G
+>>11 
+16 time_left red 898339
+>>16 
+11 flip b2 C
+>>11 
+16 time_left black 899673
+>>16 
+12 genmove red
+>>12 a1 a1
+11 flip a1 r
+>>11 
+16 time_left red 896729
+>>16 
+11 flip c6 R
+>>11 
+16 time_left black 899529
+>>16 
+12 genmove red
+>>12 c4 c4
+11 flip c4 n
+>>11 
+16 time_left red 895119
+>>16 
+11 flip c5 g
+>>11 
+16 time_left black 899386
+>>16 
+12 genmove red
+>>12 d2 d2
+11 flip d2 R
+>>11 
+16 time_left red 893508
+>>16 
+11 flip c7 N
+>>11 
+16 time_left black 899243
+>>16 
+12 genmove red
+>>12 c1 c1
+11 flip c1 k
+>>11 
+16 time_left red 891848
+>>16 
+11 flip b1 n
+>>11 
+16 time_left black 899100
+>>16 
+12 genmove red
+>>12 c2 c2
+11 flip c2 P
+>>11 
+16 time_left red 890237
+>>16 
+11 flip c3 G
+>>11 
+16 time_left black 898957
+>>16 
+12 genmove red
+>>12 a2 a2
+11 flip a2 K
+>>11 
+16 time_left red 888577
+>>16 
+11 flip b6 g
+>>11 
+16 time_left black 898814
+>>16 
+12 genmove red
+>>12 d3 d3
+11 flip d3 c
+>>11 
+16 time_left red 886916
+>>16 
+11 flip c8 c
+>>11 
+16 time_left black 898671
+>>16 
+12 genmove red
+>>12 a3 a3
+11 flip a3 p
+>>11 
+16 time_left red 885256
+>>16 
+11 flip b7 C
+>>11 
+16 time_left black 898528
+>>16 
+12 genmove red
+>>12 d7 d7
+11 flip d7 p
+>>11 
+16 time_left red 883596
+>>16 
+11 flip a5 M
+>>11 
+16 time_left black 898384
+>>16 
+12 genmove red
+>>12 b5 b5
+11 flip b5 N
+>>11 
+16 time_left red 881986
+>>16 
+10 move b6 b7
+>>10 
+16 time_left black 898241
+>>16 
+12 genmove red
+>>12 d6 d6
+11 flip d6 p
+>>11 
+16 time_left red 880326
+>>16 
+10 move c8 c6
+>>10 
+16 time_left black 898097
+>>16 
+12 genmove red
+>>12 d5 d5
+11 flip d5 P
+>>11 
+16 time_left red 878717
+>>16 
+10 move c1 d1
+>>10 
+16 time_left black 897953
+>>16 
+12 genmove red
+>>12 a7 a7
+11 flip a7 m
+>>11 
+16 time_left red 877057
+>>16 
+11 flip a4 P
+>>11 
+16 time_left black 897810
+>>16 
+12 genmove red
+>>12 b8 b8
+11 flip b8 M
+>>11 
+16 time_left red 875397
+>>16 
+10 move c4 d4
+>>10 
+16 time_left black 897666
+>>16 
+12 genmove red
+>>12 b4 b4
+11 flip b4 p
+>>11 
+16 time_left red 873738
+>>16 
+10 move c6 b6
+>>10 
+16 time_left black 897521
+>>16 
+12 genmove red
+>>12 c3 d3
+10 move c3 d3
+>>10 
+16 time_left red 872079
+>>16 
+10 move d1 d2
+>>10 
+16 time_left black 897377
+>>16 
+12 genmove red
+>>12 c2 c3
+10 move c2 c3
+>>10 
+16 time_left red 870420
+>>16 
+10 move d6 c6
+>>10 
+16 time_left black 897232
+>>16 
+12 genmove red
+>>12 c3 b3
+10 move c3 b3
+>>10 
+16 time_left red 868812
+>>16 
+10 move c6 d6
+>>10 
+16 time_left black 897086
+>>16 
+12 genmove red
+>>12 b3 c3
+10 move b3 c3
+>>10 
+16 time_left red 867154
+>>16 
+10 move b4 a4
+>>10 
+16 time_left black 896941
+>>16 
+12 genmove red
+>>12 c3 b3
+10 move c3 b3
+>>10 
+16 time_left red 865496
+>>16 
+10 move b6 b3
+>>10 
+16 time_left black 896795
+>>16 
+12 genmove red
+>>12 d3 c3
+10 move d3 c3
+>>10 
+16 time_left red 863839
+>>16 
+11 flip a6 r
+>>11 
+16 time_left black 896647
+>>16 
+12 genmove red
+>>12 c3 d3
+10 move c3 d3
+>>10 
+16 time_left red 862183
+>>16 
+11 flip a8 P
+>>11 
+16 time_left black 896499
+>>16 
+12 genmove red
+>>12 d3 c3
+10 move d3 c3
+>>10 
+16 time_left red 860527
+>>16 
+10 move a4 b4
+>>10 
+16 time_left black 896350
+>>16 
+12 genmove red
+>>12 c7 c6
+10 move c7 c6
+>>10 
+16 time_left red 858923
+>>16 
+10 move b1 c1
+>>10 
+16 time_left black 896200
+>>16 
+12 genmove red
+>>12 a5 a6
+10 move a5 a6
+>>10 
+16 time_left red 857269
+>>16 
+11 flip d8 m
+>>11 
+16 time_left black 896049
+>>16 
+12 genmove red
+>>12 b5 a5
+10 move b5 a5
+>>10 
+16 time_left red 855617
+>>16 
+10 move d4 d5
+>>10 
+16 time_left black 895897
+>>16 
+12 genmove red
+>>12 c3 d3
+10 move c3 d3
+>>10 
+16 time_left red 853965
+>>16 
+10 move d2 d3
+>>10 
+16 time_left black 895744
+>>16 
+12 genmove red
+>>12 a5 b5
+10 move a5 b5
+>>10 
+16 time_left red 852315
+>>16 
+10 move b4 a4
+>>10 
+16 time_left black 895590
+>>16 
+12 genmove red
+>>12 a6 b6
+10 move a6 b6
+>>10 
+16 time_left red 850665
+>>16 
+10 move c5 c4
+>>10 
+16 time_left black 895435
+>>16 
+12 genmove red
+>>12 b6 a6
+10 move b6 a6
+>>10 
+16 time_left red 849016
+>>16 
+10 move a4 a5
+>>10 
+16 time_left black 895280
+>>16 
+12 genmove red
+>>12 b5 b6
+10 move b5 b6
+>>10 
+16 time_left red 847368
+>>16 
+10 move c1 d1
+>>10 
+16 time_left black 895126
+>>16 
+12 genmove red
+>>12 b8 c8
+10 move b8 c8
+>>10 
+16 time_left red 845718
+>>16 
+10 move b3 c3
+>>10 
+16 time_left black 894974
+>>16 
+12 genmove red
+>>12 a6 a7
+10 move a6 a7
+>>10 
+16 time_left red 844067
+>>16 
+10 move d3 d4
+>>10 
+16 time_left black 894822
+>>16 
+12 genmove red
+>>12 b6 a6
+10 move b6 a6
+>>10 
+16 time_left red 842414
+>>16 
+10 move b7 b6
+>>10 
+16 time_left black 894673
+>>16 
+12 genmove red
+>>12 c8 b8
+10 move c8 b8
+>>10 
+16 time_left red 840809
+>>16 
+10 move b6 b7
+>>10 
+16 time_left black 894524
+>>16 
+12 genmove red
+>>12 b2 c2
+10 move b2 c2
+>>10 
+16 time_left red 839153
+>>16 
+10 move b7 b8
+>>10 
+16 time_left black 894378
+>>16 
+12 genmove red
+>>12 a6 b6
+10 move a6 b6
+>>10 
+16 time_left red 837495
+>>16 
+10 move d1 d2
+>>10 
+16 time_left black 894234
+>>16 
+12 genmove red
+>>12 a7 a6
+10 move a7 a6
+>>10 
+16 time_left red 835834
+>>16 
+10 move d2 d1
+>>10 
+16 time_left black 894093
+>>16 
+12 genmove red
+>>12 a2 b2
+10 move a2 b2
+>>10 
+16 time_left red 834171
+>>16 
+10 move d1 c1
+>>10 
+16 time_left black 893902
+>>16 
+12 genmove red
+>>12 a8 a7
+10 move a8 a7
+>>10 
+16 time_left red 832507
+>>16 
+10 move d8 c8
+>>10 
+16 time_left black 893712
+>>16 
+12 genmove red
+>>12 a7 b7
+10 move a7 b7
+>>10 
+16 time_left red 830892
+>>16 
+10 move d5 c5
+>>10 
+16 time_left black 893525
+>>16 
+12 genmove red
+>>12 b2 a2
+10 move b2 a2
+>>10 
+16 time_left red 829226
+>>16 
+10 move d7 d8
+>>10 
+16 time_left black 893338
+>>16 
+12 genmove red
+>>12 a6 a5
+10 move a6 a5
+>>10 
+16 time_left red 827558
+>>16 
+10 move d8 d7
+>>10 
+16 time_left black 893152
+>>16 
+12 genmove red
+>>12 a2 b2
+10 move a2 b2
+>>10 
+16 time_left red 825892
+>>16 
+10 move a1 b1
+>>10 
+16 time_left black 892964
+>>16 
+12 genmove red
+>>12 b6 a6
+10 move b6 a6
+>>10 
+16 time_left red 824226
+>>16 
+10 move d7 d8
+>>10 
+16 time_left black 892777
+>>16 
+12 genmove red
+>>12 b7 b6
+10 move b7 b6
+>>10 
+16 time_left red 822609
+>>16 
+10 move b8 a8
+>>10 
+16 time_left black 892592
+>>16 
+12 genmove red
+>>12 b6 b7
+10 move b6 b7
+>>10 
+16 time_left red 820939
+>>16 
+10 move a3 a2
+>>10 
+16 time_left black 892409
+>>16 
+12 genmove red
+>>12 b7 b8
+10 move b7 b8
+>>10 
+16 time_left red 819268
+>>16 
+10 move c8 c7
+>>10 
+16 time_left black 892227
+>>16 
+12 genmove red
+>>12 b8 b7
+10 move b8 b7
+>>10 
+16 time_left red 817594
+>>16 
+10 move b1 a1
+>>10 
+16 time_left black 892050
+>>16 
+12 genmove red
+>>12 b7 b6
+10 move b7 b6
+>>10 
+16 time_left red 815918
+>>16 
+10 move d8 c8
+>>10 
+16 time_left black 891874
+>>16 
+12 genmove red
+>>12 b2 b1
+10 move b2 b1
+>>10 
+16 time_left red 814239
+>>16 
+10 move c3 d3
+>>10 
+16 time_left black 891699
+>>16 
+12 genmove red
+>>12 a5 a4
+10 move a5 a4
+>>10 
+16 time_left red 812560
+>>16 
+10 move c5 b5
+>>10 
+16 time_left black 891524
+>>16 
+12 genmove red
+>>12 a4 a3
+10 move a4 a3
+>>10 
+16 time_left red 810880
+>>16 
+10 move d3 d2
+>>10 
+16 time_left black 891351
+>>16 
+12 genmove red
+>>12 a3 a2
+10 move a3 a2
+>>10 
+16 time_left red 809198
+>>16 
+10 move c8 b8
+>>10 
+16 time_left black 891180
+>>16 
+12 genmove red
+>>12 a2 b2
+10 move a2 b2
+>>10 
+16 time_left red 807514
+>>16 
+10 move c7 c8
+>>10 
+16 time_left black 891012
+>>16 
+12 genmove red
+>>12 c6 c7
+10 move c6 c7
+>>10 
+16 time_left red 805829
+>>16 
+10 move d2 d1
+>>10 
+16 time_left black 890843
+>>16 
+12 genmove red
+>>12 b6 b7
+10 move b6 b7
+>>10 
+16 time_left red 804194
+>>16 
+10 move d4 d3
+>>10 
+16 time_left black 890676
+>>16 
+12 genmove red
+>>12 a6 a7
+10 move a6 a7
+>>10 
+16 time_left red 802508
+>>16 
+10 move c1 c2
+>>10 
+16 time_left black 890510
+>>16 
+12 genmove red
+>>12 b7 b8
+10 move b7 b8
+>>10 
+16 time_left red 800820
+>>16 
+10 move b5 c5
+>>10 
+16 time_left black 890345
+>>16 
+12 genmove red
+>>12 a7 b7
+10 move a7 b7
+>>10 
+16 time_left red 799131
+>>16 
+10 move d3 c3
+>>10 
+16 time_left black 890182
+>>16 
+12 genmove red
+>>12 c7 c6
+10 move c7 c6
+>>10 
+16 time_left red 797440
+>>16 
+10 move a8 a7
+>>10 
+16 time_left black 890021
+>>16 
+12 genmove red
+>>12 b7 b6
+10 move b7 b6
+>>10 
+16 time_left red 795747
+>>16 
+10 move c3 d3
+>>10 
+16 time_left black 889862
+>>16 
+12 genmove red
+>>12 b8 b7
+10 move b8 b7
+>>10 
+16 time_left red 794052
+>>16 
+10 move c5 c6
+>>10 
+16 time_left black 889704
+>>16 
+12 genmove red
+>>12 b2 a2
+10 move b2 a2
+>>10 
+16 time_left red 792407
+>>16 
+10 move d1 c1
+>>10 
+16 time_left black 889544
+>>16 
+12 genmove red
+>>12 b7 c7
+10 move b7 c7
+>>10 
+16 time_left red 790713
+>>16 
+10 move c4 c3
+>>10 
+16 time_left black 889386
+>>16 
+12 genmove red
+>>12 b6 b7
+10 move b6 b7
+>>10 
+16 time_left red 789067
+>>16 
+10 move c1 d1
+>>10 
+16 time_left black 889229
+>>16 
+12 genmove red
+>>12 b7 b6
+10 move b7 b6
+>>10 
+16 time_left red 787420
+>>16 
+10 move c8 c7
+>>10 
+16 time_left black 889072
+>>16 
+12 genmove red
+>>12 a2 b2
+10 move a2 b2
+>>10 
+16 time_left red 785823
+>>16 
+10 move d6 d5
+>>10 
+16 time_left black 888915
+>>16 
+12 genmove red
+>>12 b2 a2
+10 move b2 a2
+>>10 
+16 time_left red 784176
+>>16 
+10 move c7 c8
+>>10 
+16 time_left black 888759
+>>16 
+12 genmove red
+>>12 b1 b2
+10 move b1 b2
+>>10 
+16 time_left red 782528
+>>16 
+10 move d5 d4
+>>10 
+16 time_left black 888602
+>>16 
+12 genmove red
+>>12 b2 c2
+10 move b2 c2
+>>10 
+16 time_left red 780881
+>>16 
+10 move a1 b1
+>>10 
+16 time_left black 888448
+>>16 
+12 genmove red
+>>12 c2 d2
+10 move c2 d2
+>>10 
+16 time_left red 779282
+>>16 
+10 move b1 c1
+>>10 
+16 time_left black 888294
+>>16 
+12 genmove red
+>>12 a2 b2
+10 move a2 b2
+>>10 
+16 time_left red 777681
+>>16 
+10 move a7 a6
+>>10 
+16 time_left black 888142
+>>16 
+12 genmove red
+>>12 b2 c2
+10 move b2 c2
+>>10 
+16 time_left red 776079
+>>16 
+10 move a6 a7
+>>10 
+16 time_left black 887991
+>>16 
+12 genmove red
+>>12 c2 b2
+10 move c2 b2
+>>10 
+16 time_left red 774428
+>>16 
+10 move a7 a6
+>>10 
+16 time_left black 887839
+>>16 
+12 genmove red
+>>12 b2 a2
+10 move b2 a2
+>>10 
+16 time_left red 772776
+>>16 
+10 move c8 c7
+>>10 
+16 time_left black 887688
+>>16 
+12 genmove red
+>>12 a2 b2
+10 move a2 b2
+>>10 
+16 time_left red 771123
+>>16 
+10 move c1 c2
+>>10 
+16 time_left black 887538
+>>16 
+12 genmove red
+>>12 b2 a2
+10 move b2 a2
+>>10 
+16 time_left red 769470
+>>16 
+10 move c2 c1
+>>10 
+16 time_left black 887389
+>>16 
+12 genmove red
+>>12 a2 b2
+10 move a2 b2
+>>10 
+16 time_left red 767814
+>>16 
+10 move d4 c4
+>>10 
+16 time_left black 887243
+>>16 
+12 genmove red
+>>12 b2 a2
+10 move b2 a2
+>>10 
+16 time_left red 766207
+>>16 
+10 move c3 c2
+>>10 
+16 time_left black 887098
+>>16 
+12 genmove red
+>>12 a2 b2
+10 move a2 b2
+>>10 
+16 time_left red 764548
+>>16 
+10 move c6 b6
+>>10 
+16 time_left black 886954
+>>16 
+12 genmove red
+>>12 b2 a2
+10 move b2 a2
+>>10 
+16 time_left red 762887
+>>16 
+10 move b6 b7
+>>10 
+16 time_left black 886811
+>>16 
+12 genmove red
+>>12 a2 b2
+10 move a2 b2
+>>10 
+16 time_left red 761226
+>>16 
+10 move d3 d2
+>>10 
+16 time_left black 886668
+>>16 
+12 genmove red
+>>12 b2 a2
+10 move b2 a2
+>>10 
+16 time_left red 759565
+>>16 
+10 move c1 b1
+>>10 
+16 time_left black 886526
+>>16 
+12 genmove red
+>>12 a2 b2
+10 move a2 b2
+>>10 
+16 time_left red 757902
+>>16 
+10 move b1 a1
+>>10 
+16 time_left black 886335
+>>16 
+12 genmove red
+>>12 b2 b3
+10 move b2 b3
+>>10 
+16 time_left red 756239
+>>16 
+10 move c4 b4
+>>10 
+16 time_left black 886145
+>>16 
+12 genmove red
+>>12 b3 a3
+10 move b3 a3
+>>10 
+16 time_left red 754574
+>>16 
+10 move c2 c1
+>>10 
+16 time_left black 885957
+>>16 
+12 genmove red
+>>12 a3 b3
+10 move a3 b3
+>>10 
+16 time_left red 752908
+>>16 
+10 move a1 b1
+>>10 
+16 time_left black 885771
+>>16 
+12 genmove red
+>>12 b3 c3
+10 move b3 c3
+>>10 
+16 time_left red 751241
+>>16 
+10 move b4 b5
+>>10 
+16 time_left black 885586
+>>16 
+12 genmove red
+>>12 c3 c2
+10 move c3 c2
+>>10 
+16 time_left red 749572
+>>16 
+10 move b5 b6
+>>10 
+16 time_left black 885402
+>>16 
+12 genmove red
+>>12 c2 b2
+10 move c2 b2
+>>10 
+16 time_left red 747952
+>>16 
+10 move b6 b5
+>>10 
+16 time_left black 885220
+>>16 
+12 genmove red
+>>12 b2 b3
+10 move b2 b3
+>>10 
+16 time_left red 746280
+>>16 
+10 move a6 a7
+>>10 
+16 time_left black 885039
+>>16 
+12 genmove red
+>>12 b3 b2
+10 move b3 b2
+>>10 
+16 time_left red 744607
+>>16 
+10 move b5 b6
+>>10 
+16 time_left black 884858
+>>16 
+12 genmove red
+>>12 b2 c2
+10 move b2 c2
+>>10 
+16 time_left red 742934
+>>16 
+10 move c1 c2
+>>10 
+16 time_left black 884679
+>>16 
+5 quit

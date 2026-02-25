@@ -1,4 +1,5 @@
 from easydict import EasyDict
+from datetime import datetime
 
 # ==============================================================
 # begin of the most frequently changed config specified by the user
@@ -11,8 +12,8 @@ num_simulations = 1000
 update_per_collect = 50
 reanalyze_ratio = 0
 batch_size = 512
-max_env_step = 300000                   # int(1e6)
-# max_train_iter = int(1e6)
+max_env_step = int(1e6)                 
+max_train_iter = 2000
 
 board_width = 4
 board_height = 8
@@ -24,11 +25,12 @@ chance_space_size = 14
 # ==============================================================
 # end of the most frequently changed config specified by the user
 # ==============================================================
+timestamp = datetime.now().strftime('%y%m%d_%H%M%S')
 
 darkchess_stochastic_muzero_config = dict(
     # TODO: 依所需資訊更改檔名
     exp_name=
-    f'data_stochastic_mz/darkchess_stochastic_muzero_ns{num_simulations}_upc{update_per_collect}_rer{reanalyze_ratio}_bs{batch_size}',
+    f'data_stochastic_mz/darkchess_stochastic_muzero_ns{num_simulations}_upc{update_per_collect}_trainitr{max_train_iter}_bs{batch_size}_{timestamp}',
     env=dict(
         env_id='darkchess',
         obs_shape=(16, 8, 4),
@@ -53,6 +55,19 @@ darkchess_stochastic_muzero_config = dict(
             image_channel=16,
             # NOTE: whether to use the self_supervised_learning_loss. default is False
             self_supervised_learning_loss=True,
+        ),
+
+        learn=dict(
+            learner=dict(
+                train_iterations=max_train_iter,
+                hook=dict(
+                    load_ckpt_before_run='',      # 開始訓練前不載入 checkpoint
+                    log_show_after_iter=100,      # 每訓練 100 iter 印一次leaner訓練狀態
+                    save_ckpt_after_iter=1000,   # 每訓練 1000 iter 存一次 checkpoint
+                    save_ckpt_after_run=True,     # 訓練結束（自然結束/手動停止）時 再存一次 checkpoint
+                ),
+            ),
+            resume_training=False,  # 從頭訓練
         ),
         # (str) The path of the pretrained model. If None, the model will be initialized by the default model.
         model_path=None,
@@ -81,14 +96,6 @@ darkchess_stochastic_muzero_config = dict(
         weight_decay=1e-4,
         game_segment_length=200,
         
-        # 要接續哪個checkpoint繼續訓練
-        learn=dict(
-        learner=dict(
-            hook=dict(
-                load_ckpt_before_run="/home/ntcucsk201/DarkChess/LightZero/zoo/board_games/darkchess/data_stochastic_mz/darkchess_stochastic_muzero_ns1000_upc50_rer0_bs512_250918_141430/ckpt/iteration_0.pth.tar",  # 指定要讀的 checkpoint
-            ),
-        ),
-    ),
     ),
 )
 darkchess_stochastic_muzero_config = EasyDict(darkchess_stochastic_muzero_config)

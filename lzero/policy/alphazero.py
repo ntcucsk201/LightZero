@@ -220,7 +220,8 @@ class AlphaZeroPolicy(Policy):
         self._collect_model = self._model
         if self._cfg.mcts_ctree:
             import sys
-            sys.path.append('/Users/your_user_name/code/LightZero/lzero/mcts/ctree/ctree_alphazero/build')
+            # sys.path.append('/Users/your_user_name/code/LightZero/lzero/mcts/ctree/ctree_alphazero/build')
+            sys.path.append('/home/ntcucsk201/DarkChess/LightZero/lzero/mcts/ctree/ctree_alphazero/build')
             import mcts_alphazero
             self._collect_mcts = mcts_alphazero.MCTS(self._cfg.mcts.max_moves, self._cfg.mcts.num_simulations,
                                                      self._cfg.mcts.pb_c_base,
@@ -251,14 +252,23 @@ class AlphaZeroPolicy(Policy):
         self.collect_mcts_temperature = temperature
         ready_env_id = list(obs.keys())
         init_state = {env_id: obs[env_id]['board'] for env_id in ready_env_id}
+        player_colors = {env_id: obs[env_id].get('player_color', ['U', 'U']) for env_id in ready_env_id}
         # If 'katago_game_state' is in the observation of the given environment ID, it's value is used.
         # If it's not present (which will raise a KeyError), None is used instead.
         # This approach is taken to maintain compatibility with the handling of 'katago' related parts of 'alphazero_mcts_ctree' in Go.
-        katago_game_state = {env_id: obs[env_id].get('katago_game_state', None) for env_id in ready_env_id}
+        katago_game_state = {env_id: obs[env_id].get('katago_game_state', {}) for env_id in ready_env_id}
         start_player_index = {env_id: obs[env_id]['current_player_index'] for env_id in ready_env_id}
         output = {}
         self._policy_model = self._collect_model
         for env_id in ready_env_id:
+            # --- DEBUG START ---
+            print(f"\n[DEBUG COLLECT MCTS] Env ID: {env_id}")
+            print(f"Player Index: {start_player_index[env_id]}")
+            print(f"player_color: {player_colors[env_id]}")
+            print(f"Board State:\n{init_state[env_id]}")
+            # --- DEBUG END ---
+            # 用 katago_game_state 參數攜帶盤面之外的狀態資訊(player_color)
+            katago_game_state[env_id]['player_color'] = player_colors[env_id]
             state_config_for_simulation_env_reset = EasyDict(dict(start_player_index=start_player_index[env_id],
                                                                   init_state=init_state[env_id],
                                                                   katago_policy_init=False,
@@ -279,7 +289,8 @@ class AlphaZeroPolicy(Policy):
         self._get_simulation_env()
         if self._cfg.mcts_ctree:
             import sys
-            sys.path.append('/Users/your_user_name/code/LightZero/lzero/mcts/ctree/ctree_alphazero/build')
+            # sys.path.append('/Users/your_user_name/code/LightZero/lzero/mcts/ctree/ctree_alphazero/build')
+            sys.path.append('/home/ntcucsk201/DarkChess/LightZero/lzero/mcts/ctree/ctree_alphazero/build')
             import mcts_alphazero
             # TODO(pu): how to set proper num_simulations for evaluation
             self._eval_mcts = mcts_alphazero.MCTS(self._cfg.mcts.max_moves,
@@ -312,14 +323,23 @@ class AlphaZeroPolicy(Policy):
         """
         ready_env_id = list(obs.keys())
         init_state = {env_id: obs[env_id]['board'] for env_id in ready_env_id}
+        player_colors = {env_id: obs[env_id].get('player_color', ['U', 'U']) for env_id in ready_env_id}
         # If 'katago_game_state' is in the observation of the given environment ID, it's value is used.
         # If it's not present (which will raise a KeyError), None is used instead.
         # This approach is taken to maintain compatibility with the handling of 'katago' related parts of 'alphazero_mcts_ctree' in Go.
-        katago_game_state = {env_id: obs[env_id].get('katago_game_state', None) for env_id in ready_env_id}
+        katago_game_state = {env_id: obs[env_id].get('katago_game_state', {}) for env_id in ready_env_id}
         start_player_index = {env_id: obs[env_id]['current_player_index'] for env_id in ready_env_id}
         output = {}
         self._policy_model = self._eval_model
         for env_id in ready_env_id:
+            # --- DEBUG START ---
+            # print(f"\n[DEBUG EVAL MCTS] Env ID: {env_id}")
+            # print(f"Player Index: {start_player_index[env_id]}")
+            # print(f"player_color: {player_colors[env_id]}")
+            # print(f"Board State:\n{init_state[env_id]}")
+            # --- DEBUG END ---
+            # 用 katago_game_state 參數攜帶盤面之外的狀態資訊(player_color)
+            katago_game_state[env_id]['player_color'] = player_colors[env_id]
             state_config_for_simulation_env_reset = EasyDict(dict(start_player_index=start_player_index[env_id],
                                                                   init_state=init_state[env_id],
                                                                   katago_policy_init=False,
@@ -364,6 +384,17 @@ class AlphaZeroPolicy(Policy):
             else:
                 raise NotImplementedError
             self.simulate_env = Connect4Env(connect4_alphazero_config.env)
+            
+        elif self._cfg.simulation_env_id == 'darkchess':
+            from zoo.board_games.darkchess.envs.darkchess_alphazero_env import DarkchessEnv
+            if self._cfg.simulation_env_config_type == 'play_with_bot':
+                from zoo.board_games.darkchess.config.alphazero_darkchess_config import darkchess_alphazero_config
+            elif self._cfg.simulation_env_config_type == 'self_play':
+                from zoo.board_games.darkchess.config.alphazero_darkchess_config import darkchess_alphazero_config
+            else:
+                raise NotImplementedError
+            self.simulate_env = DarkchessEnv(darkchess_alphazero_config.env)
+            
         else:
             raise NotImplementedError
 

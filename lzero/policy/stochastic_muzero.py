@@ -572,6 +572,10 @@ class StochasticMuZeroPolicy(MuZeroPolicy):
             self._mcts_collect = MCTSPtree(self._cfg)
         self._collect_mcts_temperature = 1
 
+        self.inverse_scalar_transform_handle = InverseScalarTransform(
+            self._cfg.model.support_scale, self._cfg.device, self._cfg.model.categorical_distribution
+        )
+
     def _forward_collect(
             self,
             data: torch.Tensor,

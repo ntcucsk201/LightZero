@@ -1,4 +1,5 @@
 from easydict import EasyDict
+from datetime import datetime
 
 # ==============================================================
 # begin of the most frequently changed config specified by the user
@@ -23,11 +24,12 @@ chance_space_size = 14
 # ==============================================================
 # end of the most frequently changed config specified by the user
 # ==============================================================
+timestamp = datetime.now().strftime('%y%m%d_%H%M%S')
 
 darkchess_muzero_config = dict(
     # TODO: 依所需資訊更改檔名
     exp_name=
-    f'data_muzero/darkchess_muzero_ns{num_simulations}_upc{update_per_collect}_rer{reanalyze_ratio}_bs{batch_size}',
+    f'data_muzero/darkchess_muzero_ns{num_simulations}_upc{update_per_collect}_rer{reanalyze_ratio}_bs{batch_size}_{timestamp}',
     env=dict(
         env_id='darkchess',
         obs_shape=(16, 8, 4),
@@ -91,6 +93,7 @@ darkchess_muzero_config = dict(
         discount_factor=1,
         weight_decay=1e-4,
         game_segment_length=200,  # TODO:
+              
     ),
 )
 darkchess_muzero_config = EasyDict(darkchess_muzero_config)

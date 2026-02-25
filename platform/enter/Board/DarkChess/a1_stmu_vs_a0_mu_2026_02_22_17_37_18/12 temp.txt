@@ -1,0 +1,92 @@
+This is TEMPORARILY file. You can use it for DEBUG.
+* 6:15pm Feb 22, 2026
+* a0_mu vs a1_stmu
+* 1 2 2 2 2 2 5 1 2 2 2 2 2 5
+* X X X X
+* X X X X
+* X X X X
+* X X X X
+* X X X X
+* X X X X
+* X X X X
+* X X X X
+* first 1
+* time 900
+* 1. b1(c) b8(m)
+* 2. c7(P) 
+* Comment 0 0
+0. 1771755326668
+1. 1771755326668
+2. 1771755328705
+3. 1771755330515
+
+# 10 27 29 #
+LightZero MGTP Interface Ready
+=1 LightZero_DarkChess
+
+=2 1.0.0
+
+=7 
+
+=15 
+
+=14 
+
+[debug] move action_id=319, action=((7, 1), (7, 1)), 
+[debug] current_player=1 (R), 
+[debug] board[(7, 1)]=12, board[(7, 1)]=12, 
+[debug] board state:
+[[15 15 15 15]
+ [15 15 15 15]
+ [15 15 15 15]
+ [15 15 15 15]
+ [15 15 15 15]
+ [15 15 15 15]
+ [15 15 15 15]
+ [15 12 15 15]], 
+
+=11 
+
+=16 
+
+=12 b8 b8
+
+[debug] move action_id=11, action=((0, 1), (0, 1)), 
+[debug] current_player=0 (B), 
+[debug] board[(0, 1)]=9, board[(0, 1)]=9, 
+[debug] board state:
+[[15  9 15 15]
+ [15 15 15 15]
+ [15 15 15 15]
+ [15 15 15 15]
+ [15 15 15 15]
+ [15 15 15 15]
+ [15 15 15 15]
+ [15 12 15 15]], 
+
+=11 
+
+=16 
+
+
+# 10 27 29 #
+/home/ntcucsk201/anaconda3/envs/darkchess/lib/python3.10/site-packages/treevalue/tree/integration/torch.py:23: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  register_for_torch(TreeValue)
+/home/ntcucsk201/anaconda3/envs/darkchess/lib/python3.10/site-packages/treevalue/tree/integration/torch.py:24: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  register_for_torch(FastTreeValue)
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+[DEBUG] Config loaded successfully
+/home/ntcucsk201/DarkChess/LightZero/zoo/board_games/darkchess/stochastic_muzero_mgtp.py:38: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(model_path, map_location='cpu')
+[DEBUG] Model moved to device: cuda:0
+
+###
+Account: a1_stmu
+Mode: MGTP
+Path: /home/ntcucsk201/anaconda3/envs/darkchess/bin/python
+Arg: /home/ntcucsk201/DarkChess/LightZero/zoo/board_games/darkchess/stochastic_muzero_mgtp.py -model_path /home/ntcucsk201/DarkChess/LightZero/zoo/board_games/darkchess/data_stochastic_mz/darkchess_stochastic_muzero_ns1000_upc50_rer0_bs512_260220_224711/ckpt/ckpt_best.pth.tar -config_path /home/ntcucsk201/DarkChess/LightZero/zoo/board_games/darkchess/data_stochastic_mz/darkchess_stochastic_muzero_ns1000_upc50_rer0_bs512_260220_224711/formatted_total_config.py
+Name: LightZero_DarkChess
+Version: 1.0.0
+###

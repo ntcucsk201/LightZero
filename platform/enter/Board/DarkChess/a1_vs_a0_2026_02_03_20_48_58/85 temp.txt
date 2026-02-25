@@ -1,0 +1,1515 @@
+This is TEMPORARILY file. You can use it for DEBUG.
+* 2:54am Feb 4, 2026
+* a1 vs a0
+* 1 2 2 2 2 2 5 1 2 2 2 2 2 5
+* X X X X
+* X X X X
+* X X X X
+* X X X X
+* X X X X
+* X X X X
+* X X X X
+* X X X X
+* first 1
+* time 900
+* 1. b1(p) b4(n)
+* 2. b7(R) b3(g)
+* 3. b6(G) c8(N)
+* 4. c1(m) c6(C)
+* 5. d8(c) d1(P)
+* 6. c3(R) c8-d8
+* 7. d4(C) a1(p)
+* 8. a6(p) b2(N)
+* 9. b5(K) a5(P)
+* 10. a4(p) a3(r)
+* 11. b3-c3 b6-a6
+* 12. b4-b3 d2(P)
+* 13. c4(n) d3(M)
+* 14. d6(M) d8-c8
+* 15. c5(G) a7(P)
+* 16. c2(P) b2-b3
+* 17. c4-b4 a2(c)
+* 18. c3-c4 c7(p)
+* 19. c4-c3 c6-c3
+* 20. b4-c4 c8-c7
+* 21. c4-b4 d7(g)
+* 22. d7-d8 c3-c1
+* 23. b4-c4 c5-c4
+* 24. d8-d7 b3-b4
+* 25. a3-b3 c1-a1
+* 26. d7-d8 b5-c5
+* 27. d8-c8 a1-a4
+* 28. b3-c3 a8(m)
+* 29. c3-b3 b8(r)
+* 30. b3-c3 a5-b5
+* 31. c3-b3 c2-c3
+* 32. c8-d8 a4-a5
+* 33. d8-c8 d5(k)
+* 34. c8-d8 b4-a4
+* 35. d8-c8 b5-b4
+* 36. c8-d8 b4-b5
+* 37. d8-c8 a4-a3
+* 38. c8-d8 d1-c1
+* 39. a2-a1 a3-a4
+* 40. d8-c8 c7-c6
+* Comment 0 0
+0. 1770144892258
+1. 1770144892258
+2. 1770144892441
+3. 1770144894252
+4. 1770144894394
+5. 1770144896256
+6. 1770144896398
+7. 1770144898260
+8. 1770144898451
+9. 1770144900263
+10. 1770144900405
+11. 1770144902268
+12. 1770144902459
+13. 1770144904322
+14. 1770144904513
+15. 1770144906327
+16. 1770144906517
+17. 1770144908382
+18. 1770144908571
+19. 1770144910436
+20. 1770144910625
+21. 1770144912490
+22. 1770144912679
+23. 1770144914543
+24. 1770144914733
+25. 1770144916597
+26. 1770144916787
+27. 1770144918600
+28. 1770144918791
+29. 1770144920654
+30. 1770144920796
+31. 1770144922659
+32. 1770144922850
+33. 1770144924712
+34. 1770144924854
+35. 1770144926716
+36. 1770144926858
+37. 1770144928720
+38. 1770144928862
+39. 1770144930724
+40. 1770144930866
+41. 1770144932727
+42. 1770144932871
+43. 1770144934731
+44. 1770144934875
+45. 1770144936735
+46. 1770144936881
+47. 1770144938739
+48. 1770144938884
+49. 1770144940743
+50. 1770144940889
+51. 1770144942747
+52. 1770144942893
+53. 1770144944701
+54. 1770144944847
+55. 1770144946704
+56. 1770144946851
+57. 1770144948708
+58. 1770144948855
+59. 1770144950712
+60. 1770144950859
+61. 1770144952716
+62. 1770144952862
+63. 1770144954719
+64. 1770144954867
+65. 1770144956723
+66. 1770144956871
+67. 1770144958726
+68. 1770144958875
+69. 1770144960729
+70. 1770144960877
+71. 1770144962733
+72. 1770144962881
+73. 1770144964737
+74. 1770144964883
+75. 1770144966741
+76. 1770144966886
+77. 1770144968744
+78. 1770144968889
+79. 1770144970748
+80. 1770144970893
+
+# 10 12 44 46 78 80 112 114 146 148 180 182 214 216 248 250 282 284 316 318 350 352 384 386 418 420 452 454 486 488 520 522 554 556 588 590 622 624 656 658 690 692 724 726 758 760 792 794 826 828 860 862 894 896 928 930 962 964 996 998 1030 1032 1064 1066 1098 1100 1132 1134 1166 1168 1200 1202 1234 1236 1268 1270 1302 1304 1336 1338 #
+LightZero MGTP Interface Ready
+=1 LightZero_DarkChess
+
+=2 1.0.0
+
+=7 
+
+=15 
+
+=14 
+
+=12 b1 b1
+
+[debug] move action_id=319, action=((7, 1), (7, 1)), 
+[debug] current_player=0 (U), 
+[debug] board[(7, 1)]=15, board[(7, 1)]=15, 
+[debug] board state:
+[[15 15 15 15]
+ [15 15 15 15]
+ [15 15 15 15]
+ [15 15 15 15]
+ [15 15 15 15]
+ [15 15 15 15]
+ [15 15 15 15]
+ [15 15 15 15]]
+=11 
+
+=16 
+
+[debug] move action_id=187, action=((4, 1), (4, 1)), 
+[debug] current_player=1 (R), 
+[debug] board[(4, 1)]=15, board[(4, 1)]=15, 
+[debug] board state:
+[[15 15 15 15]
+ [15 15 15 15]
+ [15 15 15 15]
+ [15 15 15 15]
+ [15 15 15 15]
+ [15 15 15 15]
+ [15 15 15 15]
+ [15 13 15 15]]
+=11 
+
+=16 
+
+=12 b7 b7
+
+[debug] move action_id=55, action=((1, 1), (1, 1)), 
+[debug] current_player=0 (B), 
+[debug] board[(1, 1)]=15, board[(1, 1)]=15, 
+[debug] board state:
+[[15 15 15 15]
+ [15 15 15 15]
+ [15 15 15 15]
+ [15 15 15 15]
+ [15 11 15 15]
+ [15 15 15 15]
+ [15 15 15 15]
+ [15 13 15 15]]
+=11 
+
+=16 
+
+[debug] move action_id=231, action=((5, 1), (5, 1)), 
+[debug] current_player=1 (R), 
+[debug] board[(5, 1)]=15, board[(5, 1)]=15, 
+[debug] board state:
+[[15 15 15 15]
+ [15  3 15 15]
+ [15 15 15 15]
+ [15 15 15 15]
+ [15 11 15 15]
+ [15 15 15 15]
+ [15 15 15 15]
+ [15 13 15 15]]
+=11 
+
+=16 
+
+=12 b6 b6
+
+[debug] move action_id=99, action=((2, 1), (2, 1)), 
+[debug] current_player=0 (B), 
+[debug] board[(2, 1)]=15, board[(2, 1)]=15, 
+[debug] board state:
+[[15 15 15 15]
+ [15  3 15 15]
+ [15 15 15 15]
+ [15 15 15 15]
+ [15 11 15 15]
+ [15  8 15 15]
+ [15 15 15 15]
+ [15 13 15 15]]
+=11 
+
+=16 
+
+[debug] move action_id=22, action=((0, 2), (0, 2)), 
+[debug] current_player=1 (R), 
+[debug] board[(0, 2)]=15, board[(0, 2)]=15, 
+[debug] board state:
+[[15 15 15 15]
+ [15  3 15 15]
+ [15  1 15 15]
+ [15 15 15 15]
+ [15 11 15 15]
+ [15  8 15 15]
+ [15 15 15 15]
+ [15 13 15 15]]
+=11 
+
+=16 
+
+=12 c1 c1
+
+[debug] move action_id=330, action=((7, 2), (7, 2)), 
+[debug] current_player=0 (B), 
+[debug] board[(7, 2)]=15, board[(7, 2)]=15, 
+[debug] board state:
+[[15 15  4 15]
+ [15  3 15 15]
+ [15  1 15 15]
+ [15 15 15 15]
+ [15 11 15 15]
+ [15  8 15 15]
+ [15 15 15 15]
+ [15 13 15 15]]
+=11 
+
+=16 
+
+[debug] move action_id=110, action=((2, 2), (2, 2)), 
+[debug] current_player=1 (R), 
+[debug] board[(2, 2)]=15, board[(2, 2)]=15, 
+[debug] board state:
+[[15 15  4 15]
+ [15  3 15 15]
+ [15  1 15 15]
+ [15 15 15 15]
+ [15 11 15 15]
+ [15  8 15 15]
+ [15 15 15 15]
+ [15 13  9 15]]
+=11 
+
+=16 
+
+=12 d8 d8
+
+[debug] move action_id=33, action=((0, 3), (0, 3)), 
+[debug] current_player=0 (B), 
+[debug] board[(0, 3)]=15, board[(0, 3)]=15, 
+[debug] board state:
+[[15 15  4 15]
+ [15  3 15 15]
+ [15  1  5 15]
+ [15 15 15 15]
+ [15 11 15 15]
+ [15  8 15 15]
+ [15 15 15 15]
+ [15 13  9 15]]
+=11 
+
+=16 
+
+[debug] move action_id=341, action=((7, 3), (7, 3)), 
+[debug] current_player=1 (R), 
+[debug] board[(7, 3)]=15, board[(7, 3)]=15, 
+[debug] board state:
+[[15 15  4 12]
+ [15  3 15 15]
+ [15  1  5 15]
+ [15 15 15 15]
+ [15 11 15 15]
+ [15  8 15 15]
+ [15 15 15 15]
+ [15 13  9 15]]
+=11 
+
+=16 
+
+=12 c3 c3
+
+[debug] move action_id=242, action=((5, 2), (5, 2)), 
+[debug] current_player=0 (B), 
+[debug] board[(5, 2)]=15, board[(5, 2)]=15, 
+[debug] board state:
+[[15 15  4 12]
+ [15  3 15 15]
+ [15  1  5 15]
+ [15 15 15 15]
+ [15 11 15 15]
+ [15  8 15 15]
+ [15 15 15 15]
+ [15 13  9  6]]
+=11 
+
+=16 
+
+[debug] move action_id=32, action=((0, 2), (0, 3)), 
+[debug] current_player=1 (R), 
+[debug] board[(0, 2)]=4, board[(0, 3)]=12, 
+[debug] board state:
+[[15 15  4 12]
+ [15  3 15 15]
+ [15  1  5 15]
+ [15 15 15 15]
+ [15 11 15 15]
+ [15  8  3 15]
+ [15 15 15 15]
+ [15 13  9  6]]
+=10 
+
+=16 
+
+=12 d4 d4
+
+[debug] move action_id=209, action=((4, 3), (4, 3)), 
+[debug] current_player=0 (B), 
+[debug] board[(4, 3)]=15, board[(4, 3)]=15, 
+[debug] board state:
+[[15 15 14  4]
+ [15  3 15 15]
+ [15  1  5 15]
+ [15 15 15 15]
+ [15 11 15 15]
+ [15  8  3 15]
+ [15 15 15 15]
+ [15 13  9  6]]
+=11 
+
+=16 
+
+[debug] move action_id=308, action=((7, 0), (7, 0)), 
+[debug] current_player=1 (R), 
+[debug] board[(7, 0)]=15, board[(7, 0)]=15, 
+[debug] board state:
+[[15 15 14  4]
+ [15  3 15 15]
+ [15  1  5 15]
+ [15 15 15 15]
+ [15 11 15  5]
+ [15  8  3 15]
+ [15 15 15 15]
+ [15 13  9  6]]
+=11 
+
+=16 
+
+=12 a6 a6
+
+[debug] move action_id=88, action=((2, 0), (2, 0)), 
+[debug] current_player=0 (B), 
+[debug] board[(2, 0)]=15, board[(2, 0)]=15, 
+[debug] board state:
+[[15 15 14  4]
+ [15  3 15 15]
+ [15  1  5 15]
+ [15 15 15 15]
+ [15 11 15  5]
+ [15  8  3 15]
+ [15 15 15 15]
+ [13 13  9  6]]
+=11 
+
+=16 
+
+[debug] move action_id=275, action=((6, 1), (6, 1)), 
+[debug] current_player=1 (R), 
+[debug] board[(6, 1)]=15, board[(6, 1)]=15, 
+[debug] board state:
+[[15 15 14  4]
+ [15  3 15 15]
+ [13  1  5 15]
+ [15 15 15 15]
+ [15 11 15  5]
+ [15  8  3 15]
+ [15 15 15 15]
+ [13 13  9  6]]
+=11 
+
+=16 
+
+=12 b5 b5
+
+[debug] move action_id=143, action=((3, 1), (3, 1)), 
+[debug] current_player=0 (B), 
+[debug] board[(3, 1)]=15, board[(3, 1)]=15, 
+[debug] board state:
+[[15 15 14  4]
+ [15  3 15 15]
+ [13  1  5 15]
+ [15 15 15 15]
+ [15 11 15  5]
+ [15  8  3 15]
+ [15  4 15 15]
+ [13 13  9  6]]
+=11 
+
+=16 
+
+[debug] move action_id=132, action=((3, 0), (3, 0)), 
+[debug] current_player=1 (R), 
+[debug] board[(3, 0)]=15, board[(3, 0)]=15, 
+[debug] board state:
+[[15 15 14  4]
+ [15  3 15 15]
+ [13  1  5 15]
+ [15  0 15 15]
+ [15 11 15  5]
+ [15  8  3 15]
+ [15  4 15 15]
+ [13 13  9  6]]
+=11 
+
+=16 
+
+=12 a4 a4
+
+[debug] move action_id=176, action=((4, 0), (4, 0)), 
+[debug] current_player=0 (B), 
+[debug] board[(4, 0)]=15, board[(4, 0)]=15, 
+[debug] board state:
+[[15 15 14  4]
+ [15  3 15 15]
+ [13  1  5 15]
+ [ 6  0 15 15]
+ [15 11 15  5]
+ [15  8  3 15]
+ [15  4 15 15]
+ [13 13  9  6]]
+=11 
+
+=16 
+
+[debug] move action_id=220, action=((5, 0), (5, 0)), 
+[debug] current_player=1 (R), 
+[debug] board[(5, 0)]=15, board[(5, 0)]=15, 
+[debug] board state:
+[[15 15 14  4]
+ [15  3 15 15]
+ [13  1  5 15]
+ [ 6  0 15 15]
+ [13 11 15  5]
+ [15  8  3 15]
+ [15  4 15 15]
+ [13 13  9  6]]
+=11 
+
+=16 
+
+=12 b3 c3
+
+[debug] move action_id=240, action=((5, 1), (5, 2)), 
+[debug] current_player=0 (B), 
+[debug] board[(5, 1)]=8, board[(5, 2)]=3, 
+[debug] board state:
+[[15 15 14  4]
+ [15  3 15 15]
+ [13  1  5 15]
+ [ 6  0 15 15]
+ [13 11 15  5]
+ [10  8  3 15]
+ [15  4 15 15]
+ [13 13  9  6]]
+=10 
+
+=16 
+
+[debug] move action_id=107, action=((2, 1), (2, 0)), 
+[debug] current_player=1 (R), 
+[debug] board[(2, 1)]=1, board[(2, 0)]=13, 
+[debug] board state:
+[[15 15 14  4]
+ [15  3 15 15]
+ [13  1  5 15]
+ [ 6  0 15 15]
+ [13 11 15  5]
+ [10 14  8 15]
+ [15  4 15 15]
+ [13 13  9  6]]
+=10 
+
+=16 
+
+=12 b4 b3
+
+[debug] move action_id=236, action=((4, 1), (5, 1)), 
+[debug] current_player=0 (B), 
+[debug] board[(4, 1)]=11, board[(5, 1)]=14, 
+[debug] board state:
+[[15 15 14  4]
+ [15  3 15 15]
+ [ 1 14  5 15]
+ [ 6  0 15 15]
+ [13 11 15  5]
+ [10 14  8 15]
+ [15  4 15 15]
+ [13 13  9  6]]
+=10 
+
+=16 
+
+[debug] move action_id=297, action=((6, 3), (6, 3)), 
+[debug] current_player=1 (R), 
+[debug] board[(6, 3)]=15, board[(6, 3)]=15, 
+[debug] board state:
+[[15 15 14  4]
+ [15  3 15 15]
+ [ 1 14  5 15]
+ [ 6  0 15 15]
+ [13 14 15  5]
+ [10 11  8 15]
+ [15  4 15 15]
+ [13 13  9  6]]
+=11 
+
+=16 
+
+=12 c4 c4
+
+[debug] move action_id=198, action=((4, 2), (4, 2)), 
+[debug] current_player=0 (B), 
+[debug] board[(4, 2)]=15, board[(4, 2)]=15, 
+[debug] board state:
+[[15 15 14  4]
+ [15  3 15 15]
+ [ 1 14  5 15]
+ [ 6  0 15 15]
+ [13 14 15  5]
+ [10 11  8 15]
+ [15  4 15  6]
+ [13 13  9  6]]
+=11 
+
+=16 
+
+[debug] move action_id=253, action=((5, 3), (5, 3)), 
+[debug] current_player=1 (R), 
+[debug] board[(5, 3)]=15, board[(5, 3)]=15, 
+[debug] board state:
+[[15 15 14  4]
+ [15  3 15 15]
+ [ 1 14  5 15]
+ [ 6  0 15 15]
+ [13 14 11  5]
+ [10 11  8 15]
+ [15  4 15  6]
+ [13 13  9  6]]
+=11 
+
+=16 
+
+=12 d6 d6
+
+[debug] move action_id=121, action=((2, 3), (2, 3)), 
+[debug] current_player=0 (B), 
+[debug] board[(2, 3)]=15, board[(2, 3)]=15, 
+[debug] board state:
+[[15 15 14  4]
+ [15  3 15 15]
+ [ 1 14  5 15]
+ [ 6  0 15 15]
+ [13 14 11  5]
+ [10 11  8  2]
+ [15  4 15  6]
+ [13 13  9  6]]
+=11 
+
+=16 
+
+[debug] move action_id=43, action=((0, 3), (0, 2)), 
+[debug] current_player=1 (R), 
+[debug] board[(0, 3)]=4, board[(0, 2)]=14, 
+[debug] board state:
+[[15 15 14  4]
+ [15  3 15 15]
+ [ 1 14  5  2]
+ [ 6  0 15 15]
+ [13 14 11  5]
+ [10 11  8  2]
+ [15  4 15  6]
+ [13 13  9  6]]
+=10 
+
+=16 
+
+=12 c5 c5
+
+[debug] move action_id=154, action=((3, 2), (3, 2)), 
+[debug] current_player=0 (B), 
+[debug] board[(3, 2)]=15, board[(3, 2)]=15, 
+[debug] board state:
+[[15 15  4 14]
+ [15  3 15 15]
+ [ 1 14  5  2]
+ [ 6  0 15 15]
+ [13 14 11  5]
+ [10 11  8  2]
+ [15  4 15  6]
+ [13 13  9  6]]
+=11 
+
+=16 
+
+[debug] move action_id=44, action=((1, 0), (1, 0)), 
+[debug] current_player=1 (R), 
+[debug] board[(1, 0)]=15, board[(1, 0)]=15, 
+[debug] board state:
+[[15 15  4 14]
+ [15  3 15 15]
+ [ 1 14  5  2]
+ [ 6  0  1 15]
+ [13 14 11  5]
+ [10 11  8  2]
+ [15  4 15  6]
+ [13 13  9  6]]
+=11 
+
+=16 
+
+=12 c2 c2
+
+[debug] move action_id=286, action=((6, 2), (6, 2)), 
+[debug] current_player=0 (B), 
+[debug] board[(6, 2)]=15, board[(6, 2)]=15, 
+[debug] board state:
+[[15 15  4 14]
+ [ 6  3 15 15]
+ [ 1 14  5  2]
+ [ 6  0  1 15]
+ [13 14 11  5]
+ [10 11  8  2]
+ [15  4 15  6]
+ [13 13  9  6]]
+=11 
+
+=16 
+
+[debug] move action_id=237, action=((6, 1), (5, 1)), 
+[debug] current_player=1 (R), 
+[debug] board[(6, 1)]=4, board[(5, 1)]=11, 
+[debug] board state:
+[[15 15  4 14]
+ [ 6  3 15 15]
+ [ 1 14  5  2]
+ [ 6  0  1 15]
+ [13 14 11  5]
+ [10 11  8  2]
+ [15  4  6  6]
+ [13 13  9  6]]
+=10 
+
+=16 
+
+=12 c4 b4
+
+[debug] move action_id=207, action=((4, 2), (4, 1)), 
+[debug] current_player=0 (B), 
+[debug] board[(4, 2)]=11, board[(4, 1)]=14, 
+[debug] board state:
+[[15 15  4 14]
+ [ 6  3 15 15]
+ [ 1 14  5  2]
+ [ 6  0  1 15]
+ [13 14 11  5]
+ [10  4  8  2]
+ [15 14  6  6]
+ [13 13  9  6]]
+=10 
+
+=16 
+
+[debug] move action_id=264, action=((6, 0), (6, 0)), 
+[debug] current_player=1 (R), 
+[debug] board[(6, 0)]=15, board[(6, 0)]=15, 
+[debug] board state:
+[[15 15  4 14]
+ [ 6  3 15 15]
+ [ 1 14  5  2]
+ [ 6  0  1 15]
+ [13 11 14  5]
+ [10  4  8  2]
+ [15 14  6  6]
+ [13 13  9  6]]
+=11 
+
+=16 
+
+=12 c3 c4
+
+[debug] move action_id=203, action=((5, 2), (4, 2)), 
+[debug] current_player=0 (B), 
+[debug] board[(5, 2)]=8, board[(4, 2)]=14, 
+[debug] board state:
+[[15 15  4 14]
+ [ 6  3 15 15]
+ [ 1 14  5  2]
+ [ 6  0  1 15]
+ [13 11 14  5]
+ [10  4  8  2]
+ [12 14  6  6]
+ [13 13  9  6]]
+=10 
+
+=16 
+
+[debug] move action_id=66, action=((1, 2), (1, 2)), 
+[debug] current_player=1 (R), 
+[debug] board[(1, 2)]=15, board[(1, 2)]=15, 
+[debug] board state:
+[[15 15  4 14]
+ [ 6  3 15 15]
+ [ 1 14  5  2]
+ [ 6  0  1 15]
+ [13 11  8  5]
+ [10  4 14  2]
+ [12 14  6  6]
+ [13 13  9  6]]
+=11 
+
+=16 
+
+=12 c4 c3
+
+[debug] move action_id=247, action=((4, 2), (5, 2)), 
+[debug] current_player=0 (B), 
+[debug] board[(4, 2)]=8, board[(5, 2)]=14, 
+[debug] board state:
+[[15 15  4 14]
+ [ 6  3 13 15]
+ [ 1 14  5  2]
+ [ 6  0  1 15]
+ [13 11  8  5]
+ [10  4 14  2]
+ [12 14  6  6]
+ [13 13  9  6]]
+=10 
+
+=16 
+
+[debug] move action_id=245, action=((2, 2), (5, 2)), 
+[debug] current_player=1 (R), 
+[debug] board[(2, 2)]=5, board[(5, 2)]=8, 
+[debug] board state:
+[[15 15  4 14]
+ [ 6  3 13 15]
+ [ 1 14  5  2]
+ [ 6  0  1 15]
+ [13 11 14  5]
+ [10  4  8  2]
+ [12 14  6  6]
+ [13 13  9  6]]
+=10 
+
+=16 
+
+=12 b4 c4
+
+[debug] move action_id=196, action=((4, 1), (4, 2)), 
+[debug] current_player=0 (B), 
+[debug] board[(4, 1)]=11, board[(4, 2)]=14, 
+[debug] board state:
+[[15 15  4 14]
+ [ 6  3 13 15]
+ [ 1 14 14  2]
+ [ 6  0  1 15]
+ [13 11 14  5]
+ [10  4  5  2]
+ [12 14  6  6]
+ [13 13  9  6]]
+=10 
+
+=16 
+
+[debug] move action_id=67, action=((0, 2), (1, 2)), 
+[debug] current_player=1 (R), 
+[debug] board[(0, 2)]=4, board[(1, 2)]=13, 
+[debug] board state:
+[[15 15  4 14]
+ [ 6  3 13 15]
+ [ 1 14 14  2]
+ [ 6  0  1 15]
+ [13 14 11  5]
+ [10  4  5  2]
+ [12 14  6  6]
+ [13 13  9  6]]
+=10 
+
+=16 
+
+=12 c4 b4
+
+[debug] move action_id=207, action=((4, 2), (4, 1)), 
+[debug] current_player=0 (B), 
+[debug] board[(4, 2)]=11, board[(4, 1)]=14, 
+[debug] board state:
+[[15 15 14 14]
+ [ 6  3  4 15]
+ [ 1 14 14  2]
+ [ 6  0  1 15]
+ [13 14 11  5]
+ [10  4  5  2]
+ [12 14  6  6]
+ [13 13  9  6]]
+=10 
+
+=16 
+
+[debug] move action_id=77, action=((1, 3), (1, 3)), 
+[debug] current_player=1 (R), 
+[debug] board[(1, 3)]=15, board[(1, 3)]=15, 
+[debug] board state:
+[[15 15 14 14]
+ [ 6  3  4 15]
+ [ 1 14 14  2]
+ [ 6  0  1 15]
+ [13 11 14  5]
+ [10  4  5  2]
+ [12 14  6  6]
+ [13 13  9  6]]
+=11 
+
+=16 
+
+=12 d7 d8
+
+[debug] move action_id=34, action=((1, 3), (0, 3)), 
+[debug] current_player=0 (B), 
+[debug] board[(1, 3)]=8, board[(0, 3)]=14, 
+[debug] board state:
+[[15 15 14 14]
+ [ 6  3  4  8]
+ [ 1 14 14  2]
+ [ 6  0  1 15]
+ [13 11 14  5]
+ [10  4  5  2]
+ [12 14  6  6]
+ [13 13  9  6]]
+=10 
+
+=16 
+
+[debug] move action_id=336, action=((5, 2), (7, 2)), 
+[debug] current_player=1 (R), 
+[debug] board[(5, 2)]=5, board[(7, 2)]=9, 
+[debug] board state:
+[[15 15 14  8]
+ [ 6  3  4 14]
+ [ 1 14 14  2]
+ [ 6  0  1 15]
+ [13 11 14  5]
+ [10  4  5  2]
+ [12 14  6  6]
+ [13 13  9  6]]
+=10 
+
+=16 
+
+=12 b4 c4
+
+[debug] move action_id=196, action=((4, 1), (4, 2)), 
+[debug] current_player=0 (B), 
+[debug] board[(4, 1)]=11, board[(4, 2)]=14, 
+[debug] board state:
+[[15 15 14  8]
+ [ 6  3  4 14]
+ [ 1 14 14  2]
+ [ 6  0  1 15]
+ [13 11 14  5]
+ [10  4 14  2]
+ [12 14  6  6]
+ [13 13  5  6]]
+=10 
+
+=16 
+
+[debug] move action_id=202, action=((3, 2), (4, 2)), 
+[debug] current_player=1 (R), 
+[debug] board[(3, 2)]=1, board[(4, 2)]=11, 
+[debug] board state:
+[[15 15 14  8]
+ [ 6  3  4 14]
+ [ 1 14 14  2]
+ [ 6  0  1 15]
+ [13 14 11  5]
+ [10  4 14  2]
+ [12 14  6  6]
+ [13 13  5  6]]
+=10 
+
+=16 
+
+=12 d8 d7
+
+[debug] move action_id=78, action=((0, 3), (1, 3)), 
+[debug] current_player=0 (B), 
+[debug] board[(0, 3)]=8, board[(1, 3)]=14, 
+[debug] board state:
+[[15 15 14  8]
+ [ 6  3  4 14]
+ [ 1 14 14  2]
+ [ 6  0 14 15]
+ [13 14  1  5]
+ [10  4 14  2]
+ [12 14  6  6]
+ [13 13  5  6]]
+=10 
+
+=16 
+
+[debug] move action_id=192, action=((5, 1), (4, 1)), 
+[debug] current_player=1 (R), 
+[debug] board[(5, 1)]=4, board[(4, 1)]=14, 
+[debug] board state:
+[[15 15 14 14]
+ [ 6  3  4  8]
+ [ 1 14 14  2]
+ [ 6  0 14 15]
+ [13 14  1  5]
+ [10  4 14  2]
+ [12 14  6  6]
+ [13 13  5  6]]
+=10 
+
+=16 
+
+=12 a3 b3
+
+[debug] move action_id=228, action=((5, 0), (5, 1)), 
+[debug] current_player=0 (B), 
+[debug] board[(5, 0)]=10, board[(5, 1)]=14, 
+[debug] board state:
+[[15 15 14 14]
+ [ 6  3  4  8]
+ [ 1 14 14  2]
+ [ 6  0 14 15]
+ [13  4  1  5]
+ [10 14 14  2]
+ [12 14  6  6]
+ [13 13  5  6]]
+=10 
+
+=16 
+
+[debug] move action_id=338, action=((7, 2), (7, 0)), 
+[debug] current_player=1 (R), 
+[debug] board[(7, 2)]=5, board[(7, 0)]=13, 
+[debug] board state:
+[[15 15 14 14]
+ [ 6  3  4  8]
+ [ 1 14 14  2]
+ [ 6  0 14 15]
+ [13  4  1  5]
+ [14 10 14  2]
+ [12 14  6  6]
+ [13 13  5  6]]
+=10 
+
+=16 
+
+=12 d7 d8
+
+[debug] move action_id=34, action=((1, 3), (0, 3)), 
+[debug] current_player=0 (B), 
+[debug] board[(1, 3)]=8, board[(0, 3)]=14, 
+[debug] board state:
+[[15 15 14 14]
+ [ 6  3  4  8]
+ [ 1 14 14  2]
+ [ 6  0 14 15]
+ [13  4  1  5]
+ [14 10 14  2]
+ [12 14  6  6]
+ [ 5 13 14  6]]
+=10 
+
+=16 
+
+[debug] move action_id=152, action=((3, 1), (3, 2)), 
+[debug] current_player=1 (R), 
+[debug] board[(3, 1)]=0, board[(3, 2)]=14, 
+[debug] board state:
+[[15 15 14  8]
+ [ 6  3  4 14]
+ [ 1 14 14  2]
+ [ 6  0 14 15]
+ [13  4  1  5]
+ [14 10 14  2]
+ [12 14  6  6]
+ [ 5 13 14  6]]
+=10 
+
+=16 
+
+=12 d8 c8
+
+[debug] move action_id=43, action=((0, 3), (0, 2)), 
+[debug] current_player=0 (B), 
+[debug] board[(0, 3)]=8, board[(0, 2)]=14, 
+[debug] board state:
+[[15 15 14  8]
+ [ 6  3  4 14]
+ [ 1 14 14  2]
+ [ 6 14  0 15]
+ [13  4  1  5]
+ [14 10 14  2]
+ [12 14  6  6]
+ [ 5 13 14  6]]
+=10 
+
+=16 
+
+[debug] move action_id=183, action=((7, 0), (4, 0)), 
+[debug] current_player=1 (R), 
+[debug] board[(7, 0)]=5, board[(4, 0)]=13, 
+[debug] board state:
+[[15 15  8 14]
+ [ 6  3  4 14]
+ [ 1 14 14  2]
+ [ 6 14  0 15]
+ [13  4  1  5]
+ [14 10 14  2]
+ [12 14  6  6]
+ [ 5 13 14  6]]
+=10 
+
+=16 
+
+=12 b3 c3
+
+[debug] move action_id=240, action=((5, 1), (5, 2)), 
+[debug] current_player=0 (B), 
+[debug] board[(5, 1)]=10, board[(5, 2)]=14, 
+[debug] board state:
+[[15 15  8 14]
+ [ 6  3  4 14]
+ [ 1 14 14  2]
+ [ 6 14  0 15]
+ [ 5  4  1  5]
+ [14 10 14  2]
+ [12 14  6  6]
+ [14 13 14  6]]
+=10 
+
+=16 
+
+[debug] move action_id=0, action=((0, 0), (0, 0)), 
+[debug] current_player=1 (R), 
+[debug] board[(0, 0)]=15, board[(0, 0)]=15, 
+[debug] board state:
+[[15 15  8 14]
+ [ 6  3  4 14]
+ [ 1 14 14  2]
+ [ 6 14  0 15]
+ [ 5  4  1  5]
+ [14 14 10  2]
+ [12 14  6  6]
+ [14 13 14  6]]
+=11 
+
+=16 
+
+=12 c3 b3
+
+[debug] move action_id=251, action=((5, 2), (5, 1)), 
+[debug] current_player=0 (B), 
+[debug] board[(5, 2)]=10, board[(5, 1)]=14, 
+[debug] board state:
+[[ 9 15  8 14]
+ [ 6  3  4 14]
+ [ 1 14 14  2]
+ [ 6 14  0 15]
+ [ 5  4  1  5]
+ [14 14 10  2]
+ [12 14  6  6]
+ [14 13 14  6]]
+=10 
+
+=16 
+
+[debug] move action_id=11, action=((0, 1), (0, 1)), 
+[debug] current_player=1 (R), 
+[debug] board[(0, 1)]=15, board[(0, 1)]=15, 
+[debug] board state:
+[[ 9 15  8 14]
+ [ 6  3  4 14]
+ [ 1 14 14  2]
+ [ 6 14  0 15]
+ [ 5  4  1  5]
+ [14 10 14  2]
+ [12 14  6  6]
+ [14 13 14  6]]
+=11 
+
+=16 
+
+=12 b3 c3
+
+[debug] move action_id=240, action=((5, 1), (5, 2)), 
+[debug] current_player=0 (B), 
+[debug] board[(5, 1)]=10, board[(5, 2)]=14, 
+[debug] board state:
+[[ 9 10  8 14]
+ [ 6  3  4 14]
+ [ 1 14 14  2]
+ [ 6 14  0 15]
+ [ 5  4  1  5]
+ [14 10 14  2]
+ [12 14  6  6]
+ [14 13 14  6]]
+=10 
+
+=16 
+
+[debug] move action_id=140, action=((3, 0), (3, 1)), 
+[debug] current_player=1 (R), 
+[debug] board[(3, 0)]=6, board[(3, 1)]=14, 
+[debug] board state:
+[[ 9 10  8 14]
+ [ 6  3  4 14]
+ [ 1 14 14  2]
+ [ 6 14  0 15]
+ [ 5  4  1  5]
+ [14 14 10  2]
+ [12 14  6  6]
+ [14 13 14  6]]
+=10 
+
+=16 
+
+=12 c3 b3
+
+[debug] move action_id=251, action=((5, 2), (5, 1)), 
+[debug] current_player=0 (B), 
+[debug] board[(5, 2)]=10, board[(5, 1)]=14, 
+[debug] board state:
+[[ 9 10  8 14]
+ [ 6  3  4 14]
+ [ 1 14 14  2]
+ [14  6  0 15]
+ [ 5  4  1  5]
+ [14 14 10  2]
+ [12 14  6  6]
+ [14 13 14  6]]
+=10 
+
+=16 
+
+[debug] move action_id=248, action=((6, 2), (5, 2)), 
+[debug] current_player=1 (R), 
+[debug] board[(6, 2)]=6, board[(5, 2)]=14, 
+[debug] board state:
+[[ 9 10  8 14]
+ [ 6  3  4 14]
+ [ 1 14 14  2]
+ [14  6  0 15]
+ [ 5  4  1  5]
+ [14 10 14  2]
+ [12 14  6  6]
+ [14 13 14  6]]
+=10 
+
+=16 
+
+=12 c8 d8
+
+[debug] move action_id=32, action=((0, 2), (0, 3)), 
+[debug] current_player=0 (B), 
+[debug] board[(0, 2)]=8, board[(0, 3)]=14, 
+[debug] board state:
+[[ 9 10  8 14]
+ [ 6  3  4 14]
+ [ 1 14 14  2]
+ [14  6  0 15]
+ [ 5  4  1  5]
+ [14 10  6  2]
+ [12 14 14  6]
+ [14 13 14  6]]
+=10 
+
+=16 
+
+[debug] move action_id=136, action=((4, 0), (3, 0)), 
+[debug] current_player=1 (R), 
+[debug] board[(4, 0)]=5, board[(3, 0)]=14, 
+[debug] board state:
+[[ 9 10 14  8]
+ [ 6  3  4 14]
+ [ 1 14 14  2]
+ [14  6  0 15]
+ [ 5  4  1  5]
+ [14 10  6  2]
+ [12 14 14  6]
+ [14 13 14  6]]
+=10 
+
+=16 
+
+=12 d8 c8
+
+[debug] move action_id=43, action=((0, 3), (0, 2)), 
+[debug] current_player=0 (B), 
+[debug] board[(0, 3)]=8, board[(0, 2)]=14, 
+[debug] board state:
+[[ 9 10 14  8]
+ [ 6  3  4 14]
+ [ 1 14 14  2]
+ [ 5  6  0 15]
+ [14  4  1  5]
+ [14 10  6  2]
+ [12 14 14  6]
+ [14 13 14  6]]
+=10 
+
+=16 
+
+[debug] move action_id=165, action=((3, 3), (3, 3)), 
+[debug] current_player=1 (R), 
+[debug] board[(3, 3)]=15, board[(3, 3)]=15, 
+[debug] board state:
+[[ 9 10  8 14]
+ [ 6  3  4 14]
+ [ 1 14 14  2]
+ [ 5  6  0 15]
+ [14  4  1  5]
+ [14 10  6  2]
+ [12 14 14  6]
+ [14 13 14  6]]
+=11 
+
+=16 
+
+=12 c8 d8
+
+[debug] move action_id=32, action=((0, 2), (0, 3)), 
+[debug] current_player=0 (B), 
+[debug] board[(0, 2)]=8, board[(0, 3)]=14, 
+[debug] board state:
+[[ 9 10  8 14]
+ [ 6  3  4 14]
+ [ 1 14 14  2]
+ [ 5  6  0  7]
+ [14  4  1  5]
+ [14 10  6  2]
+ [12 14 14  6]
+ [14 13 14  6]]
+=10 
+
+=16 
+
+[debug] move action_id=195, action=((4, 1), (4, 0)), 
+[debug] current_player=1 (R), 
+[debug] board[(4, 1)]=4, board[(4, 0)]=14, 
+[debug] board state:
+[[ 9 10 14  8]
+ [ 6  3  4 14]
+ [ 1 14 14  2]
+ [ 5  6  0  7]
+ [14  4  1  5]
+ [14 10  6  2]
+ [12 14 14  6]
+ [14 13 14  6]]
+=10 
+
+=16 
+
+=12 d8 c8
+
+[debug] move action_id=43, action=((0, 3), (0, 2)), 
+[debug] current_player=0 (B), 
+[debug] board[(0, 3)]=8, board[(0, 2)]=14, 
+[debug] board state:
+[[ 9 10 14  8]
+ [ 6  3  4 14]
+ [ 1 14 14  2]
+ [ 5  6  0  7]
+ [ 4 14  1  5]
+ [14 10  6  2]
+ [12 14 14  6]
+ [14 13 14  6]]
+=10 
+
+=16 
+
+[debug] move action_id=191, action=((3, 1), (4, 1)), 
+[debug] current_player=1 (R), 
+[debug] board[(3, 1)]=6, board[(4, 1)]=14, 
+[debug] board state:
+[[ 9 10  8 14]
+ [ 6  3  4 14]
+ [ 1 14 14  2]
+ [ 5  6  0  7]
+ [ 4 14  1  5]
+ [14 10  6  2]
+ [12 14 14  6]
+ [14 13 14  6]]
+=10 
+
+=16 
+
+=12 c8 d8
+
+[debug] move action_id=32, action=((0, 2), (0, 3)), 
+[debug] current_player=0 (B), 
+[debug] board[(0, 2)]=8, board[(0, 3)]=14, 
+[debug] board state:
+[[ 9 10  8 14]
+ [ 6  3  4 14]
+ [ 1 14 14  2]
+ [ 5 14  0  7]
+ [ 4  6  1  5]
+ [14 10  6  2]
+ [12 14 14  6]
+ [14 13 14  6]]
+=10 
+
+=16 
+
+[debug] move action_id=147, action=((4, 1), (3, 1)), 
+[debug] current_player=1 (R), 
+[debug] board[(4, 1)]=6, board[(3, 1)]=14, 
+[debug] board state:
+[[ 9 10 14  8]
+ [ 6  3  4 14]
+ [ 1 14 14  2]
+ [ 5 14  0  7]
+ [ 4  6  1  5]
+ [14 10  6  2]
+ [12 14 14  6]
+ [14 13 14  6]]
+=10 
+
+=16 
+
+=12 d8 c8
+
+[debug] move action_id=43, action=((0, 3), (0, 2)), 
+[debug] current_player=0 (B), 
+[debug] board[(0, 3)]=8, board[(0, 2)]=14, 
+[debug] board state:
+[[ 9 10 14  8]
+ [ 6  3  4 14]
+ [ 1 14 14  2]
+ [ 5  6  0  7]
+ [ 4 14  1  5]
+ [14 10  6  2]
+ [12 14 14  6]
+ [14 13 14  6]]
+=10 
+
+=16 
+
+[debug] move action_id=225, action=((4, 0), (5, 0)), 
+[debug] current_player=1 (R), 
+[debug] board[(4, 0)]=4, board[(5, 0)]=14, 
+[debug] board state:
+[[ 9 10  8 14]
+ [ 6  3  4 14]
+ [ 1 14 14  2]
+ [ 5  6  0  7]
+ [ 4 14  1  5]
+ [14 10  6  2]
+ [12 14 14  6]
+ [14 13 14  6]]
+=10 
+
+=16 
+
+=12 c8 d8
+
+[debug] move action_id=32, action=((0, 2), (0, 3)), 
+[debug] current_player=0 (B), 
+[debug] board[(0, 2)]=8, board[(0, 3)]=14, 
+[debug] board state:
+[[ 9 10  8 14]
+ [ 6  3  4 14]
+ [ 1 14 14  2]
+ [ 5  6  0  7]
+ [14 14  1  5]
+ [ 4 10  6  2]
+ [12 14 14  6]
+ [14 13 14  6]]
+=10 
+
+=16 
+
+[debug] move action_id=351, action=((7, 3), (7, 2)), 
+[debug] current_player=1 (R), 
+[debug] board[(7, 3)]=6, board[(7, 2)]=14, 
+[debug] board state:
+[[ 9 10 14  8]
+ [ 6  3  4 14]
+ [ 1 14 14  2]
+ [ 5  6  0  7]
+ [14 14  1  5]
+ [ 4 10  6  2]
+ [12 14 14  6]
+ [14 13 14  6]]
+=10 
+
+=16 
+
+=12 a2 a1
+
+[debug] move action_id=315, action=((6, 0), (7, 0)), 
+[debug] current_player=0 (B), 
+[debug] board[(6, 0)]=12, board[(7, 0)]=14, 
+[debug] board state:
+[[ 9 10 14  8]
+ [ 6  3  4 14]
+ [ 1 14 14  2]
+ [ 5  6  0  7]
+ [14 14  1  5]
+ [ 4 10  6  2]
+ [12 14 14  6]
+ [14 13  6 14]]
+=10 
+
+=16 
+
+[debug] move action_id=181, action=((5, 0), (4, 0)), 
+[debug] current_player=1 (R), 
+[debug] board[(5, 0)]=4, board[(4, 0)]=14, 
+[debug] board state:
+[[ 9 10 14  8]
+ [ 6  3  4 14]
+ [ 1 14 14  2]
+ [ 5  6  0  7]
+ [14 14  1  5]
+ [ 4 10  6  2]
+ [14 14 14  6]
+ [12 13  6 14]]
+=10 
+
+=16 
+
+=12 d8 c8
+
+[debug] move action_id=43, action=((0, 3), (0, 2)), 
+[debug] current_player=0 (B), 
+[debug] board[(0, 3)]=8, board[(0, 2)]=14, 
+[debug] board state:
+[[ 9 10 14  8]
+ [ 6  3  4 14]
+ [ 1 14 14  2]
+ [ 5  6  0  7]
+ [ 4 14  1  5]
+ [14 10  6  2]
+ [14 14 14  6]
+ [12 13  6 14]]
+=10 
+
+=16 
+
+
+# 10 12 44 46 78 80 112 114 146 148 180 182 214 216 248 250 282 284 316 318 350 352 384 386 418 420 452 454 486 488 520 522 554 556 588 590 622 624 656 658 690 692 724 726 758 760 792 794 826 828 860 862 894 896 928 930 962 964 996 998 1030 1032 1064 1066 1098 1100 1132 1134 1166 1168 1200 1202 1234 1236 1268 1270 1302 1304 1336 1338 #
+/home/ntcucsk201/anaconda3/envs/darkchess/lib/python3.10/site-packages/treevalue/tree/integration/torch.py:23: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  register_for_torch(TreeValue)
+/home/ntcucsk201/anaconda3/envs/darkchess/lib/python3.10/site-packages/treevalue/tree/integration/torch.py:24: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  register_for_torch(FastTreeValue)
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+[DEBUG] Config loaded successfully
+/home/ntcucsk201/DarkChess/LightZero/zoo/board_games/darkchess/mgtp.py:38: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(model_path, map_location='cpu')
+[DEBUG] Model moved to device: cuda:0
+
+###
+Account: a1
+Mode: MGTP
+Path: /home/ntcucsk201/anaconda3/envs/darkchess/bin/python
+Arg: /home/ntcucsk201/DarkChess/LightZero/zoo/board_games/darkchess/mgtp.py -model_path /home/ntcucsk201/DarkChess/LightZero/zoo/board_games/darkchess/data_muzero/darkchess_muzero_ns1000_upc50_rer0.0_bs512_251016/ckpt/iteration_2950.pth.tar -config_path /home/ntcucsk201/DarkChess/LightZero/zoo/board_games/darkchess/data_muzero/darkchess_muzero_ns1000_upc50_rer0.0_bs512_251016/formatted_total_config.py
+Name: LightZero_DarkChess
+Version: 1.0.0
+###

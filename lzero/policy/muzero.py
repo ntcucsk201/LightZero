@@ -820,6 +820,11 @@ class MuZeroPolicy(Policy):
             self._mcts_eval = MCTSCtree(self._cfg)
         else:
             self._mcts_eval = MCTSPtree(self._cfg)
+
+        self.inverse_scalar_transform_handle = InverseScalarTransform(
+            self._cfg.model.support_scale, self._cfg.device, self._cfg.model.categorical_distribution
+        )
+        
         if self._cfg.model.model_type == 'conv_context':
             self.last_batch_obs = torch.zeros([3, self._cfg.model.observation_shape[0], 64, 64]).to(self._cfg.device)
             self.last_batch_action = [-1 for _ in range(3)]

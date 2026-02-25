@@ -99,6 +99,7 @@ class DarkchessEnv(BaseEnv):
         self.battle_mode = cfg.battle_mode
         # The mode of interaction between the agent and the environment.
         assert self.battle_mode in ['self_play_mode', 'play_with_bot_mode', 'eval_mode']
+        self.bot_policy_fn = None
 
         self.board_width = cfg.board_width
         self.board_height = cfg.board_height
@@ -115,6 +116,10 @@ class DarkchessEnv(BaseEnv):
         self.chance = 0
 
         self.chess_value = {0: 7, 1: 6, 2: 5, 3: 4, 4: 3, 5: 2, 6: 1, 7: 7, 8: 6, 9: 5, 10: 4, 11: 3, 12: 2, 13: 1}
+        
+        # 設定 reward 在0-1之間讓神經網路更好收斂
+        self.chess_weight = [0.55, 0.50, 0.25, 0.10, 0.08, 0.30, 0.08,  # 紅方 K~P
+                     0.55, 0.50, 0.25, 0.10, 0.08, 0.30, 0.08]  # 黑方 k~p
 
         # gym space
         self._observation_space = gym.spaces.Box(
@@ -178,7 +183,7 @@ class DarkchessEnv(BaseEnv):
 
         return obs
 
-    def step(self, action_id: int):
+    def step(self, action_id: int, flip_chess=None):
         action = self.all_actions[action_id]
         assert (self.is_legal_action(action))
 
@@ -191,22 +196,88 @@ class DarkchessEnv(BaseEnv):
                               ] = -timestep.reward if timestep.obs['to_play'] == 0 else timestep.reward
             return timestep
         # TODO
-        # elif self.battle_mode == 'play_with_bot_mode':
-        #     timestep_player1 = self._player_step(action)
+        elif self.battle_mode == 'play_with_bot_mode':
+            # --------------------------------------------------------
+            # Player 0: 外部 AI 
+            # player 1: lightzero 模型 
+            # --------------------------------------------------------
+            
+            # 玩家（Player 0）執行動作
+            timestep = self._player_step(action, flip_chess)
+            self.action_history.append(action_id)
+            
+            # 遊戲未結束且輪到 Bot（Player 1）
+            # if not timestep.done and self.current_player == 1:
+            #     # Bot 根據當前局面產生動作
+            #     bot_action_id = self.bot_policy_fn(timestep.obs)
+            #     bot_action = self.all_actions[bot_action_id]
+            #     assert self.is_legal_action(bot_action)
+                
+            #     # Bot 執行動作
+            #     timestep = self._player_step(bot_action)
+            #     self.action_history.append(bot_action_id)
+            
+            # 計算回報（從 Player 0 視角）
+            if timestep.done:
+                # 如果 Player 1 是最後玩家，反轉回報
+                timestep.info['eval_episode_return'] = \
+                    -timestep.reward if timestep.obs['to_play'] == 1 else timestep.reward
+                    
+            src, dst = action
+            print(
+                f"[debug] move action_id={action_id}, action={action}, \n"
+                f"[debug] current_player={self.current_player} ({self.player_color[self.current_player]}), \n"
+                f"[debug] board[{src}]={self.board[src]}, board[{dst}]={self.board[dst]}, \n"
+                f"[debug] board state:\n{self.board}, \n"
+            )
+            
+            return timestep
+        elif self.battle_mode == 'eval_mode':
+            # 如果遊戲還沒結束，且設定了人類對戰
+            timestep = self._player_step(action)
+            if not timestep.done and self.agent_vs_human:
+                # 渲染棋盤讓人類看到現況
+                self.render()
+                # 獲取人類透過 MGTP 格式輸入的動作
+                human_action_id = self.string_to_action()
+                # 執行人類動作
+                timestep = self._player_step(self.all_actions[human_action_id])
+                
+            # 為了計算最終回報，統一視角
+            if timestep.done:
+                timestep.info['eval_episode_return'] = \
+                    -timestep.reward if timestep.obs['to_play'] == 0 else timestep.reward
+                    
+            return timestep
 
-    def _player_step(self, action: tuple) -> BaseEnvTimestep:
+    def _player_step(self, action: tuple, flip_chess=None) -> BaseEnvTimestep:
+        reward = 0.0
         if action[0] == action[1]:
-            chess_id = self.flip(action)
+            chess_id = self.flip(action, flip_chess)
             self.chance = chess_id
+            reward = 0.0
         else:
+            target_chess_id = self.board[action[1]]
             self.move(action)
             self.chance = 0
+            if 0 <= target_chess_id < 14: # 吃子
+                reward = self.chess_weight[target_chess_id]
+            else: 
+                reward -= 0.01
         if not 0 <= self.chance < 14:
             logging.warning(f"Chance value: {self.chance}!!!")
 
         # check if game is end and get winner
         done, winner = self.get_done_winner()
-        reward = np.array(float(winner == self.current_player)).astype(np.float32)
+        if done:
+            if winner == self.current_player:
+                reward += 1.0  # 贏棋加一分
+            elif winner == -1:
+                reward += 0.0  # 平手不加不扣
+            else:
+                reward -= 1.0  # 輸棋減一分
+        reward = np.array(float(reward)).astype(np.float32)
+        # reward = np.array(float(winner == self.current_player)).astype(np.float32)
         info = {'next player to play': self.next_player}
         # change player
         self.current_player = self.next_player
@@ -325,16 +396,21 @@ class DarkchessEnv(BaseEnv):
         src, dst = action
         dst_chess = self.board[dst]
         if dst_chess != 14:  # 吃子
-            chess_id = np.where(self.chess_name == dst_chess)[0]
-            self.chess_count[chess_id] -= 1
+            # chess_id = np.where(self.chess_name == dst_chess)[0]
+            # self.chess_count[chess_id] -= 1
+            self.chess_count[dst_chess] -= 1
             self.continuous_move_count = 0
         else:
             self.continuous_move_count += 1
         self.board[dst] = self.board[src]
         self.board[src] = 14
 
-    def flip(self, action: tuple):
-        chess_id = self.get_random_chess_id()
+    def flip(self, action: tuple, flip_chess=None):
+        if self.battle_mode == 'play_with_bot_mode':
+            # 在使用平台對弈時翻棋會傳入翻出的棋
+            chess_id = np.where(self.chess_name == flip_chess)[0][0]
+        else:
+            chess_id = self.get_random_chess_id()
 
         # 第一次翻棋後決定雙方顏色
         if self.player_color[self.current_player] == 'U':
@@ -385,7 +461,31 @@ class DarkchessEnv(BaseEnv):
         np.random.seed(self._seed)
 
     def render(self):
-        pass
+        """
+        Overview:
+            Renders the game environment.
+        Arguments:
+            - mode (:obj:`str`): The rendering mode. Options are 
+            'state_realtime_mode', 
+            'image_realtime_mode', 
+            or 'image_savefile_mode'.
+        """
+        if self.render_mode == 'state_realtime_mode':
+            # 定義棋子顯示字符
+            # 0-6: K..P, 7-13: k..p, 14: -, 15: X
+            chars = self.chess_name
+            
+            print("\n  a b c d")
+            print("  -------")
+            for i in range(8):
+                print(f"{8-i}|", end="")
+                for j in range(4):
+                    piece = self.board[i, j]
+                    print(chars[piece], end=" ")
+                print(f"|{8-i}")
+            print("  -------")
+            print("  a b c d\n")
+            print(f"player1: {self.player_color[0]}, player2: {self.player_color[1]}")
 
     def close(self) -> None:
         pass
@@ -398,7 +498,38 @@ class DarkchessEnv(BaseEnv):
         action = self.all_actions[action_id]
         src = chr(ord('a') + action[0][1]) + str(8 - action[0][0])
         dst = chr(ord('a') + action[1][1]) + str(8 - action[1][0])
-        return src + '-' + dst
+        return src + ' ' + dst
+    
+    def string_to_action(self) -> int:
+        """
+        從終端機讀取 MGTP 指令並轉換為 action_id
+        """
+        while True:
+            try:
+                print(f"\n[Player {self.current_player} (Human) Turn]")
+                user_input = input("請輸入動作 (例如 'a1 b1'): ").strip().lower()
+                
+                # 解析 MGTP 格式: a1-b1
+                src_str, dst_str = user_input.split('  ')
+                
+                def parse_pos(s):
+                    col = ord(s[0]) - ord('a')
+                    row = 8 - int(s[1])
+                    return (row, col)
+                
+                action_tuple = (parse_pos(src_str), parse_pos(dst_str))
+                
+                # 尋找對應的 action_id
+                if action_tuple in self.all_actions:
+                    action_id = self.all_actions.index(action_tuple)
+                    if self.is_legal_action(action_tuple):
+                        return action_id
+                    else:
+                        print("不合法的移動，請重新輸入。")
+                else:
+                    print("輸入座標超出棋盤範圍。")
+            except Exception as e:
+                print(f"解析錯誤: {e}。正確格式為 'a1 b1' 或 'c3 c3'")
 
     def show_board(self):
         # TODO: chess_id to char
